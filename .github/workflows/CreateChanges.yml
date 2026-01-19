@@ -10,8 +10,10 @@ jobs:
       - name: Make temp
         run: "mkdir ./temp"
       - name: Checkout Cyrus
-        run: git checkout https://github.com/CyrusCraft/Cyrus.git
-        working-directory: "./temp"
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.CYRUS_READ_ONLY }}
+          path: "./temp"
       - name: make executable
         run: chmod -x ./gradlew
         working-directory: "temp/"
