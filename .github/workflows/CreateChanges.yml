@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Checkout this
         uses: actions/checkout@v6
+      - name: Make temp
+        run: "mkdir ./temp"
       - name: Checkout Cyrus
         run: git checkout https://github.com/CyrusCraft/Cyrus.git
         working-directory: "./temp"
