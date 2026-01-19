@@ -32,7 +32,12 @@ jobs:
       - name: Cleanup
         run: rmdir -Path temp -Force -Recurse
       - name: Commit changes
-        uses: actions-x/commit@v6
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
           
       
 
