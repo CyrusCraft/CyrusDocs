@@ -12,6 +12,8 @@ jobs:
       - name: Checkout Cyrus
         uses: actions/checkout@v6
         with:
+          repository: CyrusCraft/Cyrus
+          ref: main
           token: ${{ secrets.CYRUS_READ_ONLY }}
           path: "./temp"
       - run: ls
