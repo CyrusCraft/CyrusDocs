@@ -18,10 +18,10 @@ jobs:
           token: ${{ secrets.CYRUS_READ_ONLY }}
           path: "./temp"
       - name: Build docs
-        run: ./gradlew docs
+        run: ./gradlew javadoc
         working-directory: "./temp"
       - name: Move API docs
-        run: move ./temp/api/build/docs/ ./Docs/API
+        run: move ./temp/api/build/docs/javadoc/ ./Docs/API
       - name: Cleanup
         run: rmdir /S /Q ./temp
       - name: Commit changes
