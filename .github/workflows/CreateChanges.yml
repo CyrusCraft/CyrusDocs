@@ -30,7 +30,7 @@ jobs:
       - name: Move API docs
         run: move ./temp/api/build/docs/javadoc/ ./Docs/API
       - name: Cleanup
-        run: rmdir /S ./temp
+        run: rmdir /s temp
       - name: Commit changes
         uses: actions-x/commit@v6
           
