@@ -4,7 +4,7 @@ on:
 permissions: write-all
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout this
         uses: actions/checkout@v6
@@ -17,19 +17,13 @@ jobs:
           ref: main
           token: ${{ secrets.CYRUS_READ_ONLY }}
           path: "./temp"
-      - run: ls
-      - run: ls
-        working-directory: ./temp
-      - name: make executable
-        run: chmod -x ./gradlew
-        working-directory: "./temp"
       - name: Build docs
         run: ./gradlew docs
         working-directory: "./temp"
       - name: Move API docs
-        run: mv ./temp/api/build/docs/ ./Docs/API
+        run: move ./temp/api/build/docs/ ./Docs/API
       - name: Cleanup
-        run: rm -r ./temp
+        run: rmdir /S /Q ./temp
       - name: Commit changes
         uses: actions-x/commit@v6
           
