@@ -8,11 +8,10 @@ jobs:
       - name: Checkout this
         uses: actions/checkout@v4
       - name: Checkout Cyrus
-        uses: CodersLab-core/action-checkout-and-move@v1.0.1
+        uses: actions/checkout@v4
         with:
           repository: CyrusCraft/Cyrus.git
-          dest-path: "temp/"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          path: "temp"
       - name: make executable
         run: chmod -x ./gradlew
         working-directory: "temp/"
