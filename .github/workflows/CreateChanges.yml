@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Cyrus
         uses: actions/checkout@v4
         with:
-          repository: CyrusCraft/Cyrus.git
+          repository: CyrusCraft/Cyrus
           path: "temp"
       - name: make executable
         run: chmod -x ./gradlew
