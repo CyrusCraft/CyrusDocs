@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Cyrus
         uses: CodersLab-core/action-checkout-and-move@v1.0.1
         with:
-          repository: https://github.com/CyrusCraft/Cyrus.git
+          repository: CyrusCraft/Cyrus.git
           dest-path: "temp/"
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: make executable
