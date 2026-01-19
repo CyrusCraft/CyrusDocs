@@ -8,11 +8,8 @@ jobs:
       - name: Checkout this
         uses: actions/checkout@v6
       - name: Checkout Cyrus
-        uses: actions/checkout@v6
-        with:
-          repository: CyrusCraft/Cyrus.git
-          ref: "main"
-          path: "temp"
+        run: git checkout https://github.com/CyrusCraft/Cyrus.git
+        working-directory: "./temp"
       - name: make executable
         run: chmod -x ./gradlew
         working-directory: "temp/"
