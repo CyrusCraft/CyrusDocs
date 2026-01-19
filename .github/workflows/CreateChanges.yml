@@ -14,7 +14,9 @@ jobs:
         with:
           token: ${{ secrets.CYRUS_READ_ONLY }}
           path: "./temp"
-      - run: ls ./temp
+      - run: ls
+      - run: ls
+        working-directory: ./temp
       - name: make executable
         run: chmod -x ./gradlew
         working-directory: "./temp"
