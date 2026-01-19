@@ -14,12 +14,13 @@ jobs:
         with:
           token: ${{ secrets.CYRUS_READ_ONLY }}
           path: "./temp"
+      - run: ls ./temp
       - name: make executable
         run: chmod -x ./gradlew
-        working-directory: "temp/"
+        working-directory: "./temp"
       - name: Build docs
         run: ./gradlew docs
-        working-directory: "temp/"
+        working-directory: "./temp"
       - name: Move API docs
         run: mv ./temp/api/build/docs/ ./Docs/API
       - name: Cleanup
