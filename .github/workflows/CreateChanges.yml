@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Cyrus
         uses: actions/checkout@v6
         with:
-          repository: CyrusCraft/Cyrus
+          repository: CyrusCraft/Cyrus.git
           ref: "main"
           path: "temp"
       - name: make executable
