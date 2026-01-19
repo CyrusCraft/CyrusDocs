@@ -1,0 +1,30 @@
+name: Update
+on:
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this
+        uses: actions/checkout@v4
+      - name: Checkout Cyrus
+        uses: CodersLab-core/action-checkout-and-move@v1.0.1
+        with:
+          repository: https://github.com/CyrusCraft/Cyrus.git
+          dest-path: "temp/"
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: make executable
+        run: chmod -x ./gradlew
+        working-directory: "temp/"
+      - name: Build docs
+        run: ./gradlew docs
+        working-directory: "temp/"
+      - name: Move API docs
+        run: mv ./temp/api/build/docs/ ./Docs/API
+      - name: Cleanup
+        run: rm -r ./temp
+      - name: Commit changes
+        uses: actions-x/commit@v6
+          
+      
+
