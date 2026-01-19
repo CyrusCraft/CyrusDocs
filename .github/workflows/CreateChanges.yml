@@ -6,11 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Checkout Cyrus
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: CyrusCraft/Cyrus
+          ref: "main"
           path: "temp"
       - name: make executable
         run: chmod -x ./gradlew
