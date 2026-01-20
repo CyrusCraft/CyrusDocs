@@ -1,0 +1,39 @@
+body {
+    background-color: #2b2b2b;
+}
+
+header {
+    padding-bottom: 2em;
+    margin-left: 1.1em;
+}
+
+header a {
+    color: WHITE;
+    text-decoration: none;
+    border-right-style: groove;
+    min-width: 6em;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section {
+    min-width: 3em;
+    max-width: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.section p {
+    text-align: center;
+    color: WHITE;
+    font-weight: bold;
+}
+
+.section a {
+    text-decoration: none;
+    color: #99b8ff;
+}
