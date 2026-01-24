@@ -4,7 +4,74 @@ body {
 
 header {
     padding-bottom: 2em;
-    margin-left: 1.1em;
+    margin-left: 1.1rem;
+}
+
+h1 {
+    color: #99b8ff;
+    margin-left: 3rem;
+}
+
+h2 {
+    color: #99b8ff;
+    margin-left: 3rem;
+}
+
+h3 {
+    color: #99b8ff;
+    margin-left: 3rem;
+}
+
+.image-like {
+    width: fit-content;
+    padding: 1px;
+    background-color: GREY;
+}
+
+.image-like p {
+    margin: 1px;
+    padding: 6px;
+}
+
+main > p {
+    color: WHITE;
+    margin-left: 3rem;
+    max-width: 800px;
+    background-color: #2a2a2a;
+}
+
+main > ul {
+    margin-left: 3rem;
+    color: WHITE;
+}
+
+pre {
+    background-color: BLACK;
+    width: fit-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    margin: 0;
+    color: white;
+}
+
+.code-frame {
+    border-style: double;
+    border-width: 2px;
+    border-color: WHITE;
+    width: fit-content;
+    margin-left: 3rem;
+}
+
+.code-frame > p {
+    color: BLACK;
+    background-color: #eeeeee;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0.5rem;
+    font-size: small;
+    font-weight: bold;
 }
 
 header a {
@@ -17,13 +84,28 @@ header a {
     justify-content: space-evenly;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.three-quarters {
+    width: 33.3%;
+}
+
 .section {
+    display: inline-block;
     min-width: 3em;
-    max-width: 150px;
     border-style: solid;
     border-width: 1px;
     border-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 1em;
 }
 
@@ -31,9 +113,59 @@ header a {
     text-align: center;
     color: WHITE;
     font-weight: bold;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    text-wrap-mode: nowrap;
+    text-wrap-style: pretty;
+}
+
+.section ul {
+    padding: 0;
 }
 
 .section a {
     text-decoration: none;
     color: #99b8ff;
+    margin-right: 1em;
+    margin-left: 1em;
+    text-align: center;
+    display: block;
+}
+
+.code-variable-name {
+    color: #cccccc;
+}
+
+.code-comment {
+    color: GREEN;
+}
+
+.code-annotation {
+    color: LIGHTGRAY;
+}
+
+.code-primitive {
+    color: DEEPPINK;
+}
+
+.code-visibility {
+    color: PINK;
+}
+
+.code-method-name {
+    color: #aaaaaa;
+}
+
+.code-class-def {
+    color: #bbbbbb;
+}
+
+a {
+    color: #4D7A97;
+}
+
+a:visited {
+    color: #3D6A66;
 }
