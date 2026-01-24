@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <title>Cyrus</title>
+    <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<header style="display: flex;">
+    <a href="#">
+        <span style="text-decoration: line-through;">Download</span>
+    </a>
+    <a href="#">
+        <img alt="Github logo" height="20" src="https://github.com/fluidicon.png" width="20"/>
+        <span style="text-decoration: line-through;">Github</span>
+    </a>
+</header>
+<main>
+    <h1>Events</h1>
+    <p>Cyrus relies heavily on events, therefore we wanted to great the gold standard on event handling. The gold
+        standard is the Sponge api, thanks to its event system being linked with its cause system, allowing filtering of
+        the event handler to more exact changes.</p>
+    <p>Cyrus also has an event system so the events can be filtered in the same way as Sponge. But let's not get ahead
+        of ourselves and instead focus on the basics.</p>
+
+    <h2>Event handling - basics</h2>
+    <div class="code-frame">
+        <p>Basic event handler example</p>
+        <pre>
+<span class="code-annotation">@EventHandler</span>
+<span class="code-visibility">public</span> <span class="code-primitive">static void</span> <span
+                class="code-method-name">onBlockChange</span>(<span class="code-class-def">BlockChangeEvent</span> <span
+                class="code-variable-name">event</span>){
+    <span class="code-comment">//logic</span>
+}
+    </pre>
+    </div>
+    <p>The following example will trigger when a block change occurs, if this is placed in your main class then there is
+        no need to register it.</p>
+    <p>The key ingredients to make the event handler trigger are as follows:</p>
+    <div class="code-frame">
+        <p>Annotation</p>
+        <pre><span class="code-annotation">@EventHandler</span></pre>
+    </div>
+    <p>This annotation marks the method it is connected to as the event handler for the provided event.</p>
+    <div class="code-frame">
+        <p>Class</p>
+        <pre><span class="code-class-def">BlockChangeEvent</span></pre>
+    </div>
+    <p>This is the event type that the event handler. There are many events within Cyrus, a full list can be found <a
+            href="/Docs/API/javadoc/">here</a>. In the example we are listening for the <span class="code-class-def">BlockChangeEvent</span>
+        which as the name implies, triggers when a block is changed.</p>
+    <h2>Event handling - filtering</h2>
+    <h3>Getter</h3>
+    <div class="code-frame">
+        <p>Getter annotation</p>
+        <pre><span class="code-annotation">@EventHandler</span>
+<span class="code-visibility">public</span> <span class="code-primitive">static void</span> <span
+                    class="code-method-name">onBlockChange</span>(<span
+                    class="code-class-def">BlockChangeEvent</span> <span class="code-variable-name">event</span>, <span
+                    class="code-annotation">@Getter("transaction")</span> <span class="code-class-def">BlockTransaction.Break</span> <span
+                    class="code-variable-name">transaction</span>){
+    <span class="code-comment">//logic</span>
+}
+        </pre>
+    </div>
+    <p>The following example has a second parameter of <span class="code-annotation">@Getter("transaction")</span> <span
+            class="code-class-def">BlockTransaction.Break</span>. With this the event handler will only trigger if the
+        event function of <span class="code-method-name">event.transaction()</span> returns a object that is assignable
+        to
+        <span class="code-class-def">BlockTransaction.Break</span>. Traditionally this method returns a object that is
+        always assignable to <span class="code-class-def">BlockTransaction</span>.</p>
+
+
+</main>
+<footer></footer>
+</body>
+</html>

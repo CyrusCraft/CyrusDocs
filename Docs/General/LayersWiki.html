@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <title>Cyrus</title>
+    <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<header style="display: flex;">
+    <a href="#">
+        <span style="text-decoration: line-through;">Download</span>
+    </a>
+    <a href="#">
+        <img alt="Github logo" height="20" src="https://github.com/fluidicon.png" width="20"/>
+        <span style="text-decoration: line-through;">Github</span>
+    </a>
+</header>
+<main>
+    <h1>Layer system</h1>
+    <p>Cyrus uses a layered system when it comes to data. The layer system allows all systems within Cyrus to make
+        changes without having to keep track of what thread is making changes.</p>
+    <div class="center" style="margin-left: 3rem; width: 800px;">
+        <div class="image-like">
+            <div class="flex">
+                <p style="background-color: WHITE; writing-mode: vertical-lr; width: 25%;">System</p>
+                <p style="background-color: WHITE; writing-mode: vertical-lr; width: 25%;">System</p>
+                <p style="background-color: WHITE; writing-mode: vertical-lr; width: 25%;">System</p>
+                <p style="background-color: WHITE; writing-mode: vertical-lr; width: 25%;">System</p>
+            </div>
+            <p style="background-color: WHITE;">Ticking server</p>
+            <p style="background-color: WHITE;">True server</p>
+        </div>
+    </div>
+    <p>When a system component retrieves data from Cyrus, the level system will first check if any changes have been
+        made
+        by the system. If however no changes have been made by the system, then it will go down a level to get the data,
+        in the example representation above, that would be the "ticking server", and then if that fails, it continues to
+        go down (in this case to the "true server").</p>
+
+    <p>When apply changes, the changes get applied to the system that made it, therefore no other system can see the
+        changes made. When the system has made all the changes it needs to, it commits the changes. These are compared
+        to all other changes in the other systems on the same level and those that are compatible are taken with the
+        other changes being disposed. The changes that are taken are applied to the level below.</p>
+
+    <h2>Why?</h2>
+    <ul>
+        <li>Resolves conflicts</li>
+        <li>Ease of development</li>
+        <li>Multi-Threaded</li>
+    </ul>
+    <p>Primary reason is to handle conflicts with other systems. If for example two players place a block at the exact
+        same position. How should Cyrus handle this? In vanilla Minecraft all player actions happen on the same thread
+        (along with lots of other actions) therefore its first come first surve and then the logic checking that the
+        placement is possible would then fail for the player who just so happened to get second. With Cyrus being
+        asynced, it means that same idea can't be used, so instead both players actions are within different systems and
+        both place the block at the position. Then the level system will choose one of the system changes to apply.</p>
+    <p>The level system allows every system on every level to work its in own isolated container of sorts, as a result
+        there isn't anything stopping each container to be on a different CPU thread. Resulting in safety and speed.</p>
+    <p>With all data being handled by Cyrus as well as multi-threaded work loads. It means that development of new
+        systems including extensions need to worry less about concurrency exceptions</p>
+
+    <h2>Scale</h2>
+    <p>Any level can make a level above it to offload some of the work it is doing. The event system used in Cyrus does
+        exactly that, whereby each event is fired filters all the events into priority order, then runs the handlers of
+        the same priority within their own container. Once all the event handlers have been consumed, then the result of
+        the changes are collected and applied to the system that fired the event.
+    </p>
+
+    <h2>Drawbacks</h2>
+    <ul>
+        <li>Wasted processing</li>
+        <li>Sometimes need to use fallbacks</li>
+    </ul>
+    <p>You're maybe thinking. If a system processes all its information and then gets rejected in terms of its
+        changes - you would be correct. The idea is that most systems won't be rejected but instead the edge cases will
+        be.</p>
+    <p>You're maybe also thinking. What if a system gets its changes commited ... before the system is complete. This
+        can happen depending on as there is no rule to what system commits the changes (it is typically the layer below
+        -
+        but there are exceptions). This results in changes not being commited to the level below and therefore never
+        being applied to the "true server". In these cases it's typical to bypass the traditional level system and use a
+        scheduled task to apply the changes. With that being said, we want to know these edge cases and raise an issue
+        for it.</p>
+
+</main>
+<footer></footer>
+</body>
+</html>
