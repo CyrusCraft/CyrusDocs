@@ -59,6 +59,8 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#executor(java.util.function.Function)" tabindex="0">executor(Function)</a></li>
+<li><a href="#permission(org.cyrus.api.service.permission.Permission)" tabindex="0">permission(Permission)</a></li>
+<li><a href="#noPermission()" tabindex="0">noPermission()</a></li>
 <li><a href="#build()" tabindex="0">build()</a></li>
 </ol>
 </li>
@@ -91,7 +93,7 @@ extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.ap
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -102,6 +104,12 @@ extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.ap
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#executor(java.util.function.Function)" class="member-name-link">executor</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>, <a href="../CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a>&gt;&nbsp;executor)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#noPermission()" class="member-name-link">noPermission</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#permission(org.cyrus.api.service.permission.Permission)" class="member-name-link">permission</a><wbr>(@Nullable <a href="../../service/permission/Permission.html" title="interface in org.cyrus.api.service.permission">Permission</a>&lt;?&gt;&nbsp;permission)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
@@ -124,9 +132,31 @@ extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.ap
 <section class="detail" id="executor(java.util.function.Function)">
 <h3>executor</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
 </span><span class="return-type">@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></span>&nbsp;<span class="element-name">executor</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>, <a href="../CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a>&gt;&nbsp;executor)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="permission(org.cyrus.api.service.permission.Permission)">
+<h3>permission</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
+</span><span class="return-type">@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></span>&nbsp;<span class="element-name">permission</span><wbr><span class="parameters">(@Nullable
+ @Nullable <a href="../../service/permission/Permission.html" title="interface in org.cyrus.api.service.permission">Permission</a>&lt;?&gt;&nbsp;permission)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="noPermission()">
+<h3>noPermission</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@Contract("-&gt; this")
+@NotNull
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></span>&nbsp;<span class="element-name">noPermission</span>()</div>
 </div>
 </section>
 </li>

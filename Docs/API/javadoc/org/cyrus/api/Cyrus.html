@@ -62,6 +62,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#trueInstance()" tabindex="0">trueInstance()</a></li>
 <li><a href="#blockManager()" tabindex="0">blockManager()</a></li>
 <li><a href="#registryManager()" tabindex="0">registryManager()</a></li>
+<li><a href="#serviceManager()" tabindex="0">serviceManager()</a></li>
 <li><a href="#platformManager()" tabindex="0">platformManager()</a></li>
 <li><a href="#eventManager()" tabindex="0">eventManager()</a></li>
 <li><a href="#networkManager()" tabindex="0">networkManager()</a></li>
@@ -70,6 +71,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#entityManager()" tabindex="0">entityManager()</a></li>
 <li><a href="#console()" tabindex="0">console()</a></li>
 <li><a href="#runningState()" tabindex="0">runningState()</a></li>
+<li><a href="#inventoryManager()" tabindex="0">inventoryManager()</a></li>
 <li><a href="#shutdown()" tabindex="0">shutdown()</a></li>
 <li><a href="#scheduler()" tabindex="0">scheduler()</a></li>
 </ol>
@@ -140,22 +142,28 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="event/IEventManager.html" title="interface in org.cyrus.api.event">IEventManager</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#eventManager()" class="member-name-link">eventManager</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="network/NetworkManager.html" title="interface in org.cyrus.api.network">NetworkManager</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#networkManager()" class="member-name-link">networkManager</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="item/inventory/InventoryManager.html" title="interface in org.cyrus.api.item.inventory">InventoryManager</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#inventoryManager()" class="member-name-link">inventoryManager</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="platform/PlatformManager.html" title="interface in org.cyrus.api.platform">PlatformManager</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#platformManager()" class="member-name-link">platformManager</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="network/NetworkManager.html" title="interface in org.cyrus.api.network">NetworkManager</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#networkManager()" class="member-name-link">networkManager</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="registry/RegistryManager.html" title="interface in org.cyrus.api.registry">RegistryManager</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registryManager()" class="member-name-link">registryManager</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="platform/PlatformManager.html" title="interface in org.cyrus.api.platform">PlatformManager</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#platformManager()" class="member-name-link">platformManager</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="registry/RegistryManager.html" title="interface in org.cyrus.api.registry">RegistryManager</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registryManager()" class="member-name-link">registryManager</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The registry of this level</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="values/RunningStateValues.html" title="enum class in org.cyrus.api.values">RunningStateValues</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#runningState()" class="member-name-link">runningState</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="values/RunningStateValues.html" title="enum class in org.cyrus.api.values">RunningStateValues</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#runningState()" class="member-name-link">runningState</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="scheduler/IScheduleManager.html" title="interface in org.cyrus.api.scheduler">IScheduleManager</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scheduler()" class="member-name-link">scheduler</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="scheduler/IScheduleManager.html" title="interface in org.cyrus.api.scheduler">IScheduleManager</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scheduler()" class="member-name-link">scheduler</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="service/ServiceManager.html" title="interface in org.cyrus.api.service">ServiceManager</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#serviceManager()" class="member-name-link">serviceManager</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#shutdown()" class="member-name-link">shutdown</a>()</code></div>
@@ -242,6 +250,15 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="serviceManager()">
+<h3>serviceManager</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="return-type">@NotNull <a href="service/ServiceManager.html" title="interface in org.cyrus.api.service">ServiceManager</a></span>&nbsp;<span class="element-name">serviceManager</span>()</div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="platformManager()">
 <h3>platformManager</h3>
 <div class="horizontal-scroll">
@@ -310,6 +327,15 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="return-type">@NotNull <a href="values/RunningStateValues.html" title="enum class in org.cyrus.api.values">RunningStateValues</a></span>&nbsp;<span class="element-name">runningState</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="inventoryManager()">
+<h3>inventoryManager</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="return-type">@NotNull <a href="item/inventory/InventoryManager.html" title="interface in org.cyrus.api.item.inventory">InventoryManager</a></span>&nbsp;<span class="element-name">inventoryManager</span>()</div>
 </div>
 </section>
 </li>

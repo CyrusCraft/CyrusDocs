@@ -64,6 +64,9 @@ loadScripts(document, 'script');</script>
 <li><a href="#cyrusVersion()" tabindex="0">cyrusVersion()</a></li>
 <li><a href="#messageOfTheDay()" tabindex="0">messageOfTheDay()</a></li>
 <li><a href="#enforceSecureChat()" tabindex="0">enforceSecureChat()</a></li>
+<li><a href="#internalDataKeyFor(java.lang.Class,java.lang.String)" tabindex="0">internalDataKeyFor(Class, String)</a></li>
+<li><a href="#dataKeyBuilder()" tabindex="0">dataKeyBuilder()</a></li>
+<li><a href="#internalKeyFor(java.lang.Class,net.kyori.adventure.key.Key)" tabindex="0">internalKeyFor(Class, Key)</a></li>
 </ol>
 </li>
 </ol>
@@ -100,25 +103,36 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Cyrus version</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#enforceSecureChat()" class="member-name-link">enforceSecureChat</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../data/DataKeyBuilder.SetKey.html" title="interface in org.cyrus.api.data">DataKeyBuilder.SetKey</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#dataKeyBuilder()" class="member-name-link">dataKeyBuilder</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#enforceSecureChat()" class="member-name-link">enforceSecureChat</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">If the server reports that it is enforcing secure chat</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="extensions/ExtensionManager.html" title="interface in org.cyrus.api.platform.extensions">ExtensionManager</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#extensions()" class="member-name-link">extensions</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="extensions/ExtensionInfo.html" title="interface in org.cyrus.api.platform.extensions">ExtensionInfo</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#info()" class="member-name-link">info</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="extensions/ExtensionManager.html" title="interface in org.cyrus.api.platform.extensions">ExtensionManager</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#extensions()" class="member-name-link">extensions</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.text.Component</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#messageOfTheDay()" class="member-name-link">messageOfTheDay</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="extensions/ExtensionInfo.html" title="interface in org.cyrus.api.platform.extensions">ExtensionInfo</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#info()" class="member-name-link">info</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#internalDataKeyFor(java.lang.Class,java.lang.String)" class="member-name-link">internalDataKeyFor</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;keyHolder,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;keyValue)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../item/inventory/type/InventoryType.html" title="interface in org.cyrus.api.item.inventory.type">InventoryType</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#internalKeyFor(java.lang.Class,net.kyori.adventure.key.Key)" class="member-name-link">internalKeyFor</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;inventoryTypeClass,
+ @NotNull net.kyori.adventure.key.Key&nbsp;id)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.text.Component</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#messageOfTheDay()" class="member-name-link">messageOfTheDay</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The default MOTD for client status reports</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minecraftVersion()" class="member-name-link">minecraftVersion</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minecraftVersion()" class="member-name-link">minecraftVersion</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Minecraft version being targeted by this server</div>
 </div>
 </div>
@@ -216,6 +230,37 @@ loadScripts(document, 'script');</script>
 <dt>Returns:</dt>
 <dd>is enforcing secure chat</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="internalDataKeyFor(java.lang.Class,java.lang.String)">
+<h3>internalDataKeyFor</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@Internal
+</span><span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;T&gt;</span>&nbsp;<span class="element-name">internalDataKeyFor</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;keyHolder,
+ @NotNull @Value
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;keyValue)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="dataKeyBuilder()">
+<h3>dataKeyBuilder</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="return-type"><a href="../data/DataKeyBuilder.SetKey.html" title="interface in org.cyrus.api.data">DataKeyBuilder.SetKey</a></span>&nbsp;<span class="element-name">dataKeyBuilder</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="internalKeyFor(java.lang.Class,net.kyori.adventure.key.Key)">
+<h3>internalKeyFor</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="return-type"><a href="../item/inventory/type/InventoryType.html" title="interface in org.cyrus.api.item.inventory.type">InventoryType</a></span>&nbsp;<span class="element-name">internalKeyFor</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;inventoryTypeClass,
+ @NotNull
+ @NotNull net.kyori.adventure.key.Key&nbsp;id)</span></div>
 </div>
 </section>
 </li>

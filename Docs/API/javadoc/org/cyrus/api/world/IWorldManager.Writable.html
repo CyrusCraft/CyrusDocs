@@ -59,7 +59,6 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#registerChunkGenerator(java.lang.Class,java.util.function.Function)" tabindex="0">registerChunkGenerator(Class, Function)</a></li>
 <li><a href="#worlds()" tabindex="0">worlds()</a></li>
 <li><a href="#registerWorld(org.cyrus.api.world.World)" tabindex="0">registerWorld(World)</a></li>
 <li><a href="#syncedWorldManager()" tabindex="0">syncedWorldManager()</a></li>
@@ -120,23 +119,19 @@ extends <a href="IWorldManager.html" title="interface in org.cyrus.api.world">IW
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;? extends <a href="World.html" title="interface in org.cyrus.api.world">World</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#loadWorld(net.kyori.adventure.key.Key)" class="member-name-link">loadWorld</a><wbr>(@NotNull net.kyori.adventure.key.Key&nbsp;key)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;O extends <a href="chunk/generator/ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>, G extends <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;O&gt;&gt;<br>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registerChunkGenerator(java.lang.Class,java.util.function.Function)" class="member-name-link">registerChunkGenerator</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;G&gt;&nbsp;chunkGeneratorClass,
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;O,<wbr>G&gt;&nbsp;creator)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registerWorld(org.cyrus.api.world.World)" class="member-name-link">registerWorld</a><wbr>(@NotNull <a href="World.html" title="interface in org.cyrus.api.world">World</a>&nbsp;world)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registerWorld(org.cyrus.api.world.World)" class="member-name-link">registerWorld</a><wbr>(@NotNull <a href="World.html" title="interface in org.cyrus.api.world">World</a>&nbsp;world)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Registers a new world</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="SyncedWorldManager.Writable.html" title="interface in org.cyrus.api.world">SyncedWorldManager.Writable</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#syncedWorldManager()" class="member-name-link">syncedWorldManager</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="SyncedWorldManager.Writable.html" title="interface in org.cyrus.api.world">SyncedWorldManager.Writable</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#syncedWorldManager()" class="member-name-link">syncedWorldManager</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the "Synced" world manager</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;? extends <a href="World.Writable.html" title="interface in org.cyrus.api.world">World.Writable</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worlds()" class="member-name-link">worlds</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;? extends <a href="World.Writable.html" title="interface in org.cyrus.api.world">World.Writable</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worlds()" class="member-name-link">worlds</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">the loaded worlds of the server</div>
 </div>
 </div>
@@ -147,7 +142,7 @@ extends <a href="IWorldManager.html" title="interface in org.cyrus.api.world">IW
 <code><a href="../event/change/ChangeHolder.html#createChangeInstance(java.lang.String)" title="createChangeInstance(String)">createChangeInstance</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.world.IWorldManager">Methods inherited from interface&nbsp;<a href="IWorldManager.html#method-summary" title="interface in org.cyrus.api.world">IWorldManager</a></h3>
-<code><a href="IWorldManager.html#generatorOf(java.lang.Class,O)" title="generatorOf(Class, O)">generatorOf</a>, <a href="IWorldManager.html#locationAt(net.kyori.adventure.key.Key,double,double,double)" title="locationAt(Key, double, double, double)">locationAt</a>, <a href="IWorldManager.html#locationAt(net.kyori.adventure.key.Key,org.spongepowered.math.vector.Vector3d)" title="locationAt(Key, Vector3d)">locationAt</a>, <a href="IWorldManager.html#world(net.kyori.adventure.key.Key)" title="world(Key)">world</a>, <a href="IWorldManager.html#worldBuilder()" title="worldBuilder()">worldBuilder</a>, <a href="IWorldManager.html#worldTypeBuilder()" title="worldTypeBuilder()">worldTypeBuilder</a></code></div>
+<code><a href="IWorldManager.html#locationAt(net.kyori.adventure.key.Key,double,double,double)" title="locationAt(Key, double, double, double)">locationAt</a>, <a href="IWorldManager.html#locationAt(net.kyori.adventure.key.Key,org.spongepowered.math.vector.Vector3d)" title="locationAt(Key, Vector3d)">locationAt</a>, <a href="IWorldManager.html#world(net.kyori.adventure.key.Key)" title="world(Key)">world</a>, <a href="IWorldManager.html#worldBuilder()" title="worldBuilder()">worldBuilder</a>, <a href="IWorldManager.html#worldTypeAttributeBuilder()" title="worldTypeAttributeBuilder()">worldTypeAttributeBuilder</a>, <a href="IWorldManager.html#worldTypeBuilder()" title="worldTypeBuilder()">worldTypeBuilder</a></code></div>
 </section>
 </li>
 </ul>
@@ -159,18 +154,6 @@ extends <a href="IWorldManager.html" title="interface in org.cyrus.api.world">IW
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
-<li>
-<section class="detail" id="registerChunkGenerator(java.lang.Class,java.util.function.Function)">
-<h3>registerChunkGenerator</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="type-parameters">&lt;O extends <a href="chunk/generator/ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>, G extends <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;O&gt;&gt;</span>
-<span class="return-type">void</span>&nbsp;<span class="element-name">registerChunkGenerator</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;G&gt;&nbsp;chunkGeneratorClass,
- @NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;O,<wbr>G&gt;&nbsp;creator)</span></div>
-</div>
-</section>
-</li>
 <li>
 <section class="detail" id="worlds()">
 <h3>worlds</h3>

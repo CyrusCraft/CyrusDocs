@@ -54,15 +54,10 @@ loadScripts(document, 'script');</script>
 <div class="toc-header">Contents&nbsp;<input type="text" class="filter-input" disabled placeholder="Filter contents (type .)" aria-label="Filter table of contents" autocomplete="off" spellcheck="false"><input type="reset" class="reset-filter" disabled tabindex="-1" value="Reset"></div>
 <ol class="toc-list" tabindex="-1">
 <li><a href="#" tabindex="0">Description</a></li>
+<li><a href="#nested-class-summary" tabindex="0">Nested Class Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#ambient()" tabindex="0">ambient()</a></li>
-<li><a href="#death()" tabindex="0">death()</a></li>
-<li><a href="#growl()" tabindex="0">growl()</a></li>
-<li><a href="#hurt()" tabindex="0">hurt()</a></li>
-<li><a href="#pant()" tabindex="0">pant()</a></li>
-<li><a href="#whine()" tabindex="0">whine()</a></li>
 <li><a href="#registry()" tabindex="0">registry()</a></li>
 <li><a href="#asNBT()" tabindex="0">asNBT()</a></li>
 </ol>
@@ -77,58 +72,61 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code>net.kyori.adventure.key.Keyed, <a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a>&gt;</code></dd>
+<dd><code><a href="../AnimalSound.html" title="interface in org.cyrus.api.entity.type">AnimalSound</a>&lt;<a href="WolfSoundType.SoundGroup.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType.SoundGroup</a>&gt;, net.kyori.adventure.key.Keyed, <a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a>&gt;</code></dd>
 </dl>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">WolfSoundType</span><span class="extends-implements">
-extends <a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a>&gt;</span></div>
+extends <a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a>&gt;, <a href="../AnimalSound.html" title="interface in org.cyrus.api.entity.type">AnimalSound</a>&lt;<a href="WolfSoundType.SoundGroup.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType.SoundGroup</a>&gt;</span></div>
 </div>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<li>
+<section class="nested-class-summary" id="nested-class-summary">
+<h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="WolfSoundType.SoundGroup.html" class="type-name-link" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType.SoundGroup</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+<div class="inherited-list">
+<h3 id="nested-classes-inherited-from-class-org.cyrus.api.entity.type.AnimalSound">Nested classes/interfaces inherited from interface&nbsp;<a href="../AnimalSound.html#nested-class-summary" title="interface in org.cyrus.api.entity.type">AnimalSound</a></h3>
+<code><a href="../AnimalSound.AnimalSoundGroup.html" title="interface in org.cyrus.api.entity.type">AnimalSound.AnimalSoundGroup</a></code></div>
+</section>
+</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#ambient()" class="member-name-link">ambient</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;org.cyrus.nbt.data.CompoundTag&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#asNBT()" class="member-name-link">asNBT</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;org.cyrus.nbt.data.CompoundTag&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#asNBT()" class="member-name-link">asNBT</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Some data needs to be sent with the registry packet.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#death()" class="member-name-link">death</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#growl()" class="member-name-link">growl</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hurt()" class="member-name-link">hurt</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#pant()" class="member-name-link">pant</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="../../../registry/RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a><wbr>&lt;<a href="WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="../../../registry/RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a><wbr>&lt;<a href="WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">The registry value of this value</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#whine()" class="member-name-link">whine</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.cyrus.api.entity.type.AnimalSound">Methods inherited from interface&nbsp;<a href="../AnimalSound.html#method-summary" title="interface in org.cyrus.api.entity.type">AnimalSound</a></h3>
+<code><a href="../AnimalSound.html#adult()" title="adult()">adult</a>, <a href="../AnimalSound.html#baby()" title="baby()">baby</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-net.kyori.adventure.key.Keyed">Methods inherited from interface&nbsp;net.kyori.adventure.key.Keyed</h3>
 <code>key</code></div>
@@ -143,66 +141,6 @@ extends <a href="../../../registry/RegistryEntry.html" title="interface in org.c
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
-<li>
-<section class="detail" id="ambient()">
-<h3>ambient</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type"><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></span>&nbsp;<span class="element-name">ambient</span>()</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="death()">
-<h3>death</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type"><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></span>&nbsp;<span class="element-name">death</span>()</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="growl()">
-<h3>growl</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type"><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></span>&nbsp;<span class="element-name">growl</span>()</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="hurt()">
-<h3>hurt</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type"><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></span>&nbsp;<span class="element-name">hurt</span>()</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="pant()">
-<h3>pant</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type"><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></span>&nbsp;<span class="element-name">pant</span>()</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="whine()">
-<h3>whine</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type"><a href="../../../sound/type/SoundType.Vanilla.html" title="interface in org.cyrus.api.sound.type">SoundType.Vanilla</a></span>&nbsp;<span class="element-name">whine</span>()</div>
-</div>
-</section>
-</li>
 <li>
 <section class="detail" id="registry()">
 <h3>registry</h3>

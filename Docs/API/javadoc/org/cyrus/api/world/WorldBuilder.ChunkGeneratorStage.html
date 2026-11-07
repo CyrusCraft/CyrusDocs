@@ -58,8 +58,8 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#generators(java.util.Collection)" tabindex="0">generators(Collection)</a></li>
-<li><a href="#addGenerator(org.cyrus.api.world.chunk.generator.ChunkGenerator)" tabindex="0">addGenerator(ChunkGenerator)</a></li>
+<li><a href="#generators(java.util.Map)" tabindex="0">generators(Map)</a></li>
+<li><a href="#addGenerator(org.cyrus.api.world.chunk.generator.ChunkGenerator,O)" tabindex="0">addGenerator(ChunkGenerator, O)</a></li>
 </ol>
 </li>
 </ol>
@@ -96,11 +96,12 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldBuilder.FinalStage.html" title="interface in org.cyrus.api.world">WorldBuilder.FinalStage</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addGenerator(org.cyrus.api.world.chunk.generator.ChunkGenerator)" class="member-name-link">addGenerator</a><wbr>(@NotNull <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&nbsp;generator)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;O extends <a href="chunk/generator/ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;<br><a href="WorldBuilder.FinalStage.html" title="interface in org.cyrus.api.world">WorldBuilder.FinalStage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addGenerator(org.cyrus.api.world.chunk.generator.ChunkGenerator,O)" class="member-name-link">addGenerator</a><wbr>(@NotNull <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;O&gt;&nbsp;generator,
+ O&nbsp;options)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldBuilder.FinalStage.html" title="interface in org.cyrus.api.world">WorldBuilder.FinalStage</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#generators(java.util.Collection)" class="member-name-link">generators</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;&nbsp;generators)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#generators(java.util.Map)" class="member-name-link">generators</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;, <a href="chunk/generator/ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;&nbsp;generators)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
@@ -117,20 +118,23 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="generators(java.util.Collection)">
+<section class="detail" id="generators(java.util.Map)">
 <h3>generators</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="WorldBuilder.FinalStage.html" title="interface in org.cyrus.api.world">WorldBuilder.FinalStage</a></span>&nbsp;<span class="element-name">generators</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;&nbsp;generators)</span></div>
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;, <a href="chunk/generator/ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;&nbsp;generators)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="addGenerator(org.cyrus.api.world.chunk.generator.ChunkGenerator)">
-<h3>addGenerator</h3>
+<section class="detail" id="addGenerator(org.cyrus.api.world.chunk.generator.ChunkGenerator,O)">
+<h3 id="addGenerator(org.cyrus.api.world.chunk.generator.ChunkGenerator,org.cyrus.api.world.chunk.generator.ChunkGeneratorOptions)">addGenerator</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldBuilder.FinalStage.html" title="interface in org.cyrus.api.world">WorldBuilder.FinalStage</a></span>&nbsp;<span class="element-name">addGenerator</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&nbsp;generator)</span></div>
+<div class="member-signature"><span class="type-parameters">&lt;O extends <a href="chunk/generator/ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;</span>
+<span class="return-type"><a href="WorldBuilder.FinalStage.html" title="interface in org.cyrus.api.world">WorldBuilder.FinalStage</a></span>&nbsp;<span class="element-name">addGenerator</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;O&gt;&nbsp;generator,
+ @NotNull
+ O&nbsp;options)</span></div>
 </div>
 </section>
 </li>

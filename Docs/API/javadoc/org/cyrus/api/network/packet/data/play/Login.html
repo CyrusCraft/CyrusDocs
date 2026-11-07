@@ -58,12 +58,12 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(int,boolean,java.util.List,int,int,int,boolean,boolean,boolean,int,long,org.cyrus.api.player.settings.GameMode,org.cyrus.api.player.settings.GameMode,boolean,boolean,net.kyori.adventure.key.Key,org.spongepowered.math.vector.Vector3i,int,int,boolean)" tabindex="0">Login(int, boolean, List, int, int, int, boolean, boolean, boolean, int, long, GameMode, GameMode, boolean, boolean, Key, Vector3i, int, int, boolean)</a></li>
+<li><a href="#%3Cinit%3E(int,boolean,java.util.List,int,int,int,boolean,boolean,boolean,int,long,org.cyrus.api.player.settings.GameMode,org.cyrus.api.player.settings.GameMode,boolean,boolean,net.kyori.adventure.key.Key,org.spongepowered.math.vector.Vector3i,int,int,boolean,boolean)" tabindex="0">Login(int, boolean, List, int, int, int, boolean, boolean, boolean, int, long, GameMode, GameMode, boolean, boolean, Key, Vector3i, int, int, boolean, boolean)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#createDefault(org.cyrus.api.event.cause.ICause,org.cyrus.api.network.connection.Connection.Writable,org.cyrus.api.Cyrus.Writable)" tabindex="0">createDefault(ICause, Connection.Writable, Cyrus.Writable)</a></li>
+<li><a href="#createDefault(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataHolder.Mutable,org.cyrus.api.Cyrus.Writable)" tabindex="0">createDefault(ICause, DataHolder.Mutable, Cyrus.Writable)</a></li>
 <li><a href="#entityId()" tabindex="0">entityId()</a></li>
 <li><a href="#isHardcore()" tabindex="0">isHardcore()</a></li>
 <li><a href="#worlds()" tabindex="0">worlds()</a></li>
@@ -83,6 +83,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#deathPosition()" tabindex="0">deathPosition()</a></li>
 <li><a href="#cooldown()" tabindex="0">cooldown()</a></li>
 <li><a href="#seaLevel()" tabindex="0">seaLevel()</a></li>
+<li><a href="#isOnlineMode()" tabindex="0">isOnlineMode()</a></li>
 <li><a href="#isEnforceSecureChat()" tabindex="0">isEnforceSecureChat()</a></li>
 </ol>
 </li>
@@ -113,9 +114,9 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,boolean,java.util.List,int,int,int,boolean,boolean,boolean,int,long,org.cyrus.api.player.settings.GameMode,org.cyrus.api.player.settings.GameMode,boolean,boolean,net.kyori.adventure.key.Key,org.spongepowered.math.vector.Vector3i,int,int,boolean)" class="member-name-link">Login</a><wbr>(int&nbsp;entityId,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,boolean,java.util.List,int,int,int,boolean,boolean,boolean,int,long,org.cyrus.api.player.settings.GameMode,org.cyrus.api.player.settings.GameMode,boolean,boolean,net.kyori.adventure.key.Key,org.spongepowered.math.vector.Vector3i,int,int,boolean,boolean)" class="member-name-link">Login</a><wbr>(int&nbsp;entityId,
  boolean&nbsp;hardcore,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;&nbsp;worlds,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;@NotNull <a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;&nbsp;worlds,
  int&nbsp;maxPlayers,
  int&nbsp;viewDistance,
  int&nbsp;simulationDistance,
@@ -132,6 +133,7 @@ loadScripts(document, 'script');</script>
  @Nullable org.spongepowered.math.vector.Vector3i&nbsp;deathPosition,
  int&nbsp;cooldown,
  int&nbsp;seaLevel,
+ boolean&nbsp;onlineMode,
  boolean&nbsp;enforceSecureChat)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
@@ -152,14 +154,14 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cooldown()" class="member-name-link">cooldown</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Login.html" title="class in org.cyrus.api.network.packet.data.play">Login</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#createDefault(org.cyrus.api.event.cause.ICause,org.cyrus.api.network.connection.Connection.Writable,org.cyrus.api.Cyrus.Writable)" class="member-name-link">createDefault</a><wbr>(@NotNull <a href="../../../../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
- <a href="../../../connection/Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>&nbsp;connection,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#createDefault(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataHolder.Mutable,org.cyrus.api.Cyrus.Writable)" class="member-name-link">createDefault</a><wbr>(@NotNull <a href="../../../../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
+ <a href="../../../../data/DataHolder.Mutable.html" title="interface in org.cyrus.api.data">DataHolder.Mutable</a>&lt;<a href="../../../connection/Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>&gt;&nbsp;connection,
  <a href="../../../../Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a>&nbsp;instance)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;org.spongepowered.math.vector.Vector3i&gt;</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;org.spongepowered.math.vector.Vector3i&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deathPosition()" class="member-name-link">deathPosition</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deathWorld()" class="member-name-link">deathWorld</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
@@ -184,35 +186,38 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isLimitCrafting()" class="member-name-link">isLimitCrafting</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isReduceDebug()" class="member-name-link">isReduceDebug</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOnlineMode()" class="member-name-link">isOnlineMode</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRespawnScreen()" class="member-name-link">isRespawnScreen</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isReduceDebug()" class="member-name-link">isReduceDebug</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>&lt;W extends <a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;<br>W</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#joiningWorld()" class="member-name-link">joiningWorld</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRespawnScreen()" class="member-name-link">isRespawnScreen</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#maxPlayers()" class="member-name-link">maxPlayers</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../../player/settings/GameMode.html" title="enum class in org.cyrus.api.player.settings">GameMode</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mode()" class="member-name-link">mode</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="../../../../player/settings/GameMode.html" title="enum class in org.cyrus.api.player.settings">GameMode</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#previousMode()" class="member-name-link">previousMode</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>&lt;W extends @NotNull <a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;<br>W</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#joiningWorld()" class="member-name-link">joiningWorld</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#seaLevel()" class="member-name-link">seaLevel</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#maxPlayers()" class="member-name-link">maxPlayers</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../../../../player/settings/GameMode.html" title="enum class in org.cyrus.api.player.settings">GameMode</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mode()" class="member-name-link">mode</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="../../../../player/settings/GameMode.html" title="enum class in org.cyrus.api.player.settings">GameMode</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#previousMode()" class="member-name-link">previousMode</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#simulationDistance()" class="member-name-link">simulationDistance</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#seaLevel()" class="member-name-link">seaLevel</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#viewDistance()" class="member-name-link">viewDistance</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#simulationDistance()" class="member-name-link">simulationDistance</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#worlds()" class="member-name-link">worlds</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#viewDistance()" class="member-name-link">viewDistance</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;@NotNull <a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#worlds()" class="member-name-link">worlds</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -231,12 +236,13 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(int,boolean,java.util.List,int,int,int,boolean,boolean,boolean,int,long,org.cyrus.api.player.settings.GameMode,org.cyrus.api.player.settings.GameMode,boolean,boolean,net.kyori.adventure.key.Key,org.spongepowered.math.vector.Vector3i,int,int,boolean)">
+<section class="detail" id="&lt;init&gt;(int,boolean,java.util.List,int,int,int,boolean,boolean,boolean,int,long,org.cyrus.api.player.settings.GameMode,org.cyrus.api.player.settings.GameMode,boolean,boolean,net.kyori.adventure.key.Key,org.spongepowered.math.vector.Vector3i,int,int,boolean,boolean)">
 <h3>Login</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Login</span><wbr><span class="parameters">(int&nbsp;entityId,
  boolean&nbsp;hardcore,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;&nbsp;worlds,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;@NotNull <a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;&nbsp;worlds,
  int&nbsp;maxPlayers,
  int&nbsp;viewDistance,
  int&nbsp;simulationDistance,
@@ -257,6 +263,7 @@ loadScripts(document, 'script');</script>
  @Nullable org.spongepowered.math.vector.Vector3i&nbsp;deathPosition,
  int&nbsp;cooldown,
  int&nbsp;seaLevel,
+ boolean&nbsp;onlineMode,
  boolean&nbsp;enforceSecureChat)</span></div>
 </div>
 </section>
@@ -270,13 +277,14 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="createDefault(org.cyrus.api.event.cause.ICause,org.cyrus.api.network.connection.Connection.Writable,org.cyrus.api.Cyrus.Writable)">
+<section class="detail" id="createDefault(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataHolder.Mutable,org.cyrus.api.Cyrus.Writable)">
 <h3>createDefault</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Login.html" title="class in org.cyrus.api.network.packet.data.play">Login</a></span>&nbsp;<span class="element-name">createDefault</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../../../../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
  @NotNull
- <a href="../../../connection/Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>&nbsp;connection,
+ <a href="../../../../data/DataHolder.Mutable.html" title="interface in org.cyrus.api.data">DataHolder.Mutable</a>&lt;<a href="../../../connection/Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>&gt;&nbsp;connection,
+ @NotNull
  <a href="../../../../Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a>&nbsp;instance)</span></div>
 </div>
 </section>
@@ -301,7 +309,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="worlds()">
 <h3>worlds</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;</span>&nbsp;<span class="element-name">worlds</span>()</div>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;@NotNull <a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;</span>&nbsp;<span class="element-name">worlds</span>()</div>
 </div>
 </section>
 </li>
@@ -357,7 +366,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="joiningWorld()">
 <h3>joiningWorld</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;</span>&nbsp;<span class="return-type">W</span>&nbsp;<span class="element-name">joiningWorld</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;W extends @NotNull <a href="../../../../world/World.html" title="interface in org.cyrus.api.world">World</a>&gt;</span>&nbsp;<span class="return-type">W</span>&nbsp;<span class="element-name">joiningWorld</span>()</div>
 </div>
 </section>
 </li>
@@ -373,7 +382,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="mode()">
 <h3>mode</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../../player/settings/GameMode.html" title="enum class in org.cyrus.api.player.settings">GameMode</a></span>&nbsp;<span class="element-name">mode</span>()</div>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="../../../../player/settings/GameMode.html" title="enum class in org.cyrus.api.player.settings">GameMode</a></span>&nbsp;<span class="element-name">mode</span>()</div>
 </div>
 </section>
 </li>
@@ -381,7 +391,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="previousMode()">
 <h3>previousMode</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../player/settings/GameMode.html" title="enum class in org.cyrus.api.player.settings">GameMode</a>&gt;</span>&nbsp;<span class="element-name">previousMode</span>()</div>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../player/settings/GameMode.html" title="enum class in org.cyrus.api.player.settings">GameMode</a>&gt;</span>&nbsp;<span class="element-name">previousMode</span>()</div>
 </div>
 </section>
 </li>
@@ -405,7 +416,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="deathWorld()">
 <h3>deathWorld</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">deathWorld</span>()</div>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">deathWorld</span>()</div>
 </div>
 </section>
 </li>
@@ -413,7 +425,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="deathPosition()">
 <h3>deathPosition</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;org.spongepowered.math.vector.Vector3i&gt;</span>&nbsp;<span class="element-name">deathPosition</span>()</div>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;org.spongepowered.math.vector.Vector3i&gt;</span>&nbsp;<span class="element-name">deathPosition</span>()</div>
 </div>
 </section>
 </li>
@@ -430,6 +443,14 @@ loadScripts(document, 'script');</script>
 <h3>seaLevel</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">seaLevel</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="isOnlineMode()">
+<h3>isOnlineMode</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isOnlineMode</span>()</div>
 </div>
 </section>
 </li>

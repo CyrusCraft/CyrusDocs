@@ -58,10 +58,10 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#addType(java.lang.String,org.cyrus.api.network.data.NetEncode)" tabindex="0">addType(String, NetEncode)</a></li>
-<li><a href="#addType(java.lang.String,org.cyrus.api.network.data.NetSerializer)" tabindex="0">addType(String, NetSerializer)</a></li>
-<li><a href="#addType(org.cyrus.api.network.data.NetEntry.Encode)" tabindex="0">addType(NetEntry.Encode)</a></li>
-<li><a href="#addTypes(org.cyrus.api.network.data.NetEntry.Encode...)" tabindex="0">addTypes(NetEntry.Encode...)</a></li>
+<li><a href="#addType(java.lang.String,org.cyrus.api.network.serialize.NetEncode)" tabindex="0">addType(String, NetEncode)</a></li>
+<li><a href="#addType(java.lang.String,org.cyrus.api.network.serialize.NetSerializer)" tabindex="0">addType(String, NetSerializer)</a></li>
+<li><a href="#addType(org.cyrus.api.network.serialize.NetEntry.Encode)" tabindex="0">addType(NetEntry.Encode)</a></li>
+<li><a href="#addTypes(org.cyrus.api.network.serialize.NetEntry.Encode...)" tabindex="0">addTypes(NetEntry.Encode...)</a></li>
 <li><a href="#from(java.util.function.BiConsumer)" tabindex="0">from(BiConsumer)</a></li>
 </ol>
 </li>
@@ -96,21 +96,21 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="PacketBuilder.AddTypeClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.AddTypeClient</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#addType(java.lang.String,org.cyrus.api.network.data.NetEncode)" class="member-name-link">addType</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
- @NotNull <a href="../data/NetEncode.html" title="interface in org.cyrus.api.network.data">NetEncode</a>&lt;?&gt;&nbsp;dataType)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#addType(java.lang.String,org.cyrus.api.network.serialize.NetEncode)" class="member-name-link">addType</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ @NotNull <a href="../serialize/NetEncode.html" title="interface in org.cyrus.api.network.serialize">NetEncode</a>&lt;?&gt;&nbsp;dataType)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="PacketBuilder.AddTypeClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.AddTypeClient</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#addType(java.lang.String,org.cyrus.api.network.data.NetSerializer)" class="member-name-link">addType</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
- @NotNull <a href="../data/NetSerializer.html" title="interface in org.cyrus.api.network.data">NetSerializer</a>&lt;?&gt;&nbsp;dataType)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#addType(java.lang.String,org.cyrus.api.network.serialize.NetSerializer)" class="member-name-link">addType</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ @NotNull <a href="../serialize/NetSerializer.html" title="interface in org.cyrus.api.network.serialize">NetSerializer</a>&lt;?&gt;&nbsp;dataType)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="PacketBuilder.AddTypeClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.AddTypeClient</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addType(org.cyrus.api.network.data.NetEntry.Encode)" class="member-name-link">addType</a><wbr>(<a href="../data/NetEntry.Encode.html" title="interface in org.cyrus.api.network.data">NetEntry.Encode</a>&lt;?&gt;&nbsp;dataType)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addType(org.cyrus.api.network.serialize.NetEntry.Encode)" class="member-name-link">addType</a><wbr>(<a href="../serialize/NetEntry.Encode.html" title="interface in org.cyrus.api.network.serialize">NetEntry.Encode</a>&lt;?&gt;&nbsp;dataType)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="PacketBuilder.AddTypeClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.AddTypeClient</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addTypes(org.cyrus.api.network.data.NetEntry.Encode...)" class="member-name-link">addTypes</a><wbr>(<a href="../data/NetEntry.Encode.html" title="interface in org.cyrus.api.network.data">NetEntry.Encode</a>&lt;?&gt;...&nbsp;dataTypes)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addTypes(org.cyrus.api.network.serialize.NetEntry.Encode...)" class="member-name-link">addTypes</a><wbr>(<a href="../serialize/NetEntry.Encode.html" title="interface in org.cyrus.api.network.serialize">NetEntry.Encode</a>&lt;?&gt;...&nbsp;dataTypes)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;PacketData&gt;<br><a href="PacketBuilder.ReadyClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.ReadyClient</a><wbr>&lt;PacketData&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#from(java.util.function.BiConsumer)" class="member-name-link">from</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="../data/NetSerializerMapping.html" title="interface in org.cyrus.api.network.data">NetSerializerMapping</a>, PacketData&gt;&nbsp;to)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#from(java.util.function.BiConsumer)" class="member-name-link">from</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="../serialize/NetSerializerMapping.html" title="interface in org.cyrus.api.network.serialize">NetSerializerMapping</a>, PacketData&gt;&nbsp;to)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
@@ -127,42 +127,42 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="addType(java.lang.String,org.cyrus.api.network.data.NetEncode)">
+<section class="detail" id="addType(java.lang.String,org.cyrus.api.network.serialize.NetEncode)">
 <h3>addType</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="PacketBuilder.AddTypeClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.AddTypeClient</a></span>&nbsp;<span class="element-name">addType</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  @NotNull
- @NotNull <a href="../data/NetEncode.html" title="interface in org.cyrus.api.network.data">NetEncode</a>&lt;?&gt;&nbsp;dataType)</span></div>
+ @NotNull <a href="../serialize/NetEncode.html" title="interface in org.cyrus.api.network.serialize">NetEncode</a>&lt;?&gt;&nbsp;dataType)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="addType(java.lang.String,org.cyrus.api.network.data.NetSerializer)">
+<section class="detail" id="addType(java.lang.String,org.cyrus.api.network.serialize.NetSerializer)">
 <h3>addType</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="PacketBuilder.AddTypeClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.AddTypeClient</a></span>&nbsp;<span class="element-name">addType</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  @NotNull
- @NotNull <a href="../data/NetSerializer.html" title="interface in org.cyrus.api.network.data">NetSerializer</a>&lt;?&gt;&nbsp;dataType)</span></div>
+ @NotNull <a href="../serialize/NetSerializer.html" title="interface in org.cyrus.api.network.serialize">NetSerializer</a>&lt;?&gt;&nbsp;dataType)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="addType(org.cyrus.api.network.data.NetEntry.Encode)">
+<section class="detail" id="addType(org.cyrus.api.network.serialize.NetEntry.Encode)">
 <h3>addType</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="PacketBuilder.AddTypeClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.AddTypeClient</a></span>&nbsp;<span class="element-name">addType</span><wbr><span class="parameters">(@NotNull
- <a href="../data/NetEntry.Encode.html" title="interface in org.cyrus.api.network.data">NetEntry.Encode</a>&lt;?&gt;&nbsp;dataType)</span></div>
+ <a href="../serialize/NetEntry.Encode.html" title="interface in org.cyrus.api.network.serialize">NetEntry.Encode</a>&lt;?&gt;&nbsp;dataType)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="addTypes(org.cyrus.api.network.data.NetEntry.Encode...)">
+<section class="detail" id="addTypes(org.cyrus.api.network.serialize.NetEntry.Encode...)">
 <h3>addTypes</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="PacketBuilder.AddTypeClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.AddTypeClient</a></span>&nbsp;<span class="element-name">addTypes</span><wbr><span class="parameters">(@NotNull
- <a href="../data/NetEntry.Encode.html" title="interface in org.cyrus.api.network.data">NetEntry.Encode</a>&lt;?&gt;...&nbsp;dataTypes)</span></div>
+ <a href="../serialize/NetEntry.Encode.html" title="interface in org.cyrus.api.network.serialize">NetEntry.Encode</a>&lt;?&gt;...&nbsp;dataTypes)</span></div>
 </div>
 </section>
 </li>
@@ -171,7 +171,7 @@ loadScripts(document, 'script');</script>
 <h3>from</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="type-parameters">&lt;PacketData&gt;</span>&nbsp;<span class="return-type"><a href="PacketBuilder.ReadyClient.html" title="interface in org.cyrus.api.network.packet">PacketBuilder.ReadyClient</a>&lt;PacketData&gt;</span>&nbsp;<span class="element-name">from</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="../data/NetSerializerMapping.html" title="interface in org.cyrus.api.network.data">NetSerializerMapping</a>, PacketData&gt;&nbsp;to)</span></div>
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="../serialize/NetSerializerMapping.html" title="interface in org.cyrus.api.network.serialize">NetSerializerMapping</a>, PacketData&gt;&nbsp;to)</span></div>
 </div>
 </section>
 </li>

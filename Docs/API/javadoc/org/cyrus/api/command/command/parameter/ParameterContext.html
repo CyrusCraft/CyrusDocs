@@ -58,7 +58,9 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#parseBoolean()" tabindex="0">parseBoolean()</a></li>
+<li><a href="#parseKey()" tabindex="0">parseKey()</a></li>
 <li><a href="#parseInteger()" tabindex="0">parseInteger()</a></li>
+<li><a href="#parseString()" tabindex="0">parseString()</a></li>
 <li><a href="#remaining()" tabindex="0">remaining()</a></li>
 <li><a href="#currentValues()" tabindex="0">currentValues()</a></li>
 <li><a href="#parametersToProcess()" tabindex="0">parametersToProcess()</a></li>
@@ -103,6 +105,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parseInteger()" class="member-name-link">parseInteger</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parseKey()" class="member-name-link">parseKey</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parseString()" class="member-name-link">parseString</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#remaining()" class="member-name-link">remaining</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
@@ -135,12 +143,41 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="parseKey()">
+<h3>parseKey</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+@NotNull
+</span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">parseKey</span>()
+                                       throws <span class="exceptions"><a href="ParseException.html" title="class in org.cyrus.api.command.command.parameter">ParseException</a></span></div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="ParseException.html" title="class in org.cyrus.api.command.command.parameter">ParseException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="parseInteger()">
 <h3>parseInteger</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="return-type">int</span>&nbsp;<span class="element-name">parseInteger</span>()
           throws <span class="exceptions"><a href="ParseException.html" title="class in org.cyrus.api.command.command.parameter">ParseException</a></span></div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="ParseException.html" title="class in org.cyrus.api.command.command.parameter">ParseException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="parseString()">
+<h3>parseString</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">parseString</span>()
+            throws <span class="exceptions"><a href="ParseException.html" title="class in org.cyrus.api.command.command.parameter">ParseException</a></span></div>
 <dl class="notes">
 <dt>Throws:</dt>
 <dd><code><a href="ParseException.html" title="class in org.cyrus.api.command.command.parameter">ParseException</a></code></dd>

@@ -105,7 +105,7 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#parameterBuilder(java.util.function.Function)" class="member-name-link">parameterBuilder</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super <a href="parameter/ParameterBuilder.Style.html" title="interface in org.cyrus.api.command.command.parameter">ParameterBuilder.Style</a>, ? extends <a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&gt;&nbsp;function)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandBuilder.ParameterCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ParameterCommand</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parameters(java.util.Collection)" class="member-name-link">parameters</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&gt;&nbsp;parameters)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parameters(java.util.Collection)" class="member-name-link">parameters</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&gt;&nbsp;parameters)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="CommandBuilder.ParameterCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ParameterCommand</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#parameters(org.cyrus.api.command.command.parameter.Parameter...)" class="member-name-link">parameters</a><wbr>(@NotNull <a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>...&nbsp;parameters)</code></div>
@@ -128,7 +128,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="parameterBuilder(java.util.function.Function)">
 <h3>parameterBuilder</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="CommandBuilder.ParameterCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ParameterCommand</a></span>&nbsp;<span class="element-name">parameterBuilder</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super <a href="parameter/ParameterBuilder.Style.html" title="interface in org.cyrus.api.command.command.parameter">ParameterBuilder.Style</a>, ? extends <a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&gt;&nbsp;function)</span></div>
 </div>
@@ -138,7 +139,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="parameter(org.cyrus.api.command.command.parameter.Parameter)">
 <h3>parameter</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
 </span><span class="return-type">@NotNull <a href="CommandBuilder.ParameterCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ParameterCommand</a></span>&nbsp;<span class="element-name">parameter</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&nbsp;parameter)</span></div>
 </div>
@@ -148,9 +150,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="parameters(java.util.Collection)">
 <h3>parameters</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
 </span><span class="return-type">@NotNull <a href="CommandBuilder.ParameterCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ParameterCommand</a></span>&nbsp;<span class="element-name">parameters</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&gt;&nbsp;parameters)</span></div>
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&gt;&nbsp;parameters)</span></div>
 </div>
 </section>
 </li>
@@ -158,7 +161,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="parameters(org.cyrus.api.command.command.parameter.Parameter...)">
 <h3>parameters</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="CommandBuilder.ParameterCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ParameterCommand</a></span>&nbsp;<span class="element-name">parameters</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>...&nbsp;parameters)</span></div>
 </div>

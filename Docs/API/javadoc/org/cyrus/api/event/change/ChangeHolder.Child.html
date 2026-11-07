@@ -59,16 +59,19 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
+<li><a href="#directChanges()" tabindex="0">directChanges()</a></li>
+<li><a href="#linkedChanges()" tabindex="0">linkedChanges()</a></li>
 <li><a href="#changeId()" tabindex="0">changeId()</a></li>
 <li><a href="#changeParent()" tabindex="0">changeParent()</a></li>
 <li><a href="#resetChanges()" tabindex="0">resetChanges()</a></li>
-<li><a href="#copyDirectChangesInto(Self)" tabindex="0">copyDirectChangesInto(Self)</a></li>
-<li><a href="#copyLinkedChangesInto(Self)" tabindex="0">copyLinkedChangesInto(Self)</a></li>
-<li><a href="#compareDirectChanges(Self)" tabindex="0">compareDirectChanges(Self)</a></li>
-<li><a href="#compareLinkedChanges(Self)" tabindex="0">compareLinkedChanges(Self)</a></li>
+<li><a href="#copyDirectChangesInto(Self,boolean)" tabindex="0">copyDirectChangesInto(Self, boolean)</a></li>
+<li><a href="#copyLinkedChangesInto(Self,boolean)" tabindex="0">copyLinkedChangesInto(Self, boolean)</a></li>
+<li><a href="#compareConflictingDirectChanges(Self)" tabindex="0">compareConflictingDirectChanges(Self)</a></li>
+<li><a href="#compareConflictingLinkedChanges(Self)" tabindex="0">compareConflictingLinkedChanges(Self)</a></li>
 <li><a href="#commitDirectChanges()" tabindex="0">commitDirectChanges()</a></li>
 <li><a href="#commitLinkedChanges()" tabindex="0">commitLinkedChanges()</a></li>
 <li><a href="#hasDirectChanges()" tabindex="0">hasDirectChanges()</a></li>
+<li><a href="#hasLinkedChanges()" tabindex="0">hasLinkedChanges()</a></li>
 <li><a href="#directLinkedChangeHolders()" tabindex="0">directLinkedChangeHolders()</a></li>
 <li><a href="#linkedChangeHolders()" tabindex="0">linkedChangeHolders()</a></li>
 </ol>
@@ -92,7 +95,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="../../world/chunk/ChunkData.Changing.html" title="interface in org.cyrus.api.world.chunk">ChunkData.Changing</a>, <a href="../../world/chunk/ChunkSection.Changing.html" title="interface in org.cyrus.api.world.chunk">ChunkSection.Changing</a>, <a href="../../command/CommandManager.Changeable.html" title="interface in org.cyrus.api.command">CommandManager.Changeable</a>, <a href="../../network/connection/Connection.Changing.html" title="interface in org.cyrus.api.network.connection">Connection.Changing</a>, <a href="../../network/connection/ConnectionManager.Changing.html" title="interface in org.cyrus.api.network.connection">ConnectionManager.Changing</a>, <a href="../../Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a>, <a href="../../entity/Entity.Live.Changing.html" title="interface in org.cyrus.api.entity">Entity.Live.Changing</a>, <a href="../../entity/EntityManager.Changing.html" title="interface in org.cyrus.api.entity">EntityManager.Changing</a>, <a href="../../platform/extensions/ExtensionManager.Changeable.html" title="interface in org.cyrus.api.platform.extensions">ExtensionManager.Changeable</a>, <a href="../../world/IWorldManager.Changing.html" title="interface in org.cyrus.api.world">IWorldManager.Changing</a>, <a href="../../network/NetworkManager.Changing.html" title="interface in org.cyrus.api.network">NetworkManager.Changing</a>, <a href="../../world/World.Changing.html" title="interface in org.cyrus.api.world">World.Changing</a></code></dd>
+<dd><code><a href="ChangeHolder.Child.FromGlobal.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child.FromGlobal</a>&lt;Parent,<wbr>Self&gt;, <a href="../../world/chunk/ChunkData.Changing.html" title="interface in org.cyrus.api.world.chunk">ChunkData.Changing</a>, <a href="../../world/chunk/ChunkSection.Changing.html" title="interface in org.cyrus.api.world.chunk">ChunkSection.Changing</a>, <a href="../../command/CommandManager.Changeable.html" title="interface in org.cyrus.api.command">CommandManager.Changeable</a>, <a href="../../network/connection/Connection.Changing.html" title="interface in org.cyrus.api.network.connection">Connection.Changing</a>, <a href="../../network/connection/ConnectionManager.Changing.html" title="interface in org.cyrus.api.network.connection">ConnectionManager.Changing</a>, <a href="../../Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a>, <a href="../../entity/Entity.Live.Changing.html" title="interface in org.cyrus.api.entity">Entity.Live.Changing</a>, <a href="../../entity/EntityManager.Changing.html" title="interface in org.cyrus.api.entity">EntityManager.Changing</a>, <a href="../../platform/extensions/ExtensionManager.Changeable.html" title="interface in org.cyrus.api.platform.extensions">ExtensionManager.Changeable</a>, <a href="../../item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;, <a href="../../world/IWorldManager.Changing.html" title="interface in org.cyrus.api.world">IWorldManager.Changing</a>, <a href="../../network/NetworkManager.Changing.html" title="interface in org.cyrus.api.network">NetworkManager.Changing</a>, <a href="../../item/inventory/type/player/PlayerInventory.Changing.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a>, <a href="../../service/ServiceManager.Changable.html" title="interface in org.cyrus.api.service">ServiceManager.Changable</a>, <a href="../../item/inventory/slot/Slot.Changing.html" title="interface in org.cyrus.api.item.inventory.slot">Slot.Changing</a>, <a href="../../world/World.Changing.html" title="interface in org.cyrus.api.world">World.Changing</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
@@ -111,6 +114,15 @@ extends <a href="ChangeHolder.html" title="interface in org.cyrus.api.event.chan
 <li>
 <section class="nested-class-summary" id="nested-class-summary">
 <h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="ChangeHolder.Child.FromGlobal.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeHolder.Child.FromGlobal</a>&lt;<a href="ChangeHolder.Child.FromGlobal.html#type-param-Parent" title="type parameter in ChangeHolder.Child.FromGlobal">Parent</a> extends <a href="ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;<a href="ChangeHolder.Child.FromGlobal.html#type-param-Parent" title="type parameter in ChangeHolder.Child.FromGlobal">Parent</a>,<wbr><a href="ChangeHolder.Child.FromGlobal.html#type-param-Self" title="type parameter in ChangeHolder.Child.FromGlobal">Self</a>&gt;, <a href="ChangeHolder.Child.FromGlobal.html#type-param-Self" title="type parameter in ChangeHolder.Child.FromGlobal">Self</a> extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;<a href="ChangeHolder.Child.FromGlobal.html#type-param-Parent" title="type parameter in ChangeHolder.Child.FromGlobal">Parent</a>,<wbr><a href="ChangeHolder.Child.FromGlobal.html#type-param-Self" title="type parameter in ChangeHolder.Child.FromGlobal">Self</a>&gt;&gt;</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
 <div class="inherited-list">
 <h3 id="nested-classes-inherited-from-class-org.cyrus.api.event.change.ChangeHolder">Nested classes/interfaces inherited from interface&nbsp;<a href="ChangeHolder.html#nested-class-summary" title="interface in org.cyrus.api.event.change">ChangeHolder</a></h3>
 <code><a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;</code></div>
@@ -149,47 +161,58 @@ successfully commited.</div>
 <div class="block">Commits all indirected changes to the parent with the result being the amount of changes that have been
 successfully commited.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=0L,to=2147483647L) int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#compareDirectChanges(Self)" class="member-name-link">compareDirectChanges</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;compare)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#compareConflictingDirectChanges(Self)" class="member-name-link">compareConflictingDirectChanges</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;compare)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Compares the changes that are directly applied to this instance.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#compareLinkedChanges(Self)" class="member-name-link">compareLinkedChanges</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;compare)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#compareConflictingLinkedChanges(Self)" class="member-name-link">compareConflictingLinkedChanges</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;compare)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Compares the changes that are indirectly applied to this instance.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyDirectChangesInto(Self)" class="member-name-link">copyDirectChangesInto</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;self)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyDirectChangesInto(Self,boolean)" class="member-name-link">copyDirectChangesInto</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;self,
+ boolean&nbsp;clearAfter)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Copies all changes into another instance (it does not clear any changes made in this or the one being
 transferred into)</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#copyLinkedChangesInto(Self)" class="member-name-link">copyLinkedChangesInto</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;self)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#copyLinkedChangesInto(Self,boolean)" class="member-name-link">copyLinkedChangesInto</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;self,
+ boolean&nbsp;clearAfter)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Copies the changes that are not directly applied to this instance, but this instance will hold the object
 of.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="LinkedChangeHolder.html" title="class in org.cyrus.api.event.change">LinkedChangeHolder</a>&lt;? extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;?,<wbr>?&gt;, <a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#directLinkedChangeHolders()" class="member-name-link">directLinkedChangeHolders</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;?,<wbr>?&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#directChanges()" class="member-name-link">directChanges</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="LinkedChangeHolder.html" title="class in org.cyrus.api.event.change">LinkedChangeHolder</a>&lt;? extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;?,<wbr>?&gt;, <a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#directLinkedChangeHolders()" class="member-name-link">directLinkedChangeHolders</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets all the linked <a href="ChangeHolder.html" title="interface in org.cyrus.api.event.change"><code>ChangeHolder</code></a> that are directly tied to this object</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasDirectChanges()" class="member-name-link">hasDirectChanges</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasDirectChanges()" class="member-name-link">hasDirectChanges</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">checks if any direct changes are ready to be applied</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#hasLinkedChanges()" class="member-name-link">hasLinkedChanges</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="LinkedChangeHolder.html" title="class in org.cyrus.api.event.change">LinkedChangeHolder</a>&lt;?,<wbr><a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#linkedChangeHolders()" class="member-name-link">linkedChangeHolders</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets all the linked <a href="ChangeHolder.html" title="interface in org.cyrus.api.event.change"><code>ChangeHolder</code></a> that are either directly linked with this object or directly
 linked with one of those change holders.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#resetChanges()" class="member-name-link">resetChanges</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;?,<wbr>?&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#linkedChanges()" class="member-name-link">linkedChanges</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#resetChanges()" class="member-name-link">resetChanges</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Removes all stored changes</div>
 </div>
 </div>
@@ -209,6 +232,26 @@ linked with one of those change holders.</div>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="directChanges()">
+<h3>directChanges</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;?,<wbr>?&gt;&gt;</span>&nbsp;<span class="element-name">directChanges</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="linkedChanges()">
+<h3>linkedChanges</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;?,<wbr>?&gt;&gt;</span>&nbsp;<span class="element-name">linkedChanges</span>()</div>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="changeId()">
 <h3>changeId</h3>
@@ -249,11 +292,12 @@ linked with one of those change holders.</div>
 </section>
 </li>
 <li>
-<section class="detail" id="copyDirectChangesInto(Self)">
-<h3 id="copyDirectChangesInto(org.cyrus.api.event.change.ChangeHolder.Child)">copyDirectChangesInto</h3>
+<section class="detail" id="copyDirectChangesInto(Self,boolean)">
+<h3 id="copyDirectChangesInto(org.cyrus.api.event.change.ChangeHolder.Child,boolean)">copyDirectChangesInto</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">copyDirectChangesInto</span><wbr><span class="parameters">(@NotNull
- <a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;self)</span></div>
+ <a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;self,
+ boolean&nbsp;clearAfter)</span></div>
 <div class="block">Copies all changes into another instance (it does not clear any changes made in this or the one being
 transferred into)</div>
 <dl class="notes">
@@ -264,11 +308,12 @@ transferred into)</div>
 </section>
 </li>
 <li>
-<section class="detail" id="copyLinkedChangesInto(Self)">
-<h3 id="copyLinkedChangesInto(org.cyrus.api.event.change.ChangeHolder.Child)">copyLinkedChangesInto</h3>
+<section class="detail" id="copyLinkedChangesInto(Self,boolean)">
+<h3 id="copyLinkedChangesInto(org.cyrus.api.event.change.ChangeHolder.Child,boolean)">copyLinkedChangesInto</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">copyLinkedChangesInto</span><wbr><span class="parameters">(@NotNull
- <a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;self)</span></div>
+ <a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;self,
+ boolean&nbsp;clearAfter)</span></div>
 <div class="block">Copies the changes that are not directly applied to this instance, but this instance will hold the object
 of. This will not remove any changes unless the new changes directly conflict with the previous changes,
 to which the changes will be compared and one will be dropped</div>
@@ -280,11 +325,11 @@ to which the changes will be compared and one will be dropped</div>
 </section>
 </li>
 <li>
-<section class="detail" id="compareDirectChanges(Self)">
-<h3 id="compareDirectChanges(org.cyrus.api.event.change.ChangeHolder.Child)">compareDirectChanges</h3>
+<section class="detail" id="compareConflictingDirectChanges(Self)">
+<h3 id="compareConflictingDirectChanges(org.cyrus.api.event.change.ChangeHolder.Child)">compareConflictingDirectChanges</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
-</span><span class="return-type">@Range(from=0L,to=2147483647L) int</span>&nbsp;<span class="element-name">compareDirectChanges</span><wbr><span class="parameters">(@NotNull
+</span><span class="return-type">int</span>&nbsp;<span class="element-name">compareConflictingDirectChanges</span><wbr><span class="parameters">(@NotNull
  <a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;compare)</span></div>
 <div class="block">Compares the changes that are directly applied to this instance. This is designed to be used as either '&lt;
 0' or '0 &gt;' in the same way that the typical compares work. However, the result may not be -1, 0 or 1 but
@@ -301,13 +346,14 @@ from there the two results are compared (as if both were positive numbers) with 
 </section>
 </li>
 <li>
-<section class="detail" id="compareLinkedChanges(Self)">
-<h3 id="compareLinkedChanges(org.cyrus.api.event.change.ChangeHolder.Child)">compareLinkedChanges</h3>
+<section class="detail" id="compareConflictingLinkedChanges(Self)">
+<h3 id="compareConflictingLinkedChanges(org.cyrus.api.event.change.ChangeHolder.Child)">compareConflictingLinkedChanges</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
-</span><span class="modifiers">default</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">compareLinkedChanges</span><wbr><span class="parameters">(@NotNull
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">compareConflictingLinkedChanges</span><wbr><span class="parameters">(@NotNull
  <a href="#type-param-Self" title="type parameter in ChangeHolder.Child">Self</a>&nbsp;compare)</span></div>
-<div class="block">Compares the changes that are indirectly applied to this instance. This is designed to be used as either '&lt;
+<div class="block">Compares the changes that are indirectly applied to this instance. This is designed to be used as either
+'&lt;
 0' or '0 &gt;' in the same way that the typical compares work. However, the result may not be -1, 0 or 1 but
 instead a different number.
 All direct changes are compared and the negative results and summed up and the positives are summed up,
@@ -366,6 +412,14 @@ the compare) it will not be within the result but will be removed.</div>
 <dt>Returns:</dt>
 <dd>true if this instance has changes to commit</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="hasLinkedChanges()">
+<h3>hasLinkedChanges</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasLinkedChanges</span>()</div>
 </div>
 </section>
 </li>

@@ -60,9 +60,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey,D)" tabindex="0">offer(ICause, DataKey, D)</a></li>
-<li><a href="#offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native,D)" tabindex="0">offer(ICause, DataKey.Native, D)</a></li>
 <li><a href="#reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey)" tabindex="0">reset(ICause, DataKey)</a></li>
-<li><a href="#reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native)" tabindex="0">reset(ICause, DataKey.Native)</a></li>
 </ol>
 </li>
 </ol>
@@ -79,7 +77,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="ChangeDataHolderWrapper.html" title="interface in org.cyrus.api.data">ChangeDataHolderWrapper</a>&lt;Self&gt;, <a href="../network/connection/Connection.Changing.html" title="interface in org.cyrus.api.network.connection">Connection.Changing</a>, <a href="../network/connection/Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>, <a href="../entity/Entity.html" title="interface in org.cyrus.api.entity">Entity</a>&lt;Self&gt;, <a href="../entity/Entity.Live.html" title="interface in org.cyrus.api.entity">Entity.Live</a>&lt;Self&gt;, <a href="../entity/Entity.Live.Changing.html" title="interface in org.cyrus.api.entity">Entity.Live.Changing</a>, <a href="../entity/Entity.Live.Writable.html" title="interface in org.cyrus.api.entity">Entity.Live.Writable</a>, <a href="../entity/Entity.Snapshot.html" title="interface in org.cyrus.api.entity">Entity.Snapshot</a>, <a href="../entity/Entity.Target.html" title="interface in org.cyrus.api.entity">Entity.Target</a>&lt;Self&gt;</code></dd>
+<dd><code><a href="../world/block/BlockType.html" title="interface in org.cyrus.api.world.block">BlockType</a>, <a href="ChangeDataHolderWrapper.html" title="interface in org.cyrus.api.data">ChangeDataHolderWrapper</a>&lt;Self&gt;, <a href="../network/connection/Connection.Changing.html" title="interface in org.cyrus.api.network.connection">Connection.Changing</a>, <a href="../network/connection/Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>, <a href="../entity/Entity.html" title="interface in org.cyrus.api.entity">Entity</a>&lt;Self&gt;, <a href="../entity/Entity.Live.html" title="interface in org.cyrus.api.entity">Entity.Live</a>&lt;Self&gt;, <a href="../entity/Entity.Live.Changing.html" title="interface in org.cyrus.api.entity">Entity.Live.Changing</a>, <a href="../entity/Entity.Live.Writable.html" title="interface in org.cyrus.api.entity">Entity.Live.Writable</a>, <a href="../entity/Entity.Snapshot.html" title="interface in org.cyrus.api.entity">Entity.Snapshot</a>, <a href="../entity/Entity.Target.html" title="interface in org.cyrus.api.entity">Entity.Target</a>&lt;Self&gt;</code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
@@ -107,7 +105,7 @@ extends <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHo
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -118,25 +116,16 @@ extends <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHo
  @NotNull <a href="DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;D&gt;&nbsp;key,
  @UnknownNullability D&nbsp;data)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;D&gt;&nbsp;void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native,D)" class="member-name-link">offer</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
- <a href="DataKey.Native.html" title="interface in org.cyrus.api.data">DataKey.Native</a>&lt;<a href="#type-param-Self" title="type parameter in DataHolder.Mutable">Self</a>,<wbr>D&gt;&nbsp;key,
- @UnknownNullability D&nbsp;data)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey)" class="member-name-link">reset</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey)" class="member-name-link">reset</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
  @NotNull <a href="DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;?&gt;&nbsp;key)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native)" class="member-name-link">reset</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
- <a href="DataKey.Native.html" title="interface in org.cyrus.api.data">DataKey.Native</a>&lt;<a href="#type-param-Self" title="type parameter in DataHolder.Mutable">Self</a>,<wbr>?&gt;&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.data.DataHolder">Methods inherited from interface&nbsp;<a href="DataHolder.html#method-summary" title="interface in org.cyrus.api.data">DataHolder</a></h3>
-<code><a href="DataHolder.html#get(org.cyrus.api.data.DataKey)" title="get(DataKey)">get</a>, <a href="DataHolder.html#get(org.cyrus.api.data.DataKey.Native)" title="get(DataKey.Native)">get</a>, <a href="DataHolder.html#getDefault(org.cyrus.api.data.DataKey.Default)" title="getDefault(DataKey.Default)">getDefault</a>, <a href="DataHolder.html#getKey(net.kyori.adventure.key.Key)" title="getKey(Key)">getKey</a>, <a href="DataHolder.html#has(org.cyrus.api.data.DataKey...)" title="has(DataKey...)">has</a></code></div>
+<code><a href="DataHolder.html#get(org.cyrus.api.data.DataKey)" title="get(DataKey)">get</a>, <a href="DataHolder.html#getKey(net.kyori.adventure.key.Key)" title="getKey(Key)">getKey</a>, <a href="DataHolder.html#getOrDefault(org.cyrus.api.data.DataKey)" title="getOrDefault(DataKey)">getOrDefault</a>, <a href="DataHolder.html#hasAll(org.cyrus.api.data.DataKey...)" title="hasAll(DataKey...)">hasAll</a>, <a href="DataHolder.html#keys()" title="keys()">keys</a></code></div>
 </section>
 </li>
 </ul>
@@ -161,18 +150,6 @@ extends <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHo
 </section>
 </li>
 <li>
-<section class="detail" id="offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native,D)">
-<h3 id="offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native,java.lang.Object)">offer</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;D&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">offer</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
- @NotNull
- <a href="DataKey.Native.html" title="interface in org.cyrus.api.data">DataKey.Native</a>&lt;<a href="#type-param-Self" title="type parameter in DataHolder.Mutable">Self</a>,<wbr>D&gt;&nbsp;key,
- @UnknownNullability D&nbsp;data)</span></div>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey)">
 <h3>reset</h3>
 <div class="horizontal-scroll">
@@ -180,17 +157,6 @@ extends <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHo
  @NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
  @NotNull
  @NotNull <a href="DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;?&gt;&nbsp;key)</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native)">
-<h3>reset</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">reset</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
- @NotNull
- <a href="DataKey.Native.html" title="interface in org.cyrus.api.data">DataKey.Native</a>&lt;<a href="#type-param-Self" title="type parameter in DataHolder.Mutable">Self</a>,<wbr>?&gt;&nbsp;key)</span></div>
 </div>
 </section>
 </li>

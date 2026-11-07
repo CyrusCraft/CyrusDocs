@@ -65,6 +65,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#execute(org.cyrus.api.command.command.CommandContent)" tabindex="0">execute(CommandContent)</a></li>
 <li><a href="#isValid(org.cyrus.api.command.command.CommandContent)" tabindex="0">isValid(CommandContent)</a></li>
 <li><a href="#suggestions(org.cyrus.api.command.command.CommandContent)" tabindex="0">suggestions(CommandContent)</a></li>
+<li><a href="#hasPermission(org.cyrus.api.service.permission.PermissionHolder)" tabindex="0">hasPermission(PermissionHolder)</a></li>
 <li><a href="#usage()" tabindex="0">usage()</a></li>
 </ol>
 </li>
@@ -116,31 +117,34 @@ extends <a href="node/ToCommandNodes.html" title="interface in org.cyrus.api.com
 <div class="block">The driver that the command was registered with</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isValid(org.cyrus.api.command.command.CommandContent)" class="member-name-link">isValid</a><wbr>(@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>&nbsp;content)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasPermission(org.cyrus.api.service.permission.PermissionHolder)" class="member-name-link">hasPermission</a><wbr>(@NotNull <a href="../../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a>&nbsp;holder)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isValid(org.cyrus.api.command.command.CommandContent)" class="member-name-link">isValid</a><wbr>(@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>&nbsp;content)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">If the command is valid for executing based on the context</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#name()" class="member-name-link">name</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#name()" class="member-name-link">name</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Name of the command</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parameters()" class="member-name-link">parameters</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="parameter/Parameter.html" title="interface in org.cyrus.api.command.command.parameter">Parameter</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parameters()" class="member-name-link">parameters</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The parameters for the command.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="../CommandCompletion.html" title="class in org.cyrus.api.command">CommandCompletion</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#suggestions(org.cyrus.api.command.command.CommandContent)" class="member-name-link">suggestions</a><wbr>(@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>&nbsp;content)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="../CommandCompletion.html" title="class in org.cyrus.api.command">CommandCompletion</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#suggestions(org.cyrus.api.command.command.CommandContent)" class="member-name-link">suggestions</a><wbr>(@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>&nbsp;content)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">All suggestions based on the context</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="node/CommandNode.html" title="interface in org.cyrus.api.command.command.node">CommandNode</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#toCommandNodes(org.cyrus.api.command.CommandSource)" class="member-name-link">toCommandNodes</a><wbr>(@NotNull <a href="../CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a>&nbsp;permissionHolder)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#usage()" class="member-name-link">usage</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="node/CommandNode.html" title="interface in org.cyrus.api.command.command.node">CommandNode</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#toCommandNodes(org.cyrus.api.command.CommandSource)" class="member-name-link">toCommandNodes</a><wbr>(@NotNull <a href="../CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a>&nbsp;permissionHolder)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#usage()" class="member-name-link">usage</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">The usage of the command</div>
 </div>
 </div>
@@ -280,6 +284,16 @@ extends <a href="node/ToCommandNodes.html" title="interface in org.cyrus.api.com
 <dt>Returns:</dt>
 <dd>A stream of all suggestions</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="hasPermission(org.cyrus.api.service.permission.PermissionHolder)">
+<h3>hasPermission</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type">boolean</span>&nbsp;<span class="element-name">hasPermission</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="../../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a>&nbsp;holder)</span></div>
 </div>
 </section>
 </li>

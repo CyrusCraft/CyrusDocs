@@ -60,6 +60,8 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#location()" tabindex="0">location()</a></li>
+<li><a href="#position(int)" tabindex="0">position(int)</a></li>
+<li><a href="#position(int,org.cyrus.api.network.packet.data.play.TeleportFlag)" tabindex="0">position(int, TeleportFlag)</a></li>
 </ol>
 </li>
 </ol>
@@ -123,15 +125,22 @@ extends <a href="Entity.html" title="interface in org.cyrus.api.entity">Entity</
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Location of the entity.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="../network/packet/data/play/SyncPlayerPosition.html" title="class in org.cyrus.api.network.packet.data.play">SyncPlayerPosition</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#position(int)" class="member-name-link">position</a><wbr>(int&nbsp;teleportId)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="../network/packet/data/play/SyncPlayerPosition.html" title="class in org.cyrus.api.network.packet.data.play">SyncPlayerPosition</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#position(int,org.cyrus.api.network.packet.data.play.TeleportFlag)" class="member-name-link">position</a><wbr>(int&nbsp;teleportId,
+ @Nullable <a href="../network/packet/data/play/TeleportFlag.html" title="enum class in org.cyrus.api.network.packet.data.play">TeleportFlag</a>&nbsp;flag)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.data.DataHolder">Methods inherited from interface&nbsp;<a href="../data/DataHolder.html#method-summary" title="interface in org.cyrus.api.data">DataHolder</a></h3>
-<code><a href="../data/DataHolder.html#get(org.cyrus.api.data.DataKey)" title="get(DataKey)">get</a>, <a href="../data/DataHolder.html#get(org.cyrus.api.data.DataKey.Native)" title="get(DataKey.Native)">get</a>, <a href="../data/DataHolder.html#getDefault(org.cyrus.api.data.DataKey.Default)" title="getDefault(DataKey.Default)">getDefault</a>, <a href="../data/DataHolder.html#getKey(net.kyori.adventure.key.Key)" title="getKey(Key)">getKey</a>, <a href="../data/DataHolder.html#has(org.cyrus.api.data.DataKey...)" title="has(DataKey...)">has</a></code></div>
+<code><a href="../data/DataHolder.html#get(org.cyrus.api.data.DataKey)" title="get(DataKey)">get</a>, <a href="../data/DataHolder.html#getKey(net.kyori.adventure.key.Key)" title="getKey(Key)">getKey</a>, <a href="../data/DataHolder.html#getOrDefault(org.cyrus.api.data.DataKey)" title="getOrDefault(DataKey)">getOrDefault</a>, <a href="../data/DataHolder.html#hasAll(org.cyrus.api.data.DataKey...)" title="hasAll(DataKey...)">hasAll</a>, <a href="../data/DataHolder.html#keys()" title="keys()">keys</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.data.DataHolder.Mutable">Methods inherited from interface&nbsp;<a href="../data/DataHolder.Mutable.html#method-summary" title="interface in org.cyrus.api.data">DataHolder.Mutable</a></h3>
-<code><a href="../data/DataHolder.Mutable.html#offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey,D)" title="offer(ICause, DataKey, D)">offer</a>, <a href="../data/DataHolder.Mutable.html#offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native,D)" title="offer(ICause, DataKey.Native, D)">offer</a>, <a href="../data/DataHolder.Mutable.html#reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey)" title="reset(ICause, DataKey)">reset</a>, <a href="../data/DataHolder.Mutable.html#reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey.Native)" title="reset(ICause, DataKey.Native)">reset</a></code></div>
+<code><a href="../data/DataHolder.Mutable.html#offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey,D)" title="offer(ICause, DataKey, D)">offer</a>, <a href="../data/DataHolder.Mutable.html#reset(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey)" title="reset(ICause, DataKey)">reset</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.entity.Entity">Methods inherited from interface&nbsp;<a href="Entity.html#method-summary" title="interface in org.cyrus.api.entity">Entity</a></h3>
 <code><a href="Entity.html#type()" title="type()">type</a></code></div>
@@ -161,6 +170,24 @@ Therefore, this function returns the LOCATION key data</div>
 <dt>Returns:</dt>
 <dd>The location of the entity</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="position(int)">
+<h3>position</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="../network/packet/data/play/SyncPlayerPosition.html" title="class in org.cyrus.api.network.packet.data.play">SyncPlayerPosition</a></span>&nbsp;<span class="element-name">position</span><wbr><span class="parameters">(int&nbsp;teleportId)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="position(int,org.cyrus.api.network.packet.data.play.TeleportFlag)">
+<h3>position</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="../network/packet/data/play/SyncPlayerPosition.html" title="class in org.cyrus.api.network.packet.data.play">SyncPlayerPosition</a></span>&nbsp;<span class="element-name">position</span><wbr><span class="parameters">(int&nbsp;teleportId,
+ @Nullable
+ @Nullable <a href="../network/packet/data/play/TeleportFlag.html" title="enum class in org.cyrus.api.network.packet.data.play">TeleportFlag</a>&nbsp;flag)</span></div>
 </div>
 </section>
 </li>

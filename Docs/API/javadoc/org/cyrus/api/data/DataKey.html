@@ -54,11 +54,20 @@ loadScripts(document, 'script');</script>
 <div class="toc-header">Contents&nbsp;<input type="text" class="filter-input" disabled placeholder="Filter contents (type .)" aria-label="Filter table of contents" autocomplete="off" spellcheck="false"><input type="reset" class="reset-filter" disabled tabindex="-1" value="Reset"></div>
 <ol class="toc-list" tabindex="-1">
 <li><a href="#" tabindex="0">Description</a></li>
-<li><a href="#nested-class-summary" tabindex="0">Nested Class Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
+<li><a href="#builder()" tabindex="0">builder()</a></li>
 <li><a href="#key()" tabindex="0">key()</a></li>
+<li><a href="#getMapped(org.cyrus.api.data.DataHolder)" tabindex="0">getMapped(DataHolder)</a></li>
+<li><a href="#isReadOnly()" tabindex="0">isReadOnly()</a></li>
+<li><a href="#supports(org.cyrus.api.data.DataHolder)" tabindex="0">supports(DataHolder)</a></li>
+<li><a href="#transferInto(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataHolder,org.cyrus.api.data.DataHolder)" tabindex="0">transferInto(ICause, DataHolder, DataHolder)</a></li>
+<li><a href="#dependsOn()" tabindex="0">dependsOn()</a></li>
+<li><a href="#defaultValue()" tabindex="0">defaultValue()</a></li>
+<li><a href="#asReadOnly()" tabindex="0">asReadOnly()</a></li>
+<li><a href="#isValid(D)" tabindex="0">isValid(D)</a></li>
+<li><a href="#isValidFor(org.cyrus.api.data.DataHolder,D)" tabindex="0">isValidFor(DataHolder, D)</a></li>
 </ol>
 </li>
 </ol>
@@ -73,22 +82,9 @@ loadScripts(document, 'script');</script>
 <dt>Type Parameters:</dt>
 <dd><span id="type-param-D"><code>D</code> - The expected type of the value</span></dd>
 </dl>
-<dl class="notes">
-<dt>All Known Subinterfaces:</dt>
-<dd><code><a href="../world/block/state/BlockStateKey.html" title="interface in org.cyrus.api.world.block.state">BlockStateKey</a>&lt;D&gt;, <a href="DataKey.Default.html" title="interface in org.cyrus.api.data">DataKey.Default</a>&lt;D&gt;, <a href="DataKey.ManipulationKey.html" title="interface in org.cyrus.api.data">DataKey.ManipulationKey</a>&lt;D&gt;, <a href="DataKey.Native.html" title="interface in org.cyrus.api.data">DataKey.Native</a>&lt;H,<wbr>D&gt;, <a href="DataKey.SerializableDataKey.html" title="interface in org.cyrus.api.data">DataKey.SerializableDataKey</a>&lt;D&gt;, <a href="DataKey.Transferable.html" title="interface in org.cyrus.api.data">DataKey.Transferable</a>&lt;I,<wbr>N,<wbr>D&gt;</code></dd>
-</dl>
-<dl class="notes">
-<dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../entity/EntityKey.html" title="class in org.cyrus.api.entity">EntityKey</a>, <a href="../entity/EntityKey.Defaulted.html" title="class in org.cyrus.api.entity">EntityKey.Defaulted</a>, <a href="../entity/EntityKey.Mapped.html" title="class in org.cyrus.api.entity">EntityKey.Mapped</a></code></dd>
-</dl>
-<dl class="notes">
-<dt>Functional Interface:</dt>
-<dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
-</dl>
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/FunctionalInterface.html" title="class or interface in java.lang" class="external-link">@FunctionalInterface</a>
-</span><span class="modifiers">public interface </span><span class="element-name type-name-label">DataKey&lt;D&gt;</span></div>
+<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">DataKey&lt;D&gt;</span></div>
 <div class="block">A key for a specific value within <a href="DataHolder.html" title="interface in org.cyrus.api.data"><code>DataHolder</code></a>
 <p>
 It is expected that an key implements one or more of the nested interfaces</div>
@@ -96,62 +92,55 @@ It is expected that an key implements one or more of the nested interfaces</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<li>
-<section class="nested-class-summary" id="nested-class-summary">
-<h2>Nested Class Summary</h2>
-<div class="caption"><span>Nested Classes</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Interface</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="DataKey.Default.html" class="type-name-link" title="interface in org.cyrus.api.data">DataKey.Default</a>&lt;<a href="DataKey.Default.html#type-param-D" title="type parameter in DataKey.Default">D</a>&gt;</code></div>
-<div class="col-last even-row-color">
-<div class="block">A key that has the ability to return a known value if it is not found within the <a href="DataHolder.html" title="interface in org.cyrus.api.data"><code>DataHolder</code></a></div>
-</div>
-<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="DataKey.ManipulationKey.html" class="type-name-link" title="interface in org.cyrus.api.data">DataKey.ManipulationKey</a>&lt;<a href="DataKey.ManipulationKey.html#type-param-D" title="type parameter in DataKey.ManipulationKey">D</a>&gt;</code></div>
-<div class="col-last odd-row-color">
-<div class="block">A key that stores no data within the <a href="DataHolder.html" title="interface in org.cyrus.api.data"><code>DataHolder</code></a> but instead manipulates the current data within the
-holder to produce a new value
-
-<b>This should not be used to <a href="DataHolder.Mutable.html#offer(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataKey,D)"><code>DataHolder.Mutable.offer(ICause, DataKey, Object)</code></a> values</b></div>
-</div>
-<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="DataKey.Native.html" class="type-name-link" title="interface in org.cyrus.api.data">DataKey.Native</a>&lt;<a href="DataKey.Native.html#type-param-H" title="type parameter in DataKey.Native">H</a> extends <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;<a href="DataKey.Native.html#type-param-H" title="type parameter in DataKey.Native">H</a>&gt;, <a href="DataKey.Native.html#type-param-D" title="type parameter in DataKey.Native">D</a>&gt;</code></div>
-<div class="col-last even-row-color">
-<div class="block">A key that should only be used on a single type of <a href="DataHolder.html" title="interface in org.cyrus.api.data"><code>DataHolder</code></a></div>
-</div>
-<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="DataKey.SerializableDataKey.html" class="type-name-link" title="interface in org.cyrus.api.data">DataKey.SerializableDataKey</a>&lt;<a href="DataKey.SerializableDataKey.html#type-param-D" title="type parameter in DataKey.SerializableDataKey">D</a>&gt;</code></div>
-<div class="col-last odd-row-color">
-<div class="block">Key designed to be saved with the data holder</div>
-</div>
-<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="DataKey.Transferable.html" class="type-name-link" title="interface in org.cyrus.api.data">DataKey.Transferable</a>&lt;<a href="DataKey.Transferable.html#type-param-I" title="type parameter in DataKey.Transferable">I</a> extends <a href="DataHolder.Mutable.html" title="interface in org.cyrus.api.data">DataHolder.Mutable</a>&lt;<a href="DataKey.Transferable.html#type-param-I" title="type parameter in DataKey.Transferable">I</a>&gt;, <a href="DataKey.Transferable.html#type-param-N" title="type parameter in DataKey.Transferable">N</a> extends <a href="DataHolder.Mutable.html" title="interface in org.cyrus.api.data">DataHolder.Mutable</a>&lt;<a href="DataKey.Transferable.html#type-param-N" title="type parameter in DataKey.Transferable">N</a>&gt;, <a href="DataKey.Transferable.html#type-param-D" title="type parameter in DataKey.Transferable">D</a>&gt;</code></div>
-<div class="col-last even-row-color">
-<div class="block">Makes the key transferable from one <a href="DataHolder.html" title="interface in org.cyrus.api.data"><code>DataHolder</code></a> to another.</div>
-</div>
-</div>
-</section>
-</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="#type-param-D" title="type parameter in DataKey">D</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#asReadOnly()" class="member-name-link">asReadOnly</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="DataKeyBuilder.SetKey.html" title="interface in org.cyrus.api.data">DataKeyBuilder.SetKey</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="#type-param-D" title="type parameter in DataKey">D</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#defaultValue()" class="member-name-link">defaultValue</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;? extends <a href="DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;?&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#dependsOn()" class="member-name-link">dependsOn</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="#type-param-D" title="type parameter in DataKey">D</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMapped(org.cyrus.api.data.DataHolder)" class="member-name-link">getMapped</a><wbr>(@NotNull <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;holder)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isReadOnly()" class="member-name-link">isReadOnly</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isValid(D)" class="member-name-link">isValid</a><wbr>(<a href="#type-param-D" title="type parameter in DataKey">D</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isValidFor(org.cyrus.api.data.DataHolder,D)" class="member-name-link">isValidFor</a><wbr>(@NotNull <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;holder,
+ <a href="#type-param-D" title="type parameter in DataKey">D</a>&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#key()" class="member-name-link">key</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">A string representation of the key</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#supports(org.cyrus.api.data.DataHolder)" class="member-name-link">supports</a><wbr>(<a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;holder)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transfer/DataTransferResult.html" title="interface in org.cyrus.api.data.transfer">DataTransferResult</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#transferInto(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataHolder,org.cyrus.api.data.DataHolder)" class="member-name-link">transferInto</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
+ @NotNull <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;from,
+ @NotNull <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;to)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -167,6 +156,14 @@ holder to produce a new value
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="builder()">
+<h3>builder</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="DataKeyBuilder.SetKey.html" title="interface in org.cyrus.api.data">DataKeyBuilder.SetKey</a></span>&nbsp;<span class="element-name">builder</span>()</div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="key()">
 <h3>key</h3>
 <div class="horizontal-scroll">
@@ -178,6 +175,96 @@ holder to produce a new value
 <dt>Returns:</dt>
 <dd>A <code>Key</code> of the key</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getMapped(org.cyrus.api.data.DataHolder)">
+<h3>getMapped</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="#type-param-D" title="type parameter in DataKey">D</a>&gt;</span>&nbsp;<span class="element-name">getMapped</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;holder)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="isReadOnly()">
+<h3>isReadOnly</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isReadOnly</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="supports(org.cyrus.api.data.DataHolder)">
+<h3>supports</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type">boolean</span>&nbsp;<span class="element-name">supports</span><wbr><span class="parameters">(<a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;holder)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="transferInto(org.cyrus.api.event.cause.ICause,org.cyrus.api.data.DataHolder,org.cyrus.api.data.DataHolder)">
+<h3>transferInto</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type"><a href="transfer/DataTransferResult.html" title="interface in org.cyrus.api.data.transfer">DataTransferResult</a></span>&nbsp;<span class="element-name">transferInto</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
+ @NotNull
+ @NotNull <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;from,
+ @NotNull
+ @NotNull <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;to)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="dependsOn()">
+<h3>dependsOn</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">dependsOn</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="defaultValue()">
+<h3>defaultValue</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="#type-param-D" title="type parameter in DataKey">D</a>&gt;</span>&nbsp;<span class="element-name">defaultValue</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="asReadOnly()">
+<h3>asReadOnly</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type"><a href="DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="#type-param-D" title="type parameter in DataKey">D</a>&gt;</span>&nbsp;<span class="element-name">asReadOnly</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="isValid(D)">
+<h3 id="isValid(java.lang.Object)">isValid</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type">boolean</span>&nbsp;<span class="element-name">isValid</span><wbr><span class="parameters">(@Nullable
+ <a href="#type-param-D" title="type parameter in DataKey">D</a>&nbsp;value)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="isValidFor(org.cyrus.api.data.DataHolder,D)">
+<h3 id="isValidFor(org.cyrus.api.data.DataHolder,java.lang.Object)">isValidFor</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type">boolean</span>&nbsp;<span class="element-name">isValidFor</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;?&gt;&nbsp;holder,
+ @Nullable
+ <a href="#type-param-D" title="type parameter in DataKey">D</a>&nbsp;value)</span></div>
 </div>
 </section>
 </li>

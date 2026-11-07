@@ -58,7 +58,16 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#field-detail" tabindex="0">Field Details</a>
 <ol class="toc-list">
+<li><a href="#TRANSLATABLE_COMPONENT" tabindex="0">TRANSLATABLE_COMPONENT</a></li>
+<li><a href="#COMPONENT" tabindex="0">COMPONENT</a></li>
+<li><a href="#ENTITY_ACTIVITY" tabindex="0">ENTITY_ACTIVITY</a></li>
+<li><a href="#COLOR" tabindex="0">COLOR</a></li>
 <li><a href="#FILE" tabindex="0">FILE</a></li>
+<li><a href="#TAGGABLE_KEY" tabindex="0">TAGGABLE_KEY</a></li>
+<li><a href="#KEY" tabindex="0">KEY</a></li>
+<li><a href="#EASE" tabindex="0">EASE</a></li>
+<li><a href="#MOON_PHASE" tabindex="0">MOON_PHASE</a></li>
+<li><a href="#ENVIRONMENT_MODIFIER_NAME" tabindex="0">ENVIRONMENT_MODIFIER_NAME</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -94,9 +103,36 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static final <a href="FileSerializer.html" title="class in org.cyrus.api.platform.config.file.serializer">FileSerializer</a></code></div>
-<div class="col-second even-row-color"><code><a href="#FILE" class="member-name-link">FILE</a></code></div>
+<div class="col-first even-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;<a href="../../../../values/RGBAlpha.html" title="class in org.cyrus.api.values">RGBAlpha</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#COLOR" class="member-name-link">COLOR</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="ComponentSerializer.html" title="class in org.cyrus.api.platform.config.file.serializer">ComponentSerializer</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#COMPONENT" class="member-name-link">COMPONENT</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;<a href="../../../../pack/enviroment/ease/EaseBase.html" title="interface in org.cyrus.api.pack.enviroment.ease">EaseBase</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#EASE" class="member-name-link">EASE</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;<a href="../../../../entity/activity/EntityActivity.html" title="enum class in org.cyrus.api.entity.activity">EntityActivity</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#ENTITY_ACTIVITY" class="member-name-link">ENTITY_ACTIVITY</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;<a href="../../../../pack/enviroment/EnvironmentModifierName.html" title="enum class in org.cyrus.api.pack.enviroment">EnvironmentModifierName</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#ENVIRONMENT_MODIFIER_NAME" class="member-name-link">ENVIRONMENT_MODIFIER_NAME</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#FILE" class="member-name-link">FILE</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#KEY" class="member-name-link">KEY</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;<a href="../../../../world/weather/MoonPhase.html" title="enum class in org.cyrus.api.world.weather">MoonPhase</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#MOON_PHASE" class="member-name-link">MOON_PHASE</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;<a href="../../../../values/tag/TaggableKey.html" title="class in org.cyrus.api.values.tag">TaggableKey</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#TAGGABLE_KEY" class="member-name-link">TAGGABLE_KEY</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final org.spongepowered.configurate.serialize.TypeSerializer<wbr>&lt;net.kyori.adventure.text.TranslatableComponent&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#TRANSLATABLE_COMPONENT" class="member-name-link">TRANSLATABLE_COMPONENT</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -132,10 +168,82 @@ loadScripts(document, 'script');</script>
 <h2>Field Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="TRANSLATABLE_COMPONENT">
+<h3>TRANSLATABLE_COMPONENT</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;net.kyori.adventure.text.TranslatableComponent&gt;</span>&nbsp;<span class="element-name">TRANSLATABLE_COMPONENT</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="COMPONENT">
+<h3>COMPONENT</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="ComponentSerializer.html" title="class in org.cyrus.api.platform.config.file.serializer">ComponentSerializer</a></span>&nbsp;<span class="element-name">COMPONENT</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ENTITY_ACTIVITY">
+<h3>ENTITY_ACTIVITY</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;<a href="../../../../entity/activity/EntityActivity.html" title="enum class in org.cyrus.api.entity.activity">EntityActivity</a>&gt;</span>&nbsp;<span class="element-name">ENTITY_ACTIVITY</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="COLOR">
+<h3>COLOR</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;<a href="../../../../values/RGBAlpha.html" title="class in org.cyrus.api.values">RGBAlpha</a>&gt;</span>&nbsp;<span class="element-name">COLOR</span></div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="FILE">
 <h3>FILE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="FileSerializer.html" title="class in org.cyrus.api.platform.config.file.serializer">FileSerializer</a></span>&nbsp;<span class="element-name">FILE</span></div>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&gt;</span>&nbsp;<span class="element-name">FILE</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="TAGGABLE_KEY">
+<h3>TAGGABLE_KEY</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;<a href="../../../../values/tag/TaggableKey.html" title="class in org.cyrus.api.values.tag">TaggableKey</a>&gt;</span>&nbsp;<span class="element-name">TAGGABLE_KEY</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="KEY">
+<h3>KEY</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">KEY</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="EASE">
+<h3>EASE</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;<a href="../../../../pack/enviroment/ease/EaseBase.html" title="interface in org.cyrus.api.pack.enviroment.ease">EaseBase</a>&gt;</span>&nbsp;<span class="element-name">EASE</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="MOON_PHASE">
+<h3>MOON_PHASE</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;<a href="../../../../world/weather/MoonPhase.html" title="enum class in org.cyrus.api.world.weather">MoonPhase</a>&gt;</span>&nbsp;<span class="element-name">MOON_PHASE</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ENVIRONMENT_MODIFIER_NAME">
+<h3>ENVIRONMENT_MODIFIER_NAME</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.configurate.serialize.TypeSerializer&lt;<a href="../../../../pack/enviroment/EnvironmentModifierName.html" title="enum class in org.cyrus.api.pack.enviroment">EnvironmentModifierName</a>&gt;</span>&nbsp;<span class="element-name">ENVIRONMENT_MODIFIER_NAME</span></div>
 </div>
 </section>
 </li>
