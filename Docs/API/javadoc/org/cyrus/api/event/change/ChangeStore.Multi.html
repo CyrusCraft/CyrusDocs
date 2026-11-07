@@ -57,6 +57,11 @@ loadScripts(document, 'script');</script>
 <li><a href="#" tabindex="0">Description</a></li>
 <li><a href="#nested-class-summary" tabindex="0">Nested Class Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
+<li><a href="#method-detail" tabindex="0">Method Details</a>
+<ol class="toc-list">
+<li><a href="#copy()" tabindex="0">copy()</a></li>
+</ol>
+</li>
 </ol>
 <button class="hide-sidebar"><span>Hide sidebar&nbsp;</span><img src="../../../../../resource-files/left.svg" alt="Hide sidebar"></button><button class="show-sidebar"><img src="../../../../../resource-files/right.svg" alt="Show sidebar"><span>&nbsp;Show sidebar</span></button></nav>
 <main role="main">
@@ -99,12 +104,50 @@ extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.chang
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
+<div id="method-summary-table">
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a><wbr>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Multi">C</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copy()" class="member-name-link">copy</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+</div>
+</div>
+</div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.event.change.ChangeStore">Methods inherited from interface&nbsp;<a href="ChangeStore.html#method-summary" title="interface in org.cyrus.api.event.change">ChangeStore</a></h3>
-<code><a href="ChangeStore.html#changes()" title="changes()">changes</a>, <a href="ChangeStore.html#clear()" title="clear()">clear</a>, <a href="ChangeStore.html#copyInto(org.cyrus.api.event.change.ChangeStore)" title="copyInto(ChangeStore)">copyInto</a>, <a href="ChangeStore.html#count()" title="count()">count</a>, <a href="ChangeStore.html#hasChanges()" title="hasChanges()">hasChanges</a>, <a href="ChangeStore.html#insert(C)" title="insert(C)">insert</a></code></div>
+<code><a href="ChangeStore.html#changes()" title="changes()">changes</a>, <a href="ChangeStore.html#clear()" title="clear()">clear</a>, <a href="ChangeStore.html#compareConflicting(Self)" title="compareConflicting(ChangeStore.Multi)">compareConflicting</a>, <a href="ChangeStore.html#copyInto(org.cyrus.api.event.change.ChangeStore)" title="copyInto(ChangeStore)">copyInto</a>, <a href="ChangeStore.html#count()" title="count()">count</a>, <a href="ChangeStore.html#hasChanges()" title="hasChanges()">hasChanges</a>, <a href="ChangeStore.html#identifier()" title="identifier()">identifier</a>, <a href="ChangeStore.html#insert(C)" title="insert(C)">insert</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Comparable">Methods inherited from interface&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html#method-summary" title="class or interface in java.lang" class="external-link">Comparable</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html#compareTo(T)" title="class or interface in java.lang" class="external-link">compareTo</a></code></div>
+</section>
+</li>
+</ul>
+</section>
+<section class="details">
+<ul class="details-list">
+<!-- ============ METHOD DETAIL ========== -->
+<li>
+<section class="method-details" id="method-detail">
+<h2>Method Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="copy()">
+<h3>copy</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="return-type">@NotNull <a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Multi">C</a>&gt;</span>&nbsp;<span class="element-name">copy</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="ChangeStore.html#copy()">copy</a></code>&nbsp;in interface&nbsp;<code><a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Multi">C</a> extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Multi">C</a>&gt;&gt;, <a href="#type-param-C" title="type parameter in ChangeStore.Multi">C</a> extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Multi">C</a>&gt;&gt;</code></dd>
+</dl>
+</div>
+</section>
+</li>
+</ul>
 </section>
 </li>
 </ul>

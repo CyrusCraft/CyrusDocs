@@ -60,6 +60,8 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#change()" tabindex="0">change()</a></li>
+<li><a href="#copy()" tabindex="0">copy()</a></li>
+<li><a href="#compareConflicting(org.cyrus.api.event.change.ChangeStore.Single)" tabindex="0">compareConflicting(ChangeStore.Single)</a></li>
 </ol>
 </li>
 </ol>
@@ -105,7 +107,7 @@ extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.chang
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -116,12 +118,18 @@ extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.chang
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">ability to get the single change</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#compareConflicting(org.cyrus.api.event.change.ChangeStore.Single)" class="member-name-link">compareConflicting</a><wbr>(<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;&nbsp;comparing)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copy()" class="member-name-link">copy</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.event.change.ChangeStore">Methods inherited from interface&nbsp;<a href="ChangeStore.html#method-summary" title="interface in org.cyrus.api.event.change">ChangeStore</a></h3>
-<code><a href="ChangeStore.html#changes()" title="changes()">changes</a>, <a href="ChangeStore.html#clear()" title="clear()">clear</a>, <a href="ChangeStore.html#copyInto(org.cyrus.api.event.change.ChangeStore)" title="copyInto(ChangeStore)">copyInto</a>, <a href="ChangeStore.html#count()" title="count()">count</a>, <a href="ChangeStore.html#hasChanges()" title="hasChanges()">hasChanges</a>, <a href="ChangeStore.html#insert(C)" title="insert(C)">insert</a></code></div>
+<code><a href="ChangeStore.html#changes()" title="changes()">changes</a>, <a href="ChangeStore.html#clear()" title="clear()">clear</a>, <a href="ChangeStore.html#copyInto(org.cyrus.api.event.change.ChangeStore)" title="copyInto(ChangeStore)">copyInto</a>, <a href="ChangeStore.html#count()" title="count()">count</a>, <a href="ChangeStore.html#hasChanges()" title="hasChanges()">hasChanges</a>, <a href="ChangeStore.html#identifier()" title="identifier()">identifier</a>, <a href="ChangeStore.html#insert(C)" title="insert(C)">insert</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Comparable">Methods inherited from interface&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html#method-summary" title="class or interface in java.lang" class="external-link">Comparable</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html#compareTo(T)" title="class or interface in java.lang" class="external-link">compareTo</a></code></div>
@@ -147,6 +155,33 @@ extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.chang
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the single change if present, if not then <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> is used</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="copy()">
+<h3>copy</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="return-type">@NotNull <a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;</span>&nbsp;<span class="element-name">copy</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="ChangeStore.html#copy()">copy</a></code>&nbsp;in interface&nbsp;<code><a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a> extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;&gt;, <a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a> extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;&gt;</code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="compareConflicting(org.cyrus.api.event.change.ChangeStore.Single)">
+<h3>compareConflicting</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">compareConflicting</span><wbr><span class="parameters">(@NotNull
+ <a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;&nbsp;comparing)</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="ChangeStore.html#compareConflicting(Self)">compareConflicting</a></code>&nbsp;in interface&nbsp;<code><a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a> extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;&gt;, <a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a> extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;&gt;</code></dd>
 </dl>
 </div>
 </section>

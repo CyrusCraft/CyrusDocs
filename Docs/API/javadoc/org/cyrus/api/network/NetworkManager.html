@@ -127,23 +127,23 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The actual max players the server can accept</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="data/NetSerializerBuilder.Type.html" title="interface in org.cyrus.api.network.data">NetSerializerBuilder.Type</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="serialize/NetSerializerBuilder.Type.html" title="interface in org.cyrus.api.network.serialize">NetSerializerBuilder.Type</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#netSerializerBuilder()" class="member-name-link">netSerializerBuilder</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Builder for NetSerializer</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="packet/IPacket.html" title="interface in org.cyrus.api.network.packet">IPacket</a>&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="packet/Packet.html" title="interface in org.cyrus.api.network.packet">Packet</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#packets()" class="member-name-link">packets</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Unmodifiable collection of all packets known by the server</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;D&gt;&nbsp;<a href="packet/IPacket.ToClient.html" title="interface in org.cyrus.api.network.packet">IPacket.ToClient</a><wbr>&lt;D&gt;</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;D&gt;&nbsp;<a href="packet/Packet.ToClient.html" title="interface in org.cyrus.api.network.packet">Packet.ToClient</a><wbr>&lt;D&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#toClientPacket(net.kyori.adventure.key.Key,org.cyrus.api.network.packet.NetworkPhase)" class="member-name-link">toClientPacket</a><wbr>(@NotNull net.kyori.adventure.key.Key&nbsp;key,
  @NotNull <a href="packet/NetworkPhase.html" title="enum class in org.cyrus.api.network.packet">NetworkPhase</a>&nbsp;phase)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets a To Client Packet based upon the key and network phase</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default &lt;D&gt;&nbsp;@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="packet/IPacket.ToServer.html" title="interface in org.cyrus.api.network.packet">IPacket.ToServer</a>&lt;D&gt;&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default &lt;D&gt;&nbsp;@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="packet/Packet.ToServer.html" title="interface in org.cyrus.api.network.packet">Packet.ToServer</a>&lt;D&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#toServerPacket(int,org.cyrus.api.network.packet.NetworkPhase)" class="member-name-link">toServerPacket</a><wbr>(int&nbsp;id,
  @NotNull <a href="packet/NetworkPhase.html" title="enum class in org.cyrus.api.network.packet">NetworkPhase</a>&nbsp;phase)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
@@ -151,7 +151,7 @@ loadScripts(document, 'script');</script>
 <div class="deprecation-comment">Should not use due to magic number and these values can change depending on the minecraft version</div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;D&gt;&nbsp;<a href="packet/IPacket.ToServer.html" title="interface in org.cyrus.api.network.packet">IPacket.ToServer</a><wbr>&lt;D&gt;</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;D&gt;&nbsp;<a href="packet/Packet.ToServer.html" title="interface in org.cyrus.api.network.packet">Packet.ToServer</a><wbr>&lt;D&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#toServerPacket(net.kyori.adventure.key.Key,org.cyrus.api.network.packet.NetworkPhase)" class="member-name-link">toServerPacket</a><wbr>(@NotNull net.kyori.adventure.key.Key&nbsp;key,
  @NotNull <a href="packet/NetworkPhase.html" title="enum class in org.cyrus.api.network.packet">NetworkPhase</a>&nbsp;phase)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
@@ -181,7 +181,7 @@ loadScripts(document, 'script');</script>
 <h3>packets</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="return-type">@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="packet/IPacket.html" title="interface in org.cyrus.api.network.packet">IPacket</a>&gt;</span>&nbsp;<span class="element-name">packets</span>()</div>
+</span><span class="return-type">@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="packet/Packet.html" title="interface in org.cyrus.api.network.packet">Packet</a>&gt;</span>&nbsp;<span class="element-name">packets</span>()</div>
 <div class="block">Unmodifiable collection of all packets known by the server</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -196,7 +196,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
-</span><span class="return-type"><a href="data/NetSerializerBuilder.Type.html" title="interface in org.cyrus.api.network.data">NetSerializerBuilder.Type</a></span>&nbsp;<span class="element-name">netSerializerBuilder</span>()</div>
+</span><span class="return-type"><a href="serialize/NetSerializerBuilder.Type.html" title="interface in org.cyrus.api.network.serialize">NetSerializerBuilder.Type</a></span>&nbsp;<span class="element-name">netSerializerBuilder</span>()</div>
 <div class="block">Builder for NetSerializer</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -236,7 +236,7 @@ loadScripts(document, 'script');</script>
 <h3>toClientPacket</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;D&gt;</span>&nbsp;<span class="return-type"><a href="packet/IPacket.ToClient.html" title="interface in org.cyrus.api.network.packet">IPacket.ToClient</a>&lt;D&gt;</span>&nbsp;<span class="element-name">toClientPacket</span><wbr><span class="parameters">(@NotNull
+</span><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;D&gt;</span>&nbsp;<span class="return-type"><a href="packet/Packet.ToClient.html" title="interface in org.cyrus.api.network.packet">Packet.ToClient</a>&lt;D&gt;</span>&nbsp;<span class="element-name">toClientPacket</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.key.Key&nbsp;key,
  @NotNull
  @NotNull <a href="packet/NetworkPhase.html" title="enum class in org.cyrus.api.network.packet">NetworkPhase</a>&nbsp;phase)</span></div>
@@ -260,7 +260,7 @@ loadScripts(document, 'script');</script>
 <h3>toServerPacket</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;D&gt;</span>&nbsp;<span class="return-type"><a href="packet/IPacket.ToServer.html" title="interface in org.cyrus.api.network.packet">IPacket.ToServer</a>&lt;D&gt;</span>&nbsp;<span class="element-name">toServerPacket</span><wbr><span class="parameters">(@NotNull
+</span><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;D&gt;</span>&nbsp;<span class="return-type"><a href="packet/Packet.ToServer.html" title="interface in org.cyrus.api.network.packet">Packet.ToServer</a>&lt;D&gt;</span>&nbsp;<span class="element-name">toServerPacket</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.key.Key&nbsp;key,
  @NotNull
  @NotNull <a href="packet/NetworkPhase.html" title="enum class in org.cyrus.api.network.packet">NetworkPhase</a>&nbsp;phase)</span></div>
@@ -285,7 +285,8 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-</span><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;D&gt;</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="packet/IPacket.ToServer.html" title="interface in org.cyrus.api.network.packet">IPacket.ToServer</a>&lt;D&gt;&gt;</span>&nbsp;<span class="element-name">toServerPacket</span><wbr><span class="parameters">(int&nbsp;id,
+@Internal
+</span><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;D&gt;</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="packet/Packet.ToServer.html" title="interface in org.cyrus.api.network.packet">Packet.ToServer</a>&lt;D&gt;&gt;</span>&nbsp;<span class="element-name">toServerPacket</span><wbr><span class="parameters">(int&nbsp;id,
  @NotNull
  @NotNull <a href="packet/NetworkPhase.html" title="enum class in org.cyrus.api.network.packet">NetworkPhase</a>&nbsp;phase)</span></div>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>

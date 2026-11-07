@@ -58,7 +58,9 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#canAccept(org.cyrus.api.world.chunk.ChunkData)" tabindex="0">canAccept(ChunkData)</a></li>
-<li><a href="#generate(org.cyrus.api.world.chunk.ChunkData)" tabindex="0">generate(ChunkData)</a></li>
+<li><a href="#generate(org.cyrus.api.world.chunk.ChunkData,O)" tabindex="0">generate(ChunkData, O)</a></li>
+<li><a href="#registry()" tabindex="0">registry()</a></li>
+<li><a href="#asNBT()" tabindex="0">asNBT()</a></li>
 </ol>
 </li>
 </ol>
@@ -74,13 +76,18 @@ loadScripts(document, 'script');</script>
 <dd><span id="type-param-O"><code>O</code> - The options for the chunk</span></dd>
 </dl>
 <dl class="notes">
+<dt>All Superinterfaces:</dt>
+<dd><code>net.kyori.adventure.key.Keyed, <a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;</code></dd>
+</dl>
+<dl class="notes">
 <dt>All Known Subinterfaces:</dt>
 <dd><code><a href="FlatChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">FlatChunkGenerator</a></code></dd>
 </dl>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="annotations">@OverrideOnly
-</span><span class="modifiers">public interface </span><span class="element-name type-name-label">ChunkGenerator&lt;O extends <a href="ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;</span></div>
+</span><span class="modifiers">public interface </span><span class="element-name type-name-label">ChunkGenerator&lt;O extends <a href="ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;</span><span class="extends-implements">
+extends <a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;</span></div>
 <div class="block">Allows generation of chunks</div>
 </div>
 </section>
@@ -91,25 +98,39 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canAccept(org.cyrus.api.world.chunk.ChunkData)" class="member-name-link">canAccept</a><wbr>(@NotNull <a href="../ChunkData.html" title="interface in org.cyrus.api.world.chunk">ChunkData</a>&nbsp;data)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;org.cyrus.nbt.data.CompoundTag&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#asNBT()" class="member-name-link">asNBT</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Some data needs to be sent with the registry packet.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canAccept(org.cyrus.api.world.chunk.ChunkData)" class="member-name-link">canAccept</a><wbr>(@NotNull <a href="../ChunkData.html" title="interface in org.cyrus.api.world.chunk">ChunkData</a>&nbsp;data)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Can accepts the chunk data for generation</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../ChunkSection.Writable.html" title="interface in org.cyrus.api.world.chunk">ChunkSection.Writable</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#generate(org.cyrus.api.world.chunk.ChunkData)" class="member-name-link">generate</a><wbr>(@NotNull <a href="../ChunkData.html" title="interface in org.cyrus.api.world.chunk">ChunkData</a>&nbsp;data)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../ChunkSection.Writable.html" title="interface in org.cyrus.api.world.chunk">ChunkSection.Writable</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#generate(org.cyrus.api.world.chunk.ChunkData,O)" class="member-name-link">generate</a><wbr>(@NotNull <a href="../ChunkData.html" title="interface in org.cyrus.api.world.chunk">ChunkData</a>&nbsp;data,
+ <a href="#type-param-O" title="type parameter in ChunkGenerator">O</a>&nbsp;options)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Generates the chunk sections for the chunkdata</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="../../../registry/RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a><wbr>&lt;<a href="ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">The registry value of this value</div>
 </div>
 </div>
 </div>
+</div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-net.kyori.adventure.key.Keyed">Methods inherited from interface&nbsp;net.kyori.adventure.key.Keyed</h3>
+<code>key</code></div>
 </section>
 </li>
 </ul>
@@ -139,18 +160,55 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="generate(org.cyrus.api.world.chunk.ChunkData)">
-<h3>generate</h3>
+<section class="detail" id="generate(org.cyrus.api.world.chunk.ChunkData,O)">
+<h3 id="generate(org.cyrus.api.world.chunk.ChunkData,org.cyrus.api.world.chunk.generator.ChunkGeneratorOptions)">generate</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../ChunkSection.Writable.html" title="interface in org.cyrus.api.world.chunk">ChunkSection.Writable</a>&gt;</span>&nbsp;<span class="element-name">generate</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="../ChunkData.html" title="interface in org.cyrus.api.world.chunk">ChunkData</a>&nbsp;data)</span></div>
+ @NotNull <a href="../ChunkData.html" title="interface in org.cyrus.api.world.chunk">ChunkData</a>&nbsp;data,
+ @NotNull
+ <a href="#type-param-O" title="type parameter in ChunkGenerator">O</a>&nbsp;options)</span></div>
 <div class="block">Generates the chunk sections for the chunkdata</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>data</code> - The chunk data to generate</dd>
 <dt>Returns:</dt>
 <dd>The chunk sections to apply to the provided chunk data</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="registry()">
+<h3>registry</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="../../../registry/RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a>&lt;<a href="ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">registry</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../../registry/RegistryEntry.html#registry()">RegistryEntry</a></code></span></div>
+<div class="block">The registry value of this value</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../registry/RegistryEntry.html#registry()">registry</a></code>&nbsp;in interface&nbsp;<code><a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="#type-param-O" title="type parameter in ChunkGenerator">O</a> extends <a href="ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;</code></dd>
+<dt>Returns:</dt>
+<dd>the registry value</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="asNBT()">
+<h3>asNBT</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;org.cyrus.nbt.data.CompoundTag&gt;</span>&nbsp;<span class="element-name">asNBT</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../../registry/RegistryEntry.html#asNBT()">RegistryEntry</a></code></span></div>
+<div class="block">Some data needs to be sent with the registry packet. This is done via NBT data. To see that extra data, use
+this. If the registry does not need extra data then <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> will be used</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../registry/RegistryEntry.html#asNBT()">asNBT</a></code>&nbsp;in interface&nbsp;<code><a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="#type-param-O" title="type parameter in ChunkGenerator">O</a> extends <a href="ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;</code></dd>
+<dt>Returns:</dt>
+<dd>The NBT data to send over the registry packet</dd>
 </dl>
 </div>
 </section>

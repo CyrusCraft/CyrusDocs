@@ -62,6 +62,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#commandManager()" tabindex="0">commandManager()</a></li>
 <li><a href="#worldManager()" tabindex="0">worldManager()</a></li>
 <li><a href="#networkManager()" tabindex="0">networkManager()</a></li>
+<li><a href="#serviceManager()" tabindex="0">serviceManager()</a></li>
 <li><a href="#entityManager()" tabindex="0">entityManager()</a></li>
 </ol>
 </li>
@@ -97,6 +98,9 @@ extends <a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.W
 <h3 id="nested-classes-inherited-from-class-org.cyrus.api.event.change.ChangeHolder">Nested classes/interfaces inherited from interface&nbsp;<a href="event/change/ChangeHolder.html#nested-class-summary" title="interface in org.cyrus.api.event.change">ChangeHolder</a></h3>
 <code><a href="event/change/ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;</code></div>
 <div class="inherited-list">
+<h3 id="nested-classes-inherited-from-class-org.cyrus.api.event.change.ChangeHolder.Child">Nested classes/interfaces inherited from interface&nbsp;<a href="event/change/ChangeHolder.Child.html#nested-class-summary" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a></h3>
+<code><a href="event/change/ChangeHolder.Child.FromGlobal.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child.FromGlobal</a>&lt;Parent,<wbr>Self&gt;</code></div>
+<div class="inherited-list">
 <h3 id="nested-classes-inherited-from-class-org.cyrus.api.Cyrus">Nested classes/interfaces inherited from interface&nbsp;<a href="Cyrus.html#nested-class-summary" title="interface in org.cyrus.api">Cyrus</a></h3>
 <code><a href="Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a>, <a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></code></div>
 </section>
@@ -121,9 +125,12 @@ extends <a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.W
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="network/NetworkManager.Changing.html" title="interface in org.cyrus.api.network">NetworkManager.Changing</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#networkManager()" class="member-name-link">networkManager</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="world/IWorldManager.Changing.html" title="interface in org.cyrus.api.world">IWorldManager.Changing</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldManager()" class="member-name-link">worldManager</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="service/ServiceManager.Changable.html" title="interface in org.cyrus.api.service">ServiceManager.Changable</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#serviceManager()" class="member-name-link">serviceManager</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="world/IWorldManager.Changing.html" title="interface in org.cyrus.api.world">IWorldManager.Changing</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldManager()" class="member-name-link">worldManager</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -132,10 +139,10 @@ extends <a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.W
 <code><a href="event/change/ChangeHolder.html#createChangeInstance(java.lang.String)" title="createChangeInstance(String)">createChangeInstance</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.event.change.ChangeHolder.Child">Methods inherited from interface&nbsp;<a href="event/change/ChangeHolder.Child.html#method-summary" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a></h3>
-<code><a href="event/change/ChangeHolder.Child.html#changeId()" title="changeId()">changeId</a>, <a href="event/change/ChangeHolder.Child.html#changeParent()" title="changeParent()">changeParent</a>, <a href="event/change/ChangeHolder.Child.html#commitDirectChanges()" title="commitDirectChanges()">commitDirectChanges</a>, <a href="event/change/ChangeHolder.Child.html#commitLinkedChanges()" title="commitLinkedChanges()">commitLinkedChanges</a>, <a href="event/change/ChangeHolder.Child.html#compareDirectChanges(Self)" title="compareDirectChanges(Cyrus.Changeable)">compareDirectChanges</a>, <a href="event/change/ChangeHolder.Child.html#compareLinkedChanges(Self)" title="compareLinkedChanges(Cyrus.Changeable)">compareLinkedChanges</a>, <a href="event/change/ChangeHolder.Child.html#copyDirectChangesInto(Self)" title="copyDirectChangesInto(Cyrus.Changeable)">copyDirectChangesInto</a>, <a href="event/change/ChangeHolder.Child.html#copyLinkedChangesInto(Self)" title="copyLinkedChangesInto(Cyrus.Changeable)">copyLinkedChangesInto</a>, <a href="event/change/ChangeHolder.Child.html#directLinkedChangeHolders()" title="directLinkedChangeHolders()">directLinkedChangeHolders</a>, <a href="event/change/ChangeHolder.Child.html#hasDirectChanges()" title="hasDirectChanges()">hasDirectChanges</a>, <a href="event/change/ChangeHolder.Child.html#linkedChangeHolders()" title="linkedChangeHolders()">linkedChangeHolders</a>, <a href="event/change/ChangeHolder.Child.html#resetChanges()" title="resetChanges()">resetChanges</a></code></div>
+<code><a href="event/change/ChangeHolder.Child.html#changeId()" title="changeId()">changeId</a>, <a href="event/change/ChangeHolder.Child.html#changeParent()" title="changeParent()">changeParent</a>, <a href="event/change/ChangeHolder.Child.html#commitDirectChanges()" title="commitDirectChanges()">commitDirectChanges</a>, <a href="event/change/ChangeHolder.Child.html#commitLinkedChanges()" title="commitLinkedChanges()">commitLinkedChanges</a>, <a href="event/change/ChangeHolder.Child.html#compareConflictingDirectChanges(Self)" title="compareConflictingDirectChanges(Cyrus.Changeable)">compareConflictingDirectChanges</a>, <a href="event/change/ChangeHolder.Child.html#compareConflictingLinkedChanges(Self)" title="compareConflictingLinkedChanges(Cyrus.Changeable)">compareConflictingLinkedChanges</a>, <a href="event/change/ChangeHolder.Child.html#copyDirectChangesInto(Self,boolean)" title="copyDirectChangesInto(Cyrus.Changeable, boolean)">copyDirectChangesInto</a>, <a href="event/change/ChangeHolder.Child.html#copyLinkedChangesInto(Self,boolean)" title="copyLinkedChangesInto(Cyrus.Changeable, boolean)">copyLinkedChangesInto</a>, <a href="event/change/ChangeHolder.Child.html#directChanges()" title="directChanges()">directChanges</a>, <a href="event/change/ChangeHolder.Child.html#directLinkedChangeHolders()" title="directLinkedChangeHolders()">directLinkedChangeHolders</a>, <a href="event/change/ChangeHolder.Child.html#hasDirectChanges()" title="hasDirectChanges()">hasDirectChanges</a>, <a href="event/change/ChangeHolder.Child.html#hasLinkedChanges()" title="hasLinkedChanges()">hasLinkedChanges</a>, <a href="event/change/ChangeHolder.Child.html#linkedChangeHolders()" title="linkedChangeHolders()">linkedChangeHolders</a>, <a href="event/change/ChangeHolder.Child.html#linkedChanges()" title="linkedChanges()">linkedChanges</a>, <a href="event/change/ChangeHolder.Child.html#resetChanges()" title="resetChanges()">resetChanges</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.Cyrus">Methods inherited from interface&nbsp;<a href="Cyrus.html#method-summary" title="interface in org.cyrus.api">Cyrus</a></h3>
-<code><a href="Cyrus.html#blockManager()" title="blockManager()">blockManager</a>, <a href="Cyrus.html#console()" title="console()">console</a>, <a href="Cyrus.html#eventManager()" title="eventManager()">eventManager</a>, <a href="Cyrus.html#platformManager()" title="platformManager()">platformManager</a>, <a href="Cyrus.html#registryManager()" title="registryManager()">registryManager</a>, <a href="Cyrus.html#runningState()" title="runningState()">runningState</a>, <a href="Cyrus.html#scheduler()" title="scheduler()">scheduler</a>, <a href="Cyrus.html#shutdown()" title="shutdown()">shutdown</a></code></div>
+<code><a href="Cyrus.html#blockManager()" title="blockManager()">blockManager</a>, <a href="Cyrus.html#console()" title="console()">console</a>, <a href="Cyrus.html#eventManager()" title="eventManager()">eventManager</a>, <a href="Cyrus.html#inventoryManager()" title="inventoryManager()">inventoryManager</a>, <a href="Cyrus.html#platformManager()" title="platformManager()">platformManager</a>, <a href="Cyrus.html#registryManager()" title="registryManager()">registryManager</a>, <a href="Cyrus.html#runningState()" title="runningState()">runningState</a>, <a href="Cyrus.html#scheduler()" title="scheduler()">scheduler</a>, <a href="Cyrus.html#shutdown()" title="shutdown()">shutdown</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.Cyrus.Writable">Methods inherited from interface&nbsp;<a href="Cyrus.Writable.html#method-summary" title="interface in org.cyrus.api">Cyrus.Writable</a></h3>
 <code><a href="Cyrus.Writable.html#setRunningState(org.cyrus.api.values.RunningStateValues)" title="setRunningState(RunningStateValues)">setRunningState</a></code></div>
@@ -191,6 +198,21 @@ extends <a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.W
 <dd><code><a href="Cyrus.html#networkManager()">networkManager</a></code>&nbsp;in interface&nbsp;<code><a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a></code></dd>
 <dt>Specified by:</dt>
 <dd><code><a href="Cyrus.Writable.html#networkManager()">networkManager</a></code>&nbsp;in interface&nbsp;<code><a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="serviceManager()">
+<h3>serviceManager</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="return-type"><a href="service/ServiceManager.Changable.html" title="interface in org.cyrus.api.service">ServiceManager.Changable</a></span>&nbsp;<span class="element-name">serviceManager</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="Cyrus.html#serviceManager()">serviceManager</a></code>&nbsp;in interface&nbsp;<code><a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a></code></dd>
+<dt>Specified by:</dt>
+<dd><code><a href="Cyrus.Writable.html#serviceManager()">serviceManager</a></code>&nbsp;in interface&nbsp;<code><a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></code></dd>
 </dl>
 </div>
 </section>

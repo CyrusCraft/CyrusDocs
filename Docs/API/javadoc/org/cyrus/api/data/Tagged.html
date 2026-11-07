@@ -66,7 +66,7 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Interface Tagged" class="title">Interface Tagged</h1>
+<h1 title="Interface Tagged" class="title">Interface Tagged&lt;<span id="type-param-T">T extends <a href="../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;T&gt;</span>&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
 <dl class="notes">
@@ -75,7 +75,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Tagged</span></div>
+<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Tagged&lt;T extends <a href="../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;T&gt;&gt;</span></div>
 <div class="block">Tags in Minecraft are used to group multiple types of X together. In Cyrus the tag is referenced with just the key
 (represented by <code>Key</code>) with class types that could possibility have tags referencing them implementing this
 interface. Whereby the <a href="#tags()"><code>tags()</code></a> are the tags the object is part of.</div>
@@ -99,7 +99,7 @@ interface. Whereby the <a href="#tags()"><code>tags()</code></a> are the tags th
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Checks if the implementing object is part of the tag provided</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../values/tag/Tag.html" title="interface in org.cyrus.api.values.tag">Tag</a>&lt;<a href="#type-param-T" title="type parameter in Tagged">T</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#tags()" class="member-name-link">tags</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">An unmodifiable collection of all tags the object is referenced by</div>
@@ -124,7 +124,7 @@ interface. Whereby the <a href="#tags()"><code>tags()</code></a> are the tags th
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
-</span><span class="return-type">@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">tags</span>()</div>
+</span><span class="return-type">@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../values/tag/Tag.html" title="interface in org.cyrus.api.values.tag">Tag</a>&lt;<a href="#type-param-T" title="type parameter in Tagged">T</a>&gt;&gt;</span>&nbsp;<span class="element-name">tags</span>()</div>
 <div class="block">An unmodifiable collection of all tags the object is referenced by</div>
 <dl class="notes">
 <dt>Returns:</dt>

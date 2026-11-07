@@ -57,6 +57,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
+<li><a href="#level()" tabindex="0">level()</a></li>
 <li><a href="#commandSourceContext()" tabindex="0">commandSourceContext()</a></li>
 <li><a href="#isForSuggestions()" tabindex="0">isForSuggestions()</a></li>
 <li><a href="#rawCommand()" tabindex="0">rawCommand()</a></li>
@@ -104,36 +105,41 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Is the command context being used for suggestions</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;T</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#parameter(org.cyrus.api.command.command.parameter.Parameter.Value)" class="member-name-link">parameter</a><wbr>(<a href="parameter/Parameter.Value.html" title="interface in org.cyrus.api.command.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Gets a value from a parameter</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#level()" class="member-name-link">level</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The level the command is executing on</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;T</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#parameterFromIndex(int,boolean)" class="member-name-link">parameterFromIndex</a><wbr>(@Range(from=0L,to=2147483647L) int&nbsp;index,
- boolean&nbsp;useDefault)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#parameter(org.cyrus.api.command.command.parameter.Parameter.Value)" class="member-name-link">parameter</a><wbr>(<a href="parameter/Parameter.Value.html" title="interface in org.cyrus.api.command.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;value)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets a value from a parameter</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;T</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#parameterFromIndex(int,boolean)" class="member-name-link">parameterFromIndex</a><wbr>(@Range(from=0L,to=2147483647L) int&nbsp;index,
+ boolean&nbsp;useDefault)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets a value from a parameter index</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parameterOptional(org.cyrus.api.command.command.parameter.Parameter.Value)" class="member-name-link">parameterOptional</a><wbr>(<a href="parameter/Parameter.Value.html" title="interface in org.cyrus.api.command.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parameterOptional(org.cyrus.api.command.command.parameter.Parameter.Value)" class="member-name-link">parameterOptional</a><wbr>(<a href="parameter/Parameter.Value.html" title="interface in org.cyrus.api.command.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Get a value as an optional</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#parameterOptionalFromIndex(int)" class="member-name-link">parameterOptionalFromIndex</a><wbr>(@Range(from=0L,to=2147483647L) int&nbsp;index)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#parameterOptionalFromIndex(int)" class="member-name-link">parameterOptionalFromIndex</a><wbr>(@Range(from=0L,to=2147483647L) int&nbsp;index)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Get a value as an optional as part of the index</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parameterOptionalFromIndex(int,boolean)" class="member-name-link">parameterOptionalFromIndex</a><wbr>(@Range(from=0L,to=2147483647L) int&nbsp;index,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parameterOptionalFromIndex(int,boolean)" class="member-name-link">parameterOptionalFromIndex</a><wbr>(@Range(from=0L,to=2147483647L) int&nbsp;index,
  boolean&nbsp;useDefault)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Get a value as an optional as part of the index</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rawCommand()" class="member-name-link">rawCommand</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rawCommand()" class="member-name-link">rawCommand</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The raw command sent (not including the "/" prefix)</div>
 </div>
 </div>
@@ -150,6 +156,17 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="level()">
+<h3>level</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="return-type"><a href="../../Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></span>&nbsp;<span class="element-name">level</span>()</div>
+<div class="block">The level the command is executing on</div>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="commandSourceContext()">
 <h3>commandSourceContext</h3>

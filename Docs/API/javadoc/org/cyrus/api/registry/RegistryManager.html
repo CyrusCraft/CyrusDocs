@@ -59,6 +59,16 @@ loadScripts(document, 'script');</script>
 <ol class="toc-list">
 <li><a href="#registry(java.lang.Class)" tabindex="0">registry(Class)</a></li>
 <li><a href="#registries()" tabindex="0">registries()</a></li>
+<li><a href="#blockType()" tabindex="0">blockType()</a></li>
+<li><a href="#damageType()" tabindex="0">damageType()</a></li>
+<li><a href="#biomeType()" tabindex="0">biomeType()</a></li>
+<li><a href="#itemType()" tabindex="0">itemType()</a></li>
+<li><a href="#chunkGenerators()" tabindex="0">chunkGenerators()</a></li>
+<li><a href="#wolfSound()" tabindex="0">wolfSound()</a></li>
+<li><a href="#timeline()" tabindex="0">timeline()</a></li>
+<li><a href="#clock()" tabindex="0">clock()</a></li>
+<li><a href="#worldType()" tabindex="0">worldType()</a></li>
+<li><a href="#tagManager()" tabindex="0">tagManager()</a></li>
 </ol>
 </li>
 </ol>
@@ -82,12 +92,30 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../world/biome/BiomeType.html" title="interface in org.cyrus.api.world.biome">BiomeType</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#biomeType()" class="member-name-link">biomeType</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../world/block/BlockType.html" title="interface in org.cyrus.api.world.block">BlockType</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#blockType()" class="member-name-link">blockType</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../world/chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#chunkGenerators()" class="member-name-link">chunkGenerators</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../world/timeline/clock/Clock.html" title="interface in org.cyrus.api.world.timeline.clock">Clock</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#clock()" class="member-name-link">clock</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../entity/damage/DamageType.html" title="interface in org.cyrus.api.entity.damage">DamageType</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#damageType()" class="member-name-link">damageType</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../item/ItemType.html" title="interface in org.cyrus.api.item">ItemType</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#itemType()" class="member-name-link">itemType</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;?&gt;&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registries()" class="member-name-link">registries</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -98,6 +126,18 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Get a registry based on its data class</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="../values/tag/TagManager.html" title="interface in org.cyrus.api.values.tag">TagManager</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#tagManager()" class="member-name-link">tagManager</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../world/timeline/Timeline.html" title="interface in org.cyrus.api.world.timeline">Timeline</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#timeline()" class="member-name-link">timeline</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../entity/type/wolf/WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#wolfSound()" class="member-name-link">wolfSound</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a><wbr>&lt;<a href="../world/type/WorldType.html" title="interface in org.cyrus.api.world.type">WorldType</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#worldType()" class="member-name-link">worldType</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -138,12 +178,113 @@ loadScripts(document, 'script');</script>
 <h3>registries</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
 </span><span class="return-type">@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">registries</span>()</div>
 <div class="block">Unmodifiable collection of all registry holders</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a unmodifiable collection of all registries</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="blockType()">
+<h3>blockType</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../world/block/BlockType.html" title="interface in org.cyrus.api.world.block">BlockType</a>&gt;</span>&nbsp;<span class="element-name">blockType</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="damageType()">
+<h3>damageType</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../entity/damage/DamageType.html" title="interface in org.cyrus.api.entity.damage">DamageType</a>&gt;</span>&nbsp;<span class="element-name">damageType</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="biomeType()">
+<h3>biomeType</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../world/biome/BiomeType.html" title="interface in org.cyrus.api.world.biome">BiomeType</a>&gt;</span>&nbsp;<span class="element-name">biomeType</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="itemType()">
+<h3>itemType</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../item/ItemType.html" title="interface in org.cyrus.api.item">ItemType</a>&gt;</span>&nbsp;<span class="element-name">itemType</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="chunkGenerators()">
+<h3>chunkGenerators</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../world/chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">chunkGenerators</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="wolfSound()">
+<h3>wolfSound</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../entity/type/wolf/WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a>&gt;</span>&nbsp;<span class="element-name">wolfSound</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="timeline()">
+<h3>timeline</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../world/timeline/Timeline.html" title="interface in org.cyrus.api.world.timeline">Timeline</a>&gt;</span>&nbsp;<span class="element-name">timeline</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="clock()">
+<h3>clock</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../world/timeline/clock/Clock.html" title="interface in org.cyrus.api.world.timeline.clock">Clock</a>&gt;</span>&nbsp;<span class="element-name">clock</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="worldType()">
+<h3>worldType</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Registry.html" title="interface in org.cyrus.api.registry">Registry</a>&lt;<a href="../world/type/WorldType.html" title="interface in org.cyrus.api.world.type">WorldType</a>&gt;</span>&nbsp;<span class="element-name">worldType</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="tagManager()">
+<h3>tagManager</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="return-type">@NotNull <a href="../values/tag/TagManager.html" title="interface in org.cyrus.api.values.tag">TagManager</a></span>&nbsp;<span class="element-name">tagManager</span>()</div>
 </div>
 </section>
 </li>

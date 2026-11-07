@@ -58,6 +58,8 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#shouldSendOverNetwork()" tabindex="0">shouldSendOverNetwork()</a></li>
+<li><a href="#store()" tabindex="0">store()</a></li>
+<li><a href="#type()" tabindex="0">type()</a></li>
 <li><a href="#entries()" tabindex="0">entries()</a></li>
 <li><a href="#findByKey(net.kyori.adventure.key.Key)" tabindex="0">findByKey(Key)</a></li>
 <li><a href="#values()" tabindex="0">values()</a></li>
@@ -118,9 +120,17 @@ extends net.kyori.adventure.key.Keyed</span></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">If the registry should be sent to the client</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a>&lt;<a href="#type-param-Entry" title="type parameter in Registry">Entry</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#values()" class="member-name-link">values</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="RegistryStore.html" title="class in org.cyrus.api.registry">RegistryStore</a><wbr>&lt;<a href="#type-param-Entry" title="type parameter in Registry">Entry</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#store()" class="member-name-link">store</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The collection store used to store the registry values</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a><wbr>&lt;<a href="#type-param-Entry" title="type parameter in Registry">Entry</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a>&lt;<a href="#type-param-Entry" title="type parameter in Registry">Entry</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#values()" class="member-name-link">values</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">All the RegistryValue's of the registry</div>
 </div>
 </div>
@@ -150,6 +160,30 @@ extends net.kyori.adventure.key.Keyed</span></div>
 <dt>Returns:</dt>
 <dd>if the registry should be sent over the network</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="store()">
+<h3>store</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="return-type">@NotNull <a href="RegistryStore.html" title="class in org.cyrus.api.registry">RegistryStore</a>&lt;<a href="#type-param-Entry" title="type parameter in Registry">Entry</a>&gt;</span>&nbsp;<span class="element-name">store</span>()</div>
+<div class="block">The collection store used to store the registry values</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the collection of all registries</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="type()">
+<h3>type</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;<a href="#type-param-Entry" title="type parameter in Registry">Entry</a>&gt;</span>&nbsp;<span class="element-name">type</span>()</div>
 </div>
 </section>
 </li>
@@ -189,7 +223,7 @@ extends net.kyori.adventure.key.Keyed</span></div>
 <h3>values</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a>&lt;<a href="#type-param-Entry" title="type parameter in Registry">Entry</a>&gt;&gt;</span>&nbsp;<span class="element-name">values</span>()</div>
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a>&lt;<a href="#type-param-Entry" title="type parameter in Registry">Entry</a>&gt;&gt;</span>&nbsp;<span class="element-name">values</span>()</div>
 <div class="block">All the RegistryValue's of the registry</div>
 <dl class="notes">
 <dt>Returns:</dt>

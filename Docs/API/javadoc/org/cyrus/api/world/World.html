@@ -78,7 +78,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code>net.kyori.adventure.key.Keyed, <a href="WorldKeyed.html" title="interface in org.cyrus.api.world">WorldKeyed</a></code></dd>
+<dd><code>net.kyori.adventure.key.Keyed</code></dd>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
@@ -87,7 +87,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">World</span><span class="extends-implements">
-extends net.kyori.adventure.key.Keyed, <a href="WorldKeyed.html" title="interface in org.cyrus.api.world">WorldKeyed</a></span></div>
+extends net.kyori.adventure.key.Keyed</span></div>
 <div class="block">A loaded world</div>
 </div>
 </section>
@@ -132,7 +132,7 @@ extends net.kyori.adventure.key.Keyed, <a href="WorldKeyed.html" title="interfac
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="chunk/ChunkData.html" title="interface in org.cyrus.api.world.chunk">ChunkData</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#chunk(org.spongepowered.math.vector.Vector2i)" class="member-name-link">chunk</a><wbr>(org.spongepowered.math.vector.Vector2i&nbsp;vector)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a><wbr>&lt;? extends <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.Entry.html" title="class or interface in java.util" class="external-link">Map.Entry</a>&lt;? extends <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;, <a href="chunk/generator/ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#generators()" class="member-name-link">generators</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;? extends <a href="chunk/ChunkData.html" title="interface in org.cyrus.api.world.chunk">ChunkData</a>&gt;</code></div>
@@ -188,10 +188,6 @@ extends net.kyori.adventure.key.Keyed, <a href="WorldKeyed.html" title="interfac
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">worldKey</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="WorldKeyed.html#worldKey()">worldKey</a></code>&nbsp;in interface&nbsp;<code><a href="WorldKeyed.html" title="interface in org.cyrus.api.world">WorldKeyed</a></code></dd>
-</dl>
 </div>
 </section>
 </li>
@@ -211,7 +207,7 @@ extends net.kyori.adventure.key.Keyed, <a href="WorldKeyed.html" title="interfac
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 @NotNull
-</span><span class="return-type">@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a>&lt;? extends <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">generators</span>()</div>
+</span><span class="return-type">@Unmodifiable @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.Entry.html" title="class or interface in java.util" class="external-link">Map.Entry</a>&lt;? extends <a href="chunk/generator/ChunkGenerator.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGenerator</a>&lt;?&gt;, <a href="chunk/generator/ChunkGeneratorOptions.html" title="interface in org.cyrus.api.world.chunk.generator">ChunkGeneratorOptions</a>&gt;&gt;</span>&nbsp;<span class="element-name">generators</span>()</div>
 </div>
 </section>
 </li>

@@ -54,12 +54,12 @@ loadScripts(document, 'script');</script>
 <div class="toc-header">Contents&nbsp;<input type="text" class="filter-input" disabled placeholder="Filter contents (type .)" aria-label="Filter table of contents" autocomplete="off" spellcheck="false"><input type="reset" class="reset-filter" disabled tabindex="-1" value="Reset"></div>
 <ol class="toc-list" tabindex="-1">
 <li><a href="#" tabindex="0">Description</a></li>
+<li><a href="#nested-class-summary" tabindex="0">Nested Class Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#wildAsset()" tabindex="0">wildAsset()</a></li>
-<li><a href="#tameAsset()" tabindex="0">tameAsset()</a></li>
-<li><a href="#angryAsset()" tabindex="0">angryAsset()</a></li>
+<li><a href="#baby()" tabindex="0">baby()</a></li>
+<li><a href="#adult()" tabindex="0">adult()</a></li>
 <li><a href="#registry()" tabindex="0">registry()</a></li>
 <li><a href="#asNBT()" tabindex="0">asNBT()</a></li>
 </ol>
@@ -84,6 +84,21 @@ extends <a href="../../../registry/RegistryEntry.html" title="interface in org.c
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<li>
+<section class="nested-class-summary" id="nested-class-summary">
+<h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="WolfType.Group.html" class="type-name-link" title="interface in org.cyrus.api.entity.type.wolf">WolfType.Group</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
@@ -95,25 +110,22 @@ extends <a href="../../../registry/RegistryEntry.html" title="interface in org.c
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#angryAsset()" class="member-name-link">angryAsset</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WolfType.Group.html" title="interface in org.cyrus.api.entity.type.wolf">WolfType.Group</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#adult()" class="member-name-link">adult</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;org.cyrus.nbt.data.CompoundTag&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#asNBT()" class="member-name-link">asNBT</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Some data needs to be sent with the registry packet.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="../../../registry/RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a><wbr>&lt;<a href="WolfType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfType</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WolfType.Group.html" title="interface in org.cyrus.api.entity.type.wolf">WolfType.Group</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#baby()" class="member-name-link">baby</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="../../../registry/RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a><wbr>&lt;<a href="WolfType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfType</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">The registry value of this value</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#tameAsset()" class="member-name-link">tameAsset</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#wildAsset()" class="member-name-link">wildAsset</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -132,32 +144,18 @@ extends <a href="../../../registry/RegistryEntry.html" title="interface in org.c
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="wildAsset()">
-<h3>wildAsset</h3>
+<section class="detail" id="baby()">
+<h3>baby</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">wildAsset</span>()</div>
+<div class="member-signature"><span class="return-type"><a href="WolfType.Group.html" title="interface in org.cyrus.api.entity.type.wolf">WolfType.Group</a></span>&nbsp;<span class="element-name">baby</span>()</div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="tameAsset()">
-<h3>tameAsset</h3>
+<section class="detail" id="adult()">
+<h3>adult</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">tameAsset</span>()</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="angryAsset()">
-<h3>angryAsset</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-@NotNull
-</span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">angryAsset</span>()</div>
+<div class="member-signature"><span class="return-type"><a href="WolfType.Group.html" title="interface in org.cyrus.api.entity.type.wolf">WolfType.Group</a></span>&nbsp;<span class="element-name">adult</span>()</div>
 </div>
 </section>
 </li>

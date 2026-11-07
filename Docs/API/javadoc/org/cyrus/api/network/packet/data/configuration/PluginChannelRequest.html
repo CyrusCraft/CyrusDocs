@@ -90,10 +90,15 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>All Implemented Interfaces:</dt>
+<dd><code>net.kyori.adventure.key.Keyed</code></dd>
+</dl>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">PluginChannelRequest</span>(@NotNull net.kyori.adventure.key.Key&nbsp;key, byte[]&nbsp;data)
-<span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></span></div>
+<span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a>
+implements net.kyori.adventure.key.Keyed</span></div>
 </div>
 </section>
 <section class="summary">
@@ -289,6 +294,8 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">key</span>()</div>
 <div class="block">Returns the value of the <code>key</code> record component.</div>
 <dl class="notes">
+<dt>Specified by:</dt>
+<dd><code>key</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.key.Keyed</code></dd>
 <dt>Returns:</dt>
 <dd>the value of the <code>key</code> record component</dd>
 </dl>

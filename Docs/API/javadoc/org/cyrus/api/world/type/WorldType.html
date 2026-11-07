@@ -58,6 +58,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#fixedTime()" tabindex="0">fixedTime()</a></li>
+<li><a href="#attributes()" tabindex="0">attributes()</a></li>
 <li><a href="#hasSkylight()" tabindex="0">hasSkylight()</a></li>
 <li><a href="#hasCeiling()" tabindex="0">hasCeiling()</a></li>
 <li><a href="#isUltrawarm()" tabindex="0">isUltrawarm()</a></li>
@@ -75,6 +76,10 @@ loadScripts(document, 'script');</script>
 <li><a href="#hasRaids()" tabindex="0">hasRaids()</a></li>
 <li><a href="#monsterSpawnLightLevels()" tabindex="0">monsterSpawnLightLevels()</a></li>
 <li><a href="#monsterSpawnBlockLightLevel()" tabindex="0">monsterSpawnBlockLightLevel()</a></li>
+<li><a href="#hasEnderDragonFight()" tabindex="0">hasEnderDragonFight()</a></li>
+<li><a href="#defaultClock()" tabindex="0">defaultClock()</a></li>
+<li><a href="#timelinesKeys()" tabindex="0">timelinesKeys()</a></li>
+<li><a href="#timelines()" tabindex="0">timelines()</a></li>
 <li><a href="#asNBT()" tabindex="0">asNBT()</a></li>
 </ol>
 </li>
@@ -118,8 +123,14 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Some data needs to be sent with the registry packet.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#coordinateScale()" class="member-name-link">coordinateScale</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="attribute/WorldTypeAttribute.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttribute</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#attributes()" class="member-name-link">attributes</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>double</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#coordinateScale()" class="member-name-link">coordinateScale</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#defaultClock()" class="member-name-link">defaultClock</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#doAnchorsWork()" class="member-name-link">doAnchorsWork</a>()</code></div>
@@ -137,38 +148,47 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasCeiling()" class="member-name-link">hasCeiling</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasRaids()" class="member-name-link">hasRaids</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasEnderDragonFight()" class="member-name-link">hasEnderDragonFight</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasSkylight()" class="member-name-link">hasSkylight</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="../../values/Tag.html" title="interface in org.cyrus.api.values">Tag</a>&lt;?&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#infiniteBurn()" class="member-name-link">infiniteBurn</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isNatural()" class="member-name-link">isNatural</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasRaids()" class="member-name-link">hasRaids</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isUltrawarm()" class="member-name-link">isUltrawarm</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasSkylight()" class="member-name-link">hasSkylight</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=0L,to=4064L) int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#logicalHeight()" class="member-name-link">logicalHeight</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="../../values/tag/Tag.html" title="interface in org.cyrus.api.values.tag">Tag</a><wbr>&lt;?&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#infiniteBurn()" class="member-name-link">infiniteBurn</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=16L,to=4064L) int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#maximumHeight()" class="member-name-link">maximumHeight</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isNatural()" class="member-name-link">isNatural</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=-2032L,to=2031L) int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minimumHeight()" class="member-name-link">minimumHeight</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isUltrawarm()" class="member-name-link">isUltrawarm</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=0L,to=15L) int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#monsterSpawnBlockLightLevel()" class="member-name-link">monsterSpawnBlockLightLevel</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=0L,to=4064L) int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#logicalHeight()" class="member-name-link">logicalHeight</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=16L,to=4064L) int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#maximumHeight()" class="member-name-link">maximumHeight</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=-2032L,to=2031L) int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minimumHeight()" class="member-name-link">minimumHeight</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=0L,to=15L) int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#monsterSpawnLightLevels()" class="member-name-link">monsterSpawnLightLevels</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#monsterSpawnBlockLightLevel()" class="member-name-link">monsterSpawnBlockLightLevel</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#piglinsSafe()" class="member-name-link">piglinsSafe</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@Range(from=0L,to=15L) int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#monsterSpawnLightLevels()" class="member-name-link">monsterSpawnLightLevels</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#piglinsSafe()" class="member-name-link">piglinsSafe</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../timeline/Timeline.html" title="interface in org.cyrus.api.world.timeline">Timeline</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#timelines()" class="member-name-link">timelines</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#timelinesKeys()" class="member-name-link">timelinesKeys</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -194,6 +214,16 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <h3>fixedTime</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/OptionalLong.html" title="class or interface in java.util" class="external-link">OptionalLong</a></span>&nbsp;<span class="element-name">fixedTime</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="attributes()">
+<h3>attributes</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+@NotNull
+</span><span class="return-type">@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="attribute/WorldTypeAttribute.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttribute</a>&gt;</span>&nbsp;<span class="element-name">attributes</span>()</div>
 </div>
 </section>
 </li>
@@ -282,7 +312,7 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <h3>infiniteBurn</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../values/Tag.html" title="interface in org.cyrus.api.values">Tag</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">infiniteBurn</span>()</div>
+</span><span class="return-type">@NotNull <a href="../../values/tag/Tag.html" title="interface in org.cyrus.api.values.tag">Tag</a>&lt;?&gt;</span>&nbsp;<span class="element-name">infiniteBurn</span>()</div>
 </div>
 </section>
 </li>
@@ -332,6 +362,44 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <h3>monsterSpawnBlockLightLevel</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">@Range(from=0L,to=15L) int</span>&nbsp;<span class="element-name">monsterSpawnBlockLightLevel</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="hasEnderDragonFight()">
+<h3>hasEnderDragonFight</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">hasEnderDragonFight</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="defaultClock()">
+<h3>defaultClock</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">defaultClock</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="timelinesKeys()">
+<h3>timelinesKeys</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">timelinesKeys</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="timelines()">
+<h3>timelines</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../timeline/Timeline.html" title="interface in org.cyrus.api.world.timeline">Timeline</a>&gt;</span>&nbsp;<span class="element-name">timelines</span>()</div>
 </div>
 </section>
 </li>

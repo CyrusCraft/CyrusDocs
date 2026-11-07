@@ -58,7 +58,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(org.cyrus.api.network.packet.IPacket.ToClient,org.cyrus.api.network.data.NetEntry,java.lang.Throwable)" tabindex="0">PacketDecodeException(IPacket.ToClient, NetEntry, Throwable)</a></li>
+<li><a href="#%3Cinit%3E(org.cyrus.api.network.packet.Packet.ToClient,org.cyrus.api.network.serialize.NetEntry,java.lang.Throwable)" tabindex="0">PacketDecodeException(Packet.ToClient, NetEntry, Throwable)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -92,7 +92,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">PacketDecodeException</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/RuntimeException.html" title="class or interface in java.lang" class="external-link">RuntimeException</a></span></div>
-<div class="block">Fired when <a href="../data/NetDecode.html" title="interface in org.cyrus.api.network.data"><code>NetDecode</code></a> throws an exception and being processed by the <a href="../packet/IPacket.html" title="interface in org.cyrus.api.network.packet"><code>IPacket</code></a></div>
+<div class="block">Fired when <a href="../serialize/NetDecode.html" title="interface in org.cyrus.api.network.serialize"><code>NetDecode</code></a> throws an exception and being processed by the <a href="../packet/Packet.html" title="interface in org.cyrus.api.network.packet"><code>Packet</code></a></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -113,8 +113,8 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.cyrus.api.network.packet.IPacket.ToClient,org.cyrus.api.network.data.NetEntry,java.lang.Throwable)" class="member-name-link">PacketDecodeException</a><wbr>(<a href="../packet/IPacket.ToClient.html" title="interface in org.cyrus.api.network.packet">IPacket.ToClient</a>&lt;?&gt;&nbsp;packet,
- @NotNull <a href="../data/NetEntry.html" title="interface in org.cyrus.api.network.data">NetEntry</a>&lt;?&gt;&nbsp;netEncode,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.cyrus.api.network.packet.Packet.ToClient,org.cyrus.api.network.serialize.NetEntry,java.lang.Throwable)" class="member-name-link">PacketDecodeException</a><wbr>(<a href="../packet/Packet.ToClient.html" title="interface in org.cyrus.api.network.packet">Packet.ToClient</a>&lt;?&gt;&nbsp;packet,
+ @NotNull <a href="../serialize/NetEntry.html" title="interface in org.cyrus.api.network.serialize">NetEntry</a>&lt;?&gt;&nbsp;netEncode,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;ex)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
@@ -131,10 +131,10 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../data/NetEntry.html" title="interface in org.cyrus.api.network.data">NetEntry</a><wbr>&lt;?&gt;</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../serialize/NetEntry.html" title="interface in org.cyrus.api.network.serialize">NetEntry</a><wbr>&lt;?&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#netEntry()" class="member-name-link">netEntry</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../packet/IPacket.ToClient.html" title="interface in org.cyrus.api.network.packet">IPacket.ToClient</a><wbr>&lt;?&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../packet/Packet.ToClient.html" title="interface in org.cyrus.api.network.packet">Packet.ToClient</a><wbr>&lt;?&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#packet()" class="member-name-link">packet</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
@@ -158,13 +158,13 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(org.cyrus.api.network.packet.IPacket.ToClient,org.cyrus.api.network.data.NetEntry,java.lang.Throwable)">
+<section class="detail" id="&lt;init&gt;(org.cyrus.api.network.packet.Packet.ToClient,org.cyrus.api.network.serialize.NetEntry,java.lang.Throwable)">
 <h3>PacketDecodeException</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">PacketDecodeException</span><wbr><span class="parameters">(@NotNull
- <a href="../packet/IPacket.ToClient.html" title="interface in org.cyrus.api.network.packet">IPacket.ToClient</a>&lt;?&gt;&nbsp;packet,
+ <a href="../packet/Packet.ToClient.html" title="interface in org.cyrus.api.network.packet">Packet.ToClient</a>&lt;?&gt;&nbsp;packet,
  @NotNull
- @NotNull <a href="../data/NetEntry.html" title="interface in org.cyrus.api.network.data">NetEntry</a>&lt;?&gt;&nbsp;netEncode,
+ @NotNull <a href="../serialize/NetEntry.html" title="interface in org.cyrus.api.network.serialize">NetEntry</a>&lt;?&gt;&nbsp;netEncode,
  @NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;ex)</span></div>
 </div>
@@ -182,7 +182,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="netEntry()">
 <h3>netEntry</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../data/NetEntry.html" title="interface in org.cyrus.api.network.data">NetEntry</a>&lt;?&gt;</span>&nbsp;<span class="element-name">netEntry</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../serialize/NetEntry.html" title="interface in org.cyrus.api.network.serialize">NetEntry</a>&lt;?&gt;</span>&nbsp;<span class="element-name">netEntry</span>()</div>
 </div>
 </section>
 </li>
@@ -190,7 +190,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="packet()">
 <h3>packet</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../packet/IPacket.ToClient.html" title="interface in org.cyrus.api.network.packet">IPacket.ToClient</a>&lt;?&gt;</span>&nbsp;<span class="element-name">packet</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../packet/Packet.ToClient.html" title="interface in org.cyrus.api.network.packet">Packet.ToClient</a>&lt;?&gt;</span>&nbsp;<span class="element-name">packet</span>()</div>
 </div>
 </section>
 </li>

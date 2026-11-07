@@ -63,12 +63,12 @@ loadScripts(document, 'script');</script>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#name()" tabindex="0">name()</a></li>
-<li><a href="#value()" tabindex="0">value()</a></li>
-<li><a href="#signature()" tabindex="0">signature()</a></li>
 <li><a href="#skinTexture(java.lang.String)" tabindex="0">skinTexture(String)</a></li>
 <li><a href="#of(java.lang.String,java.lang.String)" tabindex="0">of(String, String)</a></li>
 <li><a href="#of(java.lang.String,java.lang.String,java.lang.String)" tabindex="0">of(String, String, String)</a></li>
+<li><a href="#name()" tabindex="0">name()</a></li>
+<li><a href="#value()" tabindex="0">value()</a></li>
+<li><a href="#signature()" tabindex="0">signature()</a></li>
 </ol>
 </li>
 </ol>
@@ -96,7 +96,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-first even-row-color"><code>static final @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color"><code><a href="#TEXTURES_ID" class="member-name-link">TEXTURES_ID</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
@@ -118,11 +118,11 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">identifier of the property</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static @NotNull <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(java.lang.String,java.lang.String)" class="member-name-link">of</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static @NotNull <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">of</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
  @Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;signature)</code></div>
@@ -132,7 +132,7 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Some properties have signature data.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static @NotNull <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#skinTexture(java.lang.String)" class="member-name-link">skinTexture</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;textureId)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
@@ -158,7 +158,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="TEXTURES_ID">
 <h3>TEXTURES_ID</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">TEXTURES_ID</span></div>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">TEXTURES_ID</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -178,6 +179,42 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="skinTexture(java.lang.String)">
+<h3>skinTexture</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">static</span>&nbsp;<span class="return-type">@NotNull <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></span>&nbsp;<span class="element-name">skinTexture</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;textureId)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="of(java.lang.String,java.lang.String)">
+<h3>of</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">static</span>&nbsp;<span class="return-type">@NotNull <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="of(java.lang.String,java.lang.String,java.lang.String)">
+<h3>of</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">static</span>&nbsp;<span class="return-type">@NotNull <a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ @Nullable
+ @Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;signature)</span></div>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="name()">
 <h3>name</h3>
@@ -217,39 +254,6 @@ loadScripts(document, 'script');</script>
 <dt>Returns:</dt>
 <dd>An optional of the signature. Returns <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> if no signature is provided</dd>
 </dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="skinTexture(java.lang.String)">
-<h3>skinTexture</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></span>&nbsp;<span class="element-name">skinTexture</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;textureId)</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="of(java.lang.String,java.lang.String)">
-<h3>of</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
- @NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="of(java.lang.String,java.lang.String,java.lang.String)">
-<h3>of</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="IProfileProperty.html" title="interface in org.cyrus.api.profile">IProfileProperty</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
- @NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
- @Nullable
- @Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;signature)</span></div>
 </div>
 </section>
 </li>

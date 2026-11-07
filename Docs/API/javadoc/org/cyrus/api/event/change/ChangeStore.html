@@ -58,14 +58,17 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#ofSingle()" tabindex="0">ofSingle()</a></li>
-<li><a href="#ofBlocking()" tabindex="0">ofBlocking()</a></li>
+<li><a href="#ofSingle(java.lang.String)" tabindex="0">ofSingle(String)</a></li>
+<li><a href="#ofBlocking(java.lang.String,java.util.Comparator)" tabindex="0">ofBlocking(String, Comparator)</a></li>
 <li><a href="#changes()" tabindex="0">changes()</a></li>
+<li><a href="#compareConflicting(Self)" tabindex="0">compareConflicting(Self)</a></li>
 <li><a href="#insert(C)" tabindex="0">insert(C)</a></li>
 <li><a href="#copyInto(org.cyrus.api.event.change.ChangeStore)" tabindex="0">copyInto(ChangeStore)</a></li>
 <li><a href="#count()" tabindex="0">count()</a></li>
 <li><a href="#hasChanges()" tabindex="0">hasChanges()</a></li>
+<li><a href="#identifier()" tabindex="0">identifier()</a></li>
 <li><a href="#clear()" tabindex="0">clear()</a></li>
+<li><a href="#copy()" tabindex="0">copy()</a></li>
 </ol>
 </li>
 </ol>
@@ -142,6 +145,12 @@ that are changing within a chunk" and not "blocks that are changing within a chu
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Removes all changes currently stored</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#compareConflicting(Self)" class="member-name-link">compareConflicting</a><wbr>(<a href="#type-param-Self" title="type parameter in ChangeStore">Self</a>&nbsp;comparing)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a><wbr>&lt;<a href="#type-param-Self" title="type parameter in ChangeStore">Self</a>,<wbr><a href="#type-param-C" title="type parameter in ChangeStore">C</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copy()" class="member-name-link">copy</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyInto(org.cyrus.api.event.change.ChangeStore)" class="member-name-link">copyInto</a><wbr>(@NotNull <a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;?, ? super <a href="#type-param-C" title="type parameter in ChangeStore">C</a>&gt;&nbsp;copy)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -157,19 +166,25 @@ that are changing within a chunk" and not "blocks that are changing within a chu
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Checks if it has a single or multiple changes stored or not</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#insert(C)" class="member-name-link">insert</a><wbr>(<a href="#type-param-C" title="type parameter in ChangeStore">C</a>&nbsp;change)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#identifier()" class="member-name-link">identifier</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">an identifier for what the ChangeStore is for</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#insert(C)" class="member-name-link">insert</a><wbr>(<a href="#type-param-C" title="type parameter in ChangeStore">C</a>&nbsp;change)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Inserts the change into the store.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;SC extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;SC&gt;&gt;<br><a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a><wbr>&lt;SC&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#ofBlocking()" class="member-name-link">ofBlocking</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;SC extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;SC&gt;&gt;<br><a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a><wbr>&lt;SC&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#ofBlocking(java.lang.String,java.util.Comparator)" class="member-name-link">ofBlocking</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier,
+ @Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Comparator.html" title="class or interface in java.util" class="external-link">Comparator</a>&lt;SC&gt;&nbsp;comparable)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">A changeStore that stores multiple changes.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;SC extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;SC&gt;&gt;<br><a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;SC&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#ofSingle()" class="member-name-link">ofSingle</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;SC extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;SC&gt;&gt;<br><a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;SC&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#ofSingle(java.lang.String)" class="member-name-link">ofSingle</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
 <div class="block">A changeStore that stores only a single change</div>
 </div>
 </div>
@@ -190,15 +205,16 @@ that are changing within a chunk" and not "blocks that are changing within a chu
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="ofSingle()">
+<section class="detail" id="ofSingle(java.lang.String)">
 <h3>ofSingle</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;SC extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;SC&gt;&gt;</span>
-<span class="return-type"><a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;SC&gt;</span>&nbsp;<span class="element-name">ofSingle</span>()</div>
+<span class="return-type"><a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;SC&gt;</span>&nbsp;<span class="element-name">ofSingle</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier)</span></div>
 <div class="block">A changeStore that stores only a single change</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
-<dd><span id="ofSingle()-type-param-SC"><code>SC</code> - The change that are being stored</span></dd>
+<dd><span id="ofSingle(java.lang.String)-type-param-SC"><code>SC</code> - The change that are being stored</span></dd>
 <dt>Returns:</dt>
 <dd>the changestore of single type</dd>
 </dl>
@@ -206,16 +222,19 @@ that are changing within a chunk" and not "blocks that are changing within a chu
 </section>
 </li>
 <li>
-<section class="detail" id="ofBlocking()">
+<section class="detail" id="ofBlocking(java.lang.String,java.util.Comparator)">
 <h3>ofBlocking</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;SC extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;SC&gt;&gt;</span>
-<span class="return-type"><a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;SC&gt;</span>&nbsp;<span class="element-name">ofBlocking</span>()</div>
+<span class="return-type"><a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;SC&gt;</span>&nbsp;<span class="element-name">ofBlocking</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier,
+ @Nullable
+ @Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Comparator.html" title="class or interface in java.util" class="external-link">Comparator</a>&lt;SC&gt;&nbsp;comparable)</span></div>
 <div class="block">A changeStore that stores multiple changes. These changes are stored within a cocurrent blocking unordered
 collection</div>
 <dl class="notes">
 <dt>Type Parameters:</dt>
-<dd><span id="ofBlocking()-type-param-SC"><code>SC</code> - the change that are being stored</span></dd>
+<dd><span id="ofBlocking(java.lang.String,java.util.Comparator)-type-param-SC"><code>SC</code> - the change that are being stored</span></dd>
 <dt>Returns:</dt>
 <dd>the changestore of multi type</dd>
 </dl>
@@ -238,11 +257,20 @@ collection</div>
 </section>
 </li>
 <li>
+<section class="detail" id="compareConflicting(Self)">
+<h3 id="compareConflicting(org.cyrus.api.event.change.ChangeStore)">compareConflicting</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+</span><span class="return-type">int</span>&nbsp;<span class="element-name">compareConflicting</span><wbr><span class="parameters">(@NotNull
+ <a href="#type-param-Self" title="type parameter in ChangeStore">Self</a>&nbsp;comparing)</span></div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="insert(C)">
 <h3 id="insert(org.cyrus.api.event.change.Change)">insert</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-</span><span class="return-type">boolean</span>&nbsp;<span class="element-name">insert</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">insert</span><wbr><span class="parameters">(@NotNull
  <a href="#type-param-C" title="type parameter in ChangeStore">C</a>&nbsp;change)</span></div>
 <div class="block">Inserts the change into the store. If the change conflicts with another change, the two will be compared with
 the loosing instance being removed from the changestore</div>
@@ -259,11 +287,10 @@ the loosing instance being removed from the changestore</div>
 <section class="detail" id="copyInto(org.cyrus.api.event.change.ChangeStore)">
 <h3>copyInto</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
-</span><span class="return-type">boolean</span>&nbsp;<span class="element-name">copyInto</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">copyInto</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;?, ? super <a href="#type-param-C" title="type parameter in ChangeStore">C</a>&gt;&nbsp;copy)</span></div>
 <div class="block">Copies the current changes into the provided change store. Conflicts will be compared with the winner staying.
-
+<p>
 Note: if one change fails, then no change will occur and the copy into is reverted back to its original state</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -303,11 +330,36 @@ Note: if one change fails, then no change will occur and the copy into is revert
 </section>
 </li>
 <li>
+<section class="detail" id="identifier()">
+<h3>identifier</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+@NotNull
+</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">identifier</span>()</div>
+<div class="block">an identifier for what the ChangeStore is for</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>an identifier for the ChangeStore</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="clear()">
 <h3>clear</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">clear</span>()</div>
 <div class="block">Removes all changes currently stored</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="copy()">
+<h3>copy</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+@NotNull
+</span><span class="return-type">@NotNull <a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="#type-param-Self" title="type parameter in ChangeStore">Self</a>,<wbr><a href="#type-param-C" title="type parameter in ChangeStore">C</a>&gt;</span>&nbsp;<span class="element-name">copy</span>()</div>
 </div>
 </section>
 </li>

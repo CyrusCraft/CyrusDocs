@@ -60,7 +60,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#create(org.cyrus.api.event.cause.ICause,org.cyrus.api.entity.EntityType)" tabindex="0">create(ICause, EntityType)</a></li>
-<li><a href="#create(org.cyrus.api.event.cause.ICause,org.cyrus.common.utils.preview.stable.StableValue)" tabindex="0">create(ICause, StableValue)</a></li>
+<li><a href="#create(org.cyrus.api.event.cause.ICause,java.util.function.Supplier)" tabindex="0">create(ICause, Supplier)</a></li>
 <li><a href="#dispose(org.cyrus.api.event.cause.ICause,org.cyrus.api.entity.Entity.Live)" tabindex="0">dispose(ICause, Entity.Live)</a></li>
 <li><a href="#entities()" tabindex="0">entities()</a></li>
 </ol>
@@ -117,16 +117,16 @@ extends <a href="EntityManager.html" title="interface in org.cyrus.api.entity">E
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Entity.Snapshot.html" title="interface in org.cyrus.api.entity">Entity.Snapshot</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#create(org.cyrus.api.event.cause.ICause,org.cyrus.api.entity.EntityType)" class="member-name-link">create</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
- @NotNull <a href="EntityType.html" title="interface in org.cyrus.api.entity">EntityType</a>&nbsp;type)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="Entity.Snapshot.html" title="interface in org.cyrus.api.entity">Entity.Snapshot</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#create(org.cyrus.api.event.cause.ICause,java.util.function.Supplier)" class="member-name-link">create</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="EntityType.html" title="interface in org.cyrus.api.entity">EntityType</a>&gt;&nbsp;type)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Creates a new Entity ready for spawning.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="Entity.Snapshot.html" title="interface in org.cyrus.api.entity">Entity.Snapshot</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#create(org.cyrus.api.event.cause.ICause,org.cyrus.common.utils.preview.stable.StableValue)" class="member-name-link">create</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
- @NotNull org.cyrus.common.utils.preview.stable.StableValue&lt;? extends <a href="EntityType.html" title="interface in org.cyrus.api.entity">EntityType</a>&gt;&nbsp;type)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Entity.Snapshot.html" title="interface in org.cyrus.api.entity">Entity.Snapshot</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#create(org.cyrus.api.event.cause.ICause,org.cyrus.api.entity.EntityType)" class="member-name-link">create</a><wbr>(@NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
+ @NotNull <a href="EntityType.html" title="interface in org.cyrus.api.entity">EntityType</a>&nbsp;type)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates a new Entity ready for spawning.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
@@ -182,7 +182,7 @@ extends <a href="EntityManager.html" title="interface in org.cyrus.api.entity">E
 </section>
 </li>
 <li>
-<section class="detail" id="create(org.cyrus.api.event.cause.ICause,org.cyrus.common.utils.preview.stable.StableValue)">
+<section class="detail" id="create(org.cyrus.api.event.cause.ICause,java.util.function.Supplier)">
 <h3>create</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
@@ -190,7 +190,7 @@ extends <a href="EntityManager.html" title="interface in org.cyrus.api.entity">E
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="Entity.Snapshot.html" title="interface in org.cyrus.api.entity">Entity.Snapshot</a></span>&nbsp;<span class="element-name">create</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause,
  @NotNull
- @NotNull org.cyrus.common.utils.preview.stable.StableValue&lt;? extends <a href="EntityType.html" title="interface in org.cyrus.api.entity">EntityType</a>&gt;&nbsp;type)</span></div>
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="EntityType.html" title="interface in org.cyrus.api.entity">EntityType</a>&gt;&nbsp;type)</span></div>
 <div class="block">Creates a new Entity ready for spawning. This entity will be placed in the default world</div>
 <dl class="notes">
 <dt>Parameters:</dt>

@@ -63,6 +63,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#worldManager()" tabindex="0">worldManager()</a></li>
 <li><a href="#networkManager()" tabindex="0">networkManager()</a></li>
 <li><a href="#entityManager()" tabindex="0">entityManager()</a></li>
+<li><a href="#serviceManager()" tabindex="0">serviceManager()</a></li>
 <li><a href="#setRunningState(org.cyrus.api.values.RunningStateValues)" tabindex="0">setRunningState(RunningStateValues)</a></li>
 </ol>
 </li>
@@ -126,12 +127,15 @@ extends <a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a>, <a hr
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="network/NetworkManager.Writable.html" title="interface in org.cyrus.api.network">NetworkManager.Writable</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#networkManager()" class="member-name-link">networkManager</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setRunningState(org.cyrus.api.values.RunningStateValues)" class="member-name-link">setRunningState</a><wbr>(@NotNull <a href="values/RunningStateValues.html" title="enum class in org.cyrus.api.values">RunningStateValues</a>&nbsp;runningState)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="service/ServiceManager.Writable.html" title="interface in org.cyrus.api.service">ServiceManager.Writable</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#serviceManager()" class="member-name-link">serviceManager</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="world/IWorldManager.Writable.html" title="interface in org.cyrus.api.world">IWorldManager.Writable</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldManager()" class="member-name-link">worldManager</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setRunningState(org.cyrus.api.values.RunningStateValues)" class="member-name-link">setRunningState</a><wbr>(@NotNull <a href="values/RunningStateValues.html" title="enum class in org.cyrus.api.values">RunningStateValues</a>&nbsp;runningState)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="world/IWorldManager.Writable.html" title="interface in org.cyrus.api.world">IWorldManager.Writable</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldManager()" class="member-name-link">worldManager</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -140,7 +144,7 @@ extends <a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a>, <a hr
 <code><a href="event/change/ChangeHolder.html#createChangeInstance(java.lang.String)" title="createChangeInstance(String)">createChangeInstance</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.Cyrus">Methods inherited from interface&nbsp;<a href="Cyrus.html#method-summary" title="interface in org.cyrus.api">Cyrus</a></h3>
-<code><a href="Cyrus.html#blockManager()" title="blockManager()">blockManager</a>, <a href="Cyrus.html#console()" title="console()">console</a>, <a href="Cyrus.html#eventManager()" title="eventManager()">eventManager</a>, <a href="Cyrus.html#platformManager()" title="platformManager()">platformManager</a>, <a href="Cyrus.html#registryManager()" title="registryManager()">registryManager</a>, <a href="Cyrus.html#runningState()" title="runningState()">runningState</a>, <a href="Cyrus.html#scheduler()" title="scheduler()">scheduler</a>, <a href="Cyrus.html#shutdown()" title="shutdown()">shutdown</a></code></div>
+<code><a href="Cyrus.html#blockManager()" title="blockManager()">blockManager</a>, <a href="Cyrus.html#console()" title="console()">console</a>, <a href="Cyrus.html#eventManager()" title="eventManager()">eventManager</a>, <a href="Cyrus.html#inventoryManager()" title="inventoryManager()">inventoryManager</a>, <a href="Cyrus.html#platformManager()" title="platformManager()">platformManager</a>, <a href="Cyrus.html#registryManager()" title="registryManager()">registryManager</a>, <a href="Cyrus.html#runningState()" title="runningState()">runningState</a>, <a href="Cyrus.html#scheduler()" title="scheduler()">scheduler</a>, <a href="Cyrus.html#shutdown()" title="shutdown()">shutdown</a></code></div>
 </section>
 </li>
 </ul>
@@ -200,6 +204,19 @@ extends <a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a>, <a hr
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="Cyrus.html#entityManager()">entityManager</a></code>&nbsp;in interface&nbsp;<code><a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="serviceManager()">
+<h3>serviceManager</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="return-type"><a href="service/ServiceManager.Writable.html" title="interface in org.cyrus.api.service">ServiceManager.Writable</a></span>&nbsp;<span class="element-name">serviceManager</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="Cyrus.html#serviceManager()">serviceManager</a></code>&nbsp;in interface&nbsp;<code><a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a></code></dd>
 </dl>
 </div>
 </section>
