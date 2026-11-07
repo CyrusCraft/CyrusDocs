@@ -10,8 +10,6 @@ jobs:
         uses: actions/checkout@v6
       - name: Make temp
         run: "mkdir ./temp"
-      - name: make to
-        run: "mkdir ./Docs/API"
       - name: Checkout Cyrus
         uses: actions/checkout@v6
         with:
