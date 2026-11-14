@@ -123,10 +123,14 @@ apply until the <a href="../../event/change/ChangeHolder.Child.html#commitDirect
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="Connection.Changing.html" title="interface in org.cyrus.api.network.connection">Connection.Changing</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#forLevel(org.cyrus.api.Cyrus.Changeable)" class="member-name-link">forLevel</a><wbr>(<a href="../../Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a>&nbsp;level)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../item/inventory/type/player/PlayerInventory.Changing.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets this instances object in another level</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../item/inventory/type/player/ConnectionInventory.Changing.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#inventory()" class="member-name-link">inventory</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the inventory attached to the connection</div>
+</div>
 </div>
 </div>
 </div>
@@ -167,12 +171,16 @@ apply until the <a href="../../event/change/ChangeHolder.Child.html#commitDirect
 <h3>inventory</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="return-type"><a href="../../item/inventory/type/player/PlayerInventory.Changing.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a></span>&nbsp;<span class="element-name">inventory</span>()</div>
+</span><span class="return-type"><a href="../../item/inventory/type/player/ConnectionInventory.Changing.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a></span>&nbsp;<span class="element-name">inventory</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="Connection.html#inventory()">Connection</a></code></span></div>
+<div class="block">Gets the inventory attached to the connection</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="Connection.html#inventory()">inventory</a></code>&nbsp;in interface&nbsp;<code><a href="Connection.html" title="interface in org.cyrus.api.network.connection">Connection</a>&lt;<a href="Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>&gt;</code></dd>
 <dt>Specified by:</dt>
 <dd><code><a href="Connection.Writable.html#inventory()">inventory</a></code>&nbsp;in interface&nbsp;<code><a href="Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a></code></dd>
+<dt>Returns:</dt>
+<dd>the connection's inventory</dd>
 </dl>
 </div>
 </section>
@@ -184,9 +192,15 @@ apply until the <a href="../../event/change/ChangeHolder.Child.html#commitDirect
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="Connection.Changing.html" title="interface in org.cyrus.api.network.connection">Connection.Changing</a></span>&nbsp;<span class="element-name">forLevel</span><wbr><span class="parameters">(@NotNull
  <a href="../../Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a>&nbsp;level)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../event/change/ChangeHolder.Child.FromGlobal.html#forLevel(org.cyrus.api.Cyrus.Changeable)">ChangeHolder.Child.FromGlobal</a></code></span></div>
+<div class="block">Gets this instances object in another level</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="../../event/change/ChangeHolder.Child.FromGlobal.html#forLevel(org.cyrus.api.Cyrus.Changeable)">forLevel</a></code>&nbsp;in interface&nbsp;<code><a href="../../event/change/ChangeHolder.Child.FromGlobal.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child.FromGlobal</a>&lt;<a href="Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>, <a href="Connection.Changing.html" title="interface in org.cyrus.api.network.connection">Connection.Changing</a>&gt;</code></dd>
+<dt>Parameters:</dt>
+<dd><code>level</code> - The level to get from</dd>
+<dt>Returns:</dt>
+<dd>The instance in the provided level</dd>
 </dl>
 </div>
 </section>

@@ -83,10 +83,16 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>Record Components:</dt>
+<dd><code><span id="param-position">position</span></code> - The position in the world</dd>
+<dd><code><span id="param-blockId">blockId</span></code> - The block state id</dd>
+</dl>
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">BlockUpdate</span>(org.spongepowered.math.vector.Vector3i&nbsp;position, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;blockId)
+<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">BlockUpdate</span>(@NotNull org.spongepowered.math.vector.Vector3i&nbsp;position, @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;blockId)
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></span></div>
+<div class="block">Network object for when a block is updated - the world of the block update is the connections current world</div>
 </div>
 </section>
 <section class="summary">
@@ -99,8 +105,8 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.math.vector.Vector3i,java.lang.Integer)" class="member-name-link">BlockUpdate</a><wbr>(org.spongepowered.math.vector.Vector3i&nbsp;position,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;blockId)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.math.vector.Vector3i,java.lang.Integer)" class="member-name-link">BlockUpdate</a><wbr>(@NotNull org.spongepowered.math.vector.Vector3i&nbsp;position,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;blockId)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates an instance of a <code>BlockUpdate</code> record class.</div>
 </div>
@@ -118,10 +124,10 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#blockId()" class="member-name-link">blockId</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the value of the <code>blockId</code> record component.</div>
+<div class="block">Returns the value of the <a href="#param-blockId"><code>blockId</code></a> record component.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
@@ -133,10 +139,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a hash code value for this object.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.spongepowered.math.vector.Vector3i</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull org.spongepowered.math.vector.Vector3i</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#position()" class="member-name-link">position</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the value of the <code>position</code> record component.</div>
+<div class="block">Returns the value of the <a href="#param-position"><code>position</code></a> record component.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
@@ -164,13 +170,15 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(org.spongepowered.math.vector.Vector3i,java.lang.Integer)">
 <h3>BlockUpdate</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">BlockUpdate</span><wbr><span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;position,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;blockId)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">BlockUpdate</span><wbr><span class="parameters">(@NotNull
+ @NotNull org.spongepowered.math.vector.Vector3i&nbsp;position,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;blockId)</span></div>
 <div class="block">Creates an instance of a <code>BlockUpdate</code> record class.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>position</code> - the value for the <code>position</code> record component</dd>
-<dd><code>blockId</code> - the value for the <code>blockId</code> record component</dd>
+<dd><code>position</code> - the value for the <a href="#param-position"><code>position</code></a> record component</dd>
+<dd><code>blockId</code> - the value for the <a href="#param-blockId"><code>blockId</code></a> record component</dd>
 </dl>
 </div>
 </section>
@@ -234,11 +242,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="position()">
 <h3>position</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.spongepowered.math.vector.Vector3i</span>&nbsp;<span class="element-name">position</span>()</div>
-<div class="block">Returns the value of the <code>position</code> record component.</div>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull org.spongepowered.math.vector.Vector3i</span>&nbsp;<span class="element-name">position</span>()</div>
+<div class="block">Returns the value of the <a href="#param-position"><code>position</code></a> record component.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the value of the <code>position</code> record component</dd>
+<dd>the value of the <a href="#param-position"><code>position</code></a> record component</dd>
 </dl>
 </div>
 </section>
@@ -247,11 +256,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="blockId()">
 <h3>blockId</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span>&nbsp;<span class="element-name">blockId</span>()</div>
-<div class="block">Returns the value of the <code>blockId</code> record component.</div>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span>&nbsp;<span class="element-name">blockId</span>()</div>
+<div class="block">Returns the value of the <a href="#param-blockId"><code>blockId</code></a> record component.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the value of the <code>blockId</code> record component</dd>
+<dd>the value of the <a href="#param-blockId"><code>blockId</code></a> record component</dd>
 </dl>
 </div>
 </section>

@@ -67,9 +67,13 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Interface AnimalSound" class="title">Interface AnimalSound&lt;<span id="type-param-SG">SG extends <a href="AnimalSound.AnimalSoundGroup.html" title="interface in org.cyrus.api.entity.type">AnimalSound.AnimalSoundGroup</a></span>&gt;</h1>
+<h1 title="Interface AnimalSound" class="title">Interface AnimalSound&lt;SG extends <a href="AnimalSound.AnimalSoundGroup.html" title="interface in org.cyrus.api.entity.type">AnimalSound.AnimalSoundGroup</a>&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="type-param-SG"><code>SG</code> - the interface of the group implementation</span></dd>
+</dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
 <dd><code><a href="cat/CatSoundType.html" title="interface in org.cyrus.api.entity.type.cat">CatSoundType</a>, <a href="chicken/ChickenSoundType.html" title="interface in org.cyrus.api.entity.type.chicken">ChickenSoundType</a>, <a href="pig/PigSoundType.html" title="interface in org.cyrus.api.entity.type.pig">PigSoundType</a>, <a href="wolf/WolfSoundType.html" title="interface in org.cyrus.api.entity.type.wolf">WolfSoundType</a></code></dd>
@@ -77,6 +81,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">AnimalSound&lt;SG extends <a href="AnimalSound.AnimalSoundGroup.html" title="interface in org.cyrus.api.entity.type">AnimalSound.AnimalSoundGroup</a>&gt;</span></div>
+<div class="block">A base interface for when a sound can be created by an animal entity</div>
 </div>
 </section>
 <section class="summary">
@@ -92,7 +97,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="AnimalSound.AnimalSoundGroup.html" class="type-name-link" title="interface in org.cyrus.api.entity.type">AnimalSound.AnimalSoundGroup</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">A group of sounds for a particular entity</div>
+</div>
 </div>
 </section>
 </li>
@@ -109,10 +116,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type-param-SG" title="type parameter in AnimalSound">SG</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#adult()" class="member-name-link">adult</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The group of sounds for the adult edition of the entity</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type-param-SG" title="type parameter in AnimalSound">SG</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#baby()" class="member-name-link">baby</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The group of sounds for the baby edition of the entity</div>
+</div>
 </div>
 </div>
 </div>
@@ -134,6 +145,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type"><a href="#type-param-SG" title="type parameter in AnimalSound">SG</a></span>&nbsp;<span class="element-name">adult</span>()</div>
+<div class="block">The group of sounds for the adult edition of the entity</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a group of sounds for the adult variant of the entity</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -144,6 +160,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type"><a href="#type-param-SG" title="type parameter in AnimalSound">SG</a></span>&nbsp;<span class="element-name">baby</span>()</div>
+<div class="block">The group of sounds for the baby edition of the entity</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a group of sounds for the baby variant of the entity</dd>
+</dl>
 </div>
 </section>
 </li>

@@ -118,7 +118,9 @@ extends <a href="node/ToCommandNodes.html" title="interface in org.cyrus.api.com
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasPermission(org.cyrus.api.service.permission.PermissionHolder)" class="member-name-link">hasPermission</a><wbr>(@NotNull <a href="../../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a>&nbsp;holder)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks if a permission holder can run this command</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isValid(org.cyrus.api.command.command.CommandContent)" class="member-name-link">isValid</a><wbr>(@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>&nbsp;content)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -294,6 +296,13 @@ extends <a href="node/ToCommandNodes.html" title="interface in org.cyrus.api.com
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="return-type">boolean</span>&nbsp;<span class="element-name">hasPermission</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a>&nbsp;holder)</span></div>
+<div class="block">Checks if a permission holder can run this command</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>holder</code> - the holder to check</dd>
+<dt>Returns:</dt>
+<dd>true if the holder has permission</dd>
+</dl>
 </div>
 </section>
 </li>

@@ -74,6 +74,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">BiomeSpawn</span></div>
+<div class="block">Entity spawn logic for a biome</div>
 </div>
 </section>
 <section class="summary">
@@ -91,16 +92,24 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#maxCount()" class="member-name-link">maxCount</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Max amount of entities of this type the biome can have.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minCount()" class="member-name-link">minCount</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Minimum amount of entities of this type the biome can have.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="../../../entity/EntityType.html" title="interface in org.cyrus.api.entity">EntityType</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The entity in question</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#weight()" class="member-name-link">weight</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The chance of spawning the entity when the count is between the minimum and maximum.</div>
+</div>
 </div>
 </div>
 </div>
@@ -121,6 +130,11 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="return-type">@NotNull <a href="../../../entity/EntityType.html" title="interface in org.cyrus.api.entity">EntityType</a></span>&nbsp;<span class="element-name">type</span>()</div>
+<div class="block">The entity in question</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the EntityType this spawn is limiting</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -129,6 +143,11 @@ loadScripts(document, 'script');</script>
 <h3>maxCount</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">maxCount</span>()</div>
+<div class="block">Max amount of entities of this type the biome can have. Will prevent spawning of more if this is reached</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the max amount of entities of this type allowed in this biome</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -137,6 +156,12 @@ loadScripts(document, 'script');</script>
 <h3>minCount</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">minCount</span>()</div>
+<div class="block">Minimum amount of entities of this type the biome can have. If the biome has less then this amount of entities
+Cyrus will attempt to spawn more</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the minimum amount of entities of this type</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -145,6 +170,12 @@ loadScripts(document, 'script');</script>
 <h3>weight</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">weight</span>()</div>
+<div class="block">The chance of spawning the entity when the count is between the minimum and maximum. This can be thought of
+like 1 in weight chance</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the weight of chance</dd>
+</dl>
 </div>
 </section>
 </li>

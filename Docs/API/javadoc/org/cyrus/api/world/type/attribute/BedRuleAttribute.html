@@ -83,6 +83,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">BedRuleAttribute</span><span class="extends-implements">
 extends <a href="WorldTypeAttribute.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttribute</a></span></div>
+<div class="block">World rules for beds</div>
 </div>
 </section>
 <section class="summary">
@@ -98,10 +99,14 @@ extends <a href="WorldTypeAttribute.html" title="interface in org.cyrus.api.worl
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="BedRuleAttribute.BedRuleBuilder.html" class="type-name-link" title="interface in org.cyrus.api.world.type.attribute">BedRuleAttribute.BedRuleBuilder</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Builder for the bed rules</div>
+</div>
 <div class="col-first odd-row-color"><code>static enum&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="BedRuleAttribute.CanSleep.html" class="type-name-link" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Rules for beds in a world</div>
+</div>
 </div>
 </section>
 </li>
@@ -118,16 +123,24 @@ extends <a href="WorldTypeAttribute.html" title="interface in org.cyrus.api.worl
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canSetSpawn()" class="member-name-link">canSetSpawn</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">If a player can set their spawn when right-clicking a bed</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canSleep()" class="member-name-link">canSleep</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">If a player can sleep in the bed in this world.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.text.Component</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#errorMessage()" class="member-name-link">errorMessage</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The typical message that will occur when right-clicking a bed in attempt to sleep</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#explodes()" class="member-name-link">explodes</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">If a player spawns a bed into the world, should the bed explode</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull net.kyori.adventure.key.Key</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#key()" class="member-name-link">key</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
@@ -158,6 +171,15 @@ extends <a href="WorldTypeAttribute.html" title="interface in org.cyrus.api.worl
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull <a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a></span>&nbsp;<span class="element-name">canSleep</span>()</div>
+<div class="block">If a player can sleep in the bed in this world.
+<p>
+ALWAYS is not used by vanilla
+WHEN_DARK is used by the overworld
+NEVER is used in the_end and the_nether</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the rule for if a player can sleep in a bed</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -167,6 +189,15 @@ extends <a href="WorldTypeAttribute.html" title="interface in org.cyrus.api.worl
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="return-type"><a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a></span>&nbsp;<span class="element-name">canSetSpawn</span>()</div>
+<div class="block">If a player can set their spawn when right-clicking a bed
+<p>
+ALWAYS is used by the overworld
+WHEN_DARK is not used by vanilla
+NEVER is used in the_end and the_nether</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the rule for if a player can set spawn by right-clicking a bed</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -176,6 +207,19 @@ extends <a href="WorldTypeAttribute.html" title="interface in org.cyrus.api.worl
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="return-type">boolean</span>&nbsp;<span class="element-name">explodes</span>()</div>
+<div class="block">If a player spawns a bed into the world, should the bed explode
+<p>
+ALWAYS is used by the_nether and the_end
+WHEN_DARK is not used by vanilla
+NEVER is used in overworld
+<p>
+Note: the explosion action occurs when the block updates directly therefore if "<a href="BedRuleAttribute.CanSleep.html#WHEN_DARK"><code>BedRuleAttribute.CanSleep.WHEN_DARK</code></a>" is
+used and the bed is placed in the morning, the bed will not explode at night unless a block tick occurs on one
+of the bed positions</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the rule for a bed should explode on spawn</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -186,6 +230,11 @@ extends <a href="WorldTypeAttribute.html" title="interface in org.cyrus.api.worl
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 @NotNull
 </span><span class="return-type">@NotNull net.kyori.adventure.text.Component</span>&nbsp;<span class="element-name">errorMessage</span>()</div>
+<div class="block">The typical message that will occur when right-clicking a bed in attempt to sleep</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a message that will occur when right-clicking a bed to sleep and the rule prevents this</dd>
+</dl>
 </div>
 </section>
 </li>

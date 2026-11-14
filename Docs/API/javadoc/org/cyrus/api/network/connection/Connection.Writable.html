@@ -133,19 +133,29 @@ extends <a href="Connection.html" title="interface in org.cyrus.api.network.conn
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#close(org.cyrus.api.event.cause.ICause)" class="member-name-link">close</a><wbr>(@NotNull <a href="../../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Disconnects the client without any disconnect packet.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#disconnect()" class="member-name-link">disconnect</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Disconnects the client with the disconnect packet</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#disconnect(net.kyori.adventure.text.Component)" class="member-name-link">disconnect</a><wbr>(@NotNull net.kyori.adventure.text.Component&nbsp;component)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../item/inventory/type/player/PlayerInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Disconnects the client with the disconnect packet with a specific message</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../item/inventory/type/player/ConnectionInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#inventory()" class="member-name-link">inventory</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the inventory attached to the connection</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendRequest(org.cyrus.api.network.packet.request.OutgoingPacketRequest)" class="member-name-link">sendRequest</a><wbr>(@NotNull <a href="../packet/request/OutgoingPacketRequest.html" title="interface in org.cyrus.api.network.packet.request">OutgoingPacketRequest</a>&lt;?&gt;&nbsp;request)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sends a packet request - this will be stored until the network scheduler triggers</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>@NotNull <a href="Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#setPhase(org.cyrus.api.network.packet.NetworkPhase)" class="member-name-link">setPhase</a><wbr>(@NotNull <a href="../packet/NetworkPhase.html" title="enum class in org.cyrus.api.network.packet">NetworkPhase</a>&nbsp;phase)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
@@ -188,10 +198,14 @@ extends <a href="Connection.html" title="interface in org.cyrus.api.network.conn
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 @NotNull
-</span><span class="return-type"><a href="../../item/inventory/type/player/PlayerInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a></span>&nbsp;<span class="element-name">inventory</span>()</div>
+</span><span class="return-type"><a href="../../item/inventory/type/player/ConnectionInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a></span>&nbsp;<span class="element-name">inventory</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="Connection.html#inventory()">Connection</a></code></span></div>
+<div class="block">Gets the inventory attached to the connection</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="Connection.html#inventory()">inventory</a></code>&nbsp;in interface&nbsp;<code><a href="Connection.html" title="interface in org.cyrus.api.network.connection">Connection</a>&lt;<a href="Connection.Writable.html" title="interface in org.cyrus.api.network.connection">Connection.Writable</a>&gt;</code></dd>
+<dt>Returns:</dt>
+<dd>the connection's inventory</dd>
 </dl>
 </div>
 </section>
@@ -202,6 +216,11 @@ extends <a href="Connection.html" title="interface in org.cyrus.api.network.conn
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">sendRequest</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../packet/request/OutgoingPacketRequest.html" title="interface in org.cyrus.api.network.packet.request">OutgoingPacketRequest</a>&lt;?&gt;&nbsp;request)</span></div>
+<div class="block">Sends a packet request - this will be stored until the network scheduler triggers</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>request</code> - the request to sent</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -243,6 +262,11 @@ extends <a href="Connection.html" title="interface in org.cyrus.api.network.conn
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">close</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../../event/cause/ICause.html" title="interface in org.cyrus.api.event.cause">ICause</a>&nbsp;cause)</span></div>
+<div class="block">Disconnects the client without any disconnect packet. Used when you want to terminate the connection</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cause</code> - The reason to close the connection</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -251,6 +275,7 @@ extends <a href="Connection.html" title="interface in org.cyrus.api.network.conn
 <h3>disconnect</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">disconnect</span>()</div>
+<div class="block">Disconnects the client with the disconnect packet</div>
 </div>
 </section>
 </li>
@@ -260,6 +285,11 @@ extends <a href="Connection.html" title="interface in org.cyrus.api.network.conn
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">disconnect</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.text.Component&nbsp;component)</span></div>
+<div class="block">Disconnects the client with the disconnect packet with a specific message</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>component</code> - The message to send</dd>
+</dl>
 </div>
 </section>
 </li>

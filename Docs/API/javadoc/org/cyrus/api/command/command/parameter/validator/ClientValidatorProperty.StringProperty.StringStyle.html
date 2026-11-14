@@ -97,6 +97,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static enum </span><span class="element-name type-name-label">ClientValidatorProperty.StringProperty.StringStyle</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="ClientValidatorProperty.StringProperty.StringStyle.html" title="enum class in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.StringProperty.StringStyle</a>&gt;</span></div>
+<div class="block">Validators on the client</div>
 </div>
 </section>
 <section class="summary">
@@ -119,11 +120,17 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Enum Constant</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="#GREEDY" class="member-name-link">GREEDY</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Will treat the rest of the entered text in the command as part of the string</div>
+</div>
 <div class="col-first odd-row-color"><code><a href="#QUOTE" class="member-name-link">QUOTE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Will only accept a single word or multiple words when wrapped in quotation marks (").</div>
+</div>
 <div class="col-first even-row-color"><code><a href="#SINGLE" class="member-name-link">SINGLE</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Will only accept a single word</div>
+</div>
 </div>
 </section>
 </li>
@@ -174,6 +181,7 @@ the order they are declared.</div>
 <h3>SINGLE</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="ClientValidatorProperty.StringProperty.StringStyle.html" title="enum class in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.StringProperty.StringStyle</a></span>&nbsp;<span class="element-name">SINGLE</span></div>
+<div class="block">Will only accept a single word</div>
 </div>
 </section>
 </li>
@@ -182,6 +190,8 @@ the order they are declared.</div>
 <h3>QUOTE</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="ClientValidatorProperty.StringProperty.StringStyle.html" title="enum class in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.StringProperty.StringStyle</a></span>&nbsp;<span class="element-name">QUOTE</span></div>
+<div class="block">Will only accept a single word or multiple words when wrapped in quotation marks ("). Will not include
+the quotation marks as part of the string</div>
 </div>
 </section>
 </li>
@@ -190,6 +200,7 @@ the order they are declared.</div>
 <h3>GREEDY</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="ClientValidatorProperty.StringProperty.StringStyle.html" title="enum class in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.StringProperty.StringStyle</a></span>&nbsp;<span class="element-name">GREEDY</span></div>
+<div class="block">Will treat the rest of the entered text in the command as part of the string</div>
 </div>
 </section>
 </li>

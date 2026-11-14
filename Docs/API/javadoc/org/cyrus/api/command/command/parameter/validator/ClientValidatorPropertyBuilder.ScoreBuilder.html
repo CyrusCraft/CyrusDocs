@@ -82,6 +82,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ClientValidatorPropertyBuilder.ScoreBuilder</span><span class="extends-implements">
 extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder</a>&lt;<a href="ClientValidatorProperty.ScoreProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.ScoreProperty</a>&gt;</span></div>
+<div class="block">Score validator builder</div>
 </div>
 </section>
 <section class="summary">
@@ -108,7 +109,9 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ClientValidatorPropertyBuilder.ScoreBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ScoreBuilder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#allowMultiple(boolean)" class="member-name-link">allowMultiple</a><wbr>(boolean&nbsp;multiple)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Allows multiple scores to be entered</div>
+</div>
 </div>
 </div>
 </div>
@@ -130,9 +133,16 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <section class="detail" id="allowMultiple(boolean)">
 <h3>allowMultiple</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@CheckReturnValue
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
 @NotNull
 </span><span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.ScoreBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ScoreBuilder</a></span>&nbsp;<span class="element-name">allowMultiple</span><wbr><span class="parameters">(boolean&nbsp;multiple)</span></div>
+<div class="block">Allows multiple scores to be entered</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>multiple</code> - allows multiple</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>

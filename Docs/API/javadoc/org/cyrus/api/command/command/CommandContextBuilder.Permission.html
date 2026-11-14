@@ -76,6 +76,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">CommandContextBuilder.Permission</span></div>
+<div class="block">The permission check</div>
 </div>
 </section>
 <section class="summary">
@@ -93,7 +94,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandContextBuilder.Messenger.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Messenger</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#permissionSource(org.cyrus.api.service.permission.PermissionHolder)" class="member-name-link">permissionSource</a><wbr>(@NotNull <a href="../../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a>&nbsp;permissionHolder)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The source to check permissions against.</div>
+</div>
 </div>
 </div>
 </div>
@@ -115,6 +118,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="return-type">@NotNull <a href="CommandContextBuilder.Messenger.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Messenger</a></span>&nbsp;<span class="element-name">permissionSource</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a>&nbsp;permissionHolder)</span></div>
+<div class="block">The source to check permissions against. Typically, the source but not always</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>permissionHolder</code> - the permission holder to check permissions against</dd>
+<dt>Returns:</dt>
+<dd>next stage</dd>
+</dl>
 </div>
 </section>
 </li>

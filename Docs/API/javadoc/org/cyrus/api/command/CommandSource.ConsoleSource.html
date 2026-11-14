@@ -82,6 +82,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">CommandSource.ConsoleSource</span><span class="extends-implements">
 extends <a href="CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a>, net.kyori.adventure.audience.Audience, <a href="../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a></span></div>
+<div class="block">The command sender that is sent from the console</div>
 </div>
 </section>
 <section class="summary">
@@ -108,7 +109,9 @@ extends <a href="CommandSource.html" title="interface in org.cyrus.api.command">
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendError(java.lang.Throwable)" class="member-name-link">sendError</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;ex)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sends an error to the console - will provide correct highlighting</div>
+</div>
 </div>
 </div>
 </div>
@@ -138,6 +141,11 @@ extends <a href="CommandSource.html" title="interface in org.cyrus.api.command">
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">sendError</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;ex)</span></div>
+<div class="block">Sends an error to the console - will provide correct highlighting</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>ex</code> - The exception being thrown</dd>
+</dl>
 </div>
 </section>
 </li>

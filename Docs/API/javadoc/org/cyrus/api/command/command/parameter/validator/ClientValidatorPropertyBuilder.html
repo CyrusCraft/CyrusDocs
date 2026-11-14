@@ -66,9 +66,13 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Interface ClientValidatorPropertyBuilder" class="title">Interface ClientValidatorPropertyBuilder&lt;<span id="type-param-P">P extends <a href="ClientValidatorProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty</a></span>&gt;</h1>
+<h1 title="Interface ClientValidatorPropertyBuilder" class="title">Interface ClientValidatorPropertyBuilder&lt;P extends <a href="ClientValidatorProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty</a>&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="type-param-P"><code>P</code> - The client validator property it is building</span></dd>
+</dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
 <dd><code><a href="ClientValidatorPropertyBuilder.EntityBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.EntityBuilder</a>, <a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a>&lt;N&gt;, <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a>, <a href="ClientValidatorPropertyBuilder.ScoreBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ScoreBuilder</a>, <a href="ClientValidatorPropertyBuilder.StringBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.StringBuilder</a>, <a href="ClientValidatorPropertyBuilder.TimeBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.TimeBuilder</a></code></dd>
@@ -76,6 +80,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ClientValidatorPropertyBuilder&lt;P extends <a href="ClientValidatorProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty</a>&gt;</span></div>
+<div class="block">Builder for a <a href="ClientValidatorProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator"><code>ClientValidatorProperty</code></a></div>
 </div>
 </section>
 <section class="summary">
@@ -91,22 +96,34 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="ClientValidatorPropertyBuilder.EntityBuilder.html" class="type-name-link" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.EntityBuilder</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Builder for entity</div>
+</div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="ClientValidatorPropertyBuilder.NumberBuilder.html" class="type-name-link" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a>&lt;<a href="ClientValidatorPropertyBuilder.NumberBuilder.html#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a> extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a> &amp; <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="ClientValidatorPropertyBuilder.NumberBuilder.html#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;&gt;</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Base builder for all number based properties</div>
+</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" class="type-name-link" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Client validator for resources.</div>
+</div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="ClientValidatorPropertyBuilder.ScoreBuilder.html" class="type-name-link" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ScoreBuilder</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Score validator builder</div>
+</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="ClientValidatorPropertyBuilder.StringBuilder.html" class="type-name-link" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.StringBuilder</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">The builder for string times</div>
+</div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="ClientValidatorPropertyBuilder.TimeBuilder.html" class="type-name-link" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.TimeBuilder</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Builder for time property</div>
+</div>
 </div>
 </section>
 </li>
@@ -123,7 +140,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type-param-P" title="type parameter in ClientValidatorPropertyBuilder">P</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#build()" class="member-name-link">build</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates the built validator property</div>
+</div>
 </div>
 </div>
 </div>
@@ -145,6 +164,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type"><a href="#type-param-P" title="type parameter in ClientValidatorPropertyBuilder">P</a></span>&nbsp;<span class="element-name">build</span>()</div>
+<div class="block">Creates the built validator property</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The new validator property</dd>
+</dl>
 </div>
 </section>
 </li>

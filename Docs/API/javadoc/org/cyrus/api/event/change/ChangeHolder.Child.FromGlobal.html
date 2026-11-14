@@ -68,9 +68,14 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Interface ChangeHolder.Child.FromGlobal" class="title">Interface ChangeHolder.Child.FromGlobal&lt;<span id="type-param-Parent">Parent extends <a href="ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;Parent,<wbr>Self&gt;</span>, <span id="type-param-Self">Self extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;</span>&gt;</h1>
+<h1 title="Interface ChangeHolder.Child.FromGlobal" class="title">Interface ChangeHolder.Child.FromGlobal&lt;Parent extends <a href="ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;Parent,<wbr>Self&gt;, Self extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="type-param-Parent"><code>Parent</code> - The weakest possible parent type for this</span></dd>
+<dd><span id="type-param-Self"><code>Self</code> - Itself</span></dd>
+</dl>
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
 <dd><code><a href="ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;Parent,<wbr>Self&gt;, <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;</code></dd>
@@ -87,6 +92,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ChangeHolder.Child.FromGlobal&lt;Parent extends <a href="ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;Parent,<wbr>Self&gt;, Self extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;&gt;</span><span class="extends-implements">
 extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;</span></div>
+<div class="block">If the change holder is from a global state such as a singleton instance</div>
 </div>
 </section>
 <section class="summary">
@@ -116,7 +122,9 @@ extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.even
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type-param-Self" title="type parameter in ChangeHolder.Child.FromGlobal">Self</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#forLevel(org.cyrus.api.Cyrus.Changeable)" class="member-name-link">forLevel</a><wbr>(<a href="../../Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a>&nbsp;level)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets this instances object in another level</div>
+</div>
 </div>
 </div>
 </div>
@@ -145,6 +153,15 @@ extends <a href="ChangeHolder.Child.html" title="interface in org.cyrus.api.even
 @CheckReturnValue
 </span><span class="return-type"><a href="#type-param-Self" title="type parameter in ChangeHolder.Child.FromGlobal">Self</a></span>&nbsp;<span class="element-name">forLevel</span><wbr><span class="parameters">(@NotNull
  <a href="../../Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a>&nbsp;level)</span></div>
+<div class="block">Gets this instances object in another level</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>level</code> - The level to get from</dd>
+<dt>Returns:</dt>
+<dd>The instance in the provided level</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if this instance cannot be found</dd>
+</dl>
 </div>
 </section>
 </li>

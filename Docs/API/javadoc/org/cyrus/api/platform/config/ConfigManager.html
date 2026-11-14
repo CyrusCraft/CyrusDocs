@@ -74,6 +74,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ConfigManager</span></div>
+<div class="block">The global configuration manager</div>
 </div>
 </section>
 <section class="summary">
@@ -91,13 +92,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>org.spongepowered.configurate.loader.AbstractConfigurationLoader.Builder<wbr>&lt;?,<wbr>?&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#configurationBuilder()" class="member-name-link">configurationBuilder</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates a builder for a sponge configuration loader</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="file/CyrusConfig.html" title="interface in org.cyrus.api.platform.config.file">CyrusConfig</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#cyrus()" class="member-name-link">cyrus</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the configuration directory for Cyrus's config's</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#defaultConfigExtension()" class="member-name-link">defaultConfigExtension</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The default file extension for Cyrus including the prefix of '.'</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="file/ConfigDirectory.html" title="interface in org.cyrus.api.platform.config.file">ConfigDirectory</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#forExtension(java.lang.String)" class="member-name-link">forExtension</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;extensionId)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
@@ -122,6 +129,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">defaultConfigExtension</span>()</div>
+<div class="block">The default file extension for Cyrus including the prefix of '.'</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the file extension for most Cyrus configuration files</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -132,6 +144,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">org.spongepowered.configurate.loader.AbstractConfigurationLoader.Builder&lt;?,<wbr>?&gt;</span>&nbsp;<span class="element-name">configurationBuilder</span>()</div>
+<div class="block">Creates a builder for a sponge configuration loader</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a sponge builder in the configuration loader of the default file extension</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -153,6 +170,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull <a href="file/CyrusConfig.html" title="interface in org.cyrus.api.platform.config.file">CyrusConfig</a></span>&nbsp;<span class="element-name">cyrus</span>()</div>
+<div class="block">Gets the configuration directory for Cyrus's config's</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Cyrus's Configuration files</dd>
+</dl>
 </div>
 </section>
 </li>

@@ -118,7 +118,9 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#blastResistance()" class="member-name-link">blastResistance</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">The default blast resistance of the block type</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="state/BlockState.html" title="interface in org.cyrus.api.world.block.state">BlockState</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#defaultState()" class="member-name-link">defaultState</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
@@ -126,7 +128,9 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#destroySpeed()" class="member-name-link">destroySpeed</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">The destroy speed of the block type in seconds</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#displayName()" class="member-name-link">displayName</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
@@ -134,13 +138,19 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isAffectedByGravity()" class="member-name-link">isAffectedByGravity</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">If the block can be affected by gravity when block tick occurs on the block</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isUnbreakable()" class="member-name-link">isUnbreakable</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">If the block type is unbreakable</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull net.kyori.adventure.key.Key</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#itemKey()" class="member-name-link">itemKey</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">The item type to use when block is in players inventory</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="../../registry/RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a><wbr>&lt;<a href="BlockType.html" title="interface in org.cyrus.api.world.block">BlockType</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
@@ -198,6 +208,11 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">blastResistance</span>()</div>
+<div class="block">The default blast resistance of the block type</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>blast resistance</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -207,6 +222,11 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">destroySpeed</span>()</div>
+<div class="block">The destroy speed of the block type in seconds</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>destroy speed in seconds</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -217,6 +237,11 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">itemKey</span>()</div>
+<div class="block">The item type to use when block is in players inventory</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>item type for this block type</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -226,6 +251,11 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isUnbreakable</span>()</div>
+<div class="block">If the block type is unbreakable</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>If the block type is unbreakable</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -235,6 +265,11 @@ extends <a href="../../registry/RegistryEntry.html" title="interface in org.cyru
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isAffectedByGravity</span>()</div>
+<div class="block">If the block can be affected by gravity when block tick occurs on the block</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the block is affected by gravity</dd>
+</dl>
 </div>
 </section>
 </li>

@@ -78,6 +78,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ConfigFile</span></div>
+<div class="block">An extension's Configuration file</div>
 </div>
 </section>
 <section class="summary">
@@ -95,16 +96,24 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#file()" class="member-name-link">file</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The file path</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull org.spongepowered.configurate.loader.ConfigurationLoader<wbr>&lt;?&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#fileLoader()" class="member-name-link">fileLoader</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">A ConfigurationLoader for loading a file</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="FileOption.html" title="interface in org.cyrus.api.platform.config.file">FileOption</a>&lt;?&gt;&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#options()" class="member-name-link">options</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Known nodes within the file for easy data extraction</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#update()" class="member-name-link">update</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Updates/creates the configuration file based on the <a href="#options()"><code>options()</code></a> written values</div>
+</div>
 </div>
 </div>
 </div>
@@ -126,6 +135,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a></span>&nbsp;<span class="element-name">file</span>()</div>
+<div class="block">The file path</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the File path</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -136,6 +150,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull org.spongepowered.configurate.loader.ConfigurationLoader&lt;?&gt;</span>&nbsp;<span class="element-name">fileLoader</span>()</div>
+<div class="block">A ConfigurationLoader for loading a file</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a sponge configuration loader</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -146,6 +165,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="FileOption.html" title="interface in org.cyrus.api.platform.config.file">FileOption</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">options</span>()</div>
+<div class="block">Known nodes within the file for easy data extraction</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a collection of all file options</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -155,9 +179,10 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">update</span>()
              throws <span class="exceptions">org.spongepowered.configurate.ConfigurateException</span></div>
+<div class="block">Updates/creates the configuration file based on the <a href="#options()"><code>options()</code></a> written values</div>
 <dl class="notes">
 <dt>Throws:</dt>
-<dd><code>org.spongepowered.configurate.ConfigurateException</code></dd>
+<dd><code>org.spongepowered.configurate.ConfigurateException</code> - if data is invalid</dd>
 </dl>
 </div>
 </section>

@@ -162,7 +162,6 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeTypes.html" class="type-name-link" title="class in org.cyrus.api.event.change">ChangeTypes</a></li>
 <li class="circle">org.cyrus.api.world.chunk.generator.<a href="org/cyrus/api/world/chunk/generator/ChunkGenerators.html" class="type-name-link" title="class in org.cyrus.api.world.chunk.generator">ChunkGenerators</a></li>
 <li class="circle">org.cyrus.api.command.command.parameter.validator.<a href="org/cyrus/api/command/command/parameter/validator/ClientValidators.html" class="type-name-link" title="class in org.cyrus.api.command.command.parameter.validator">ClientValidators</a></li>
-<li class="circle">org.cyrus.api.platform.config.file.serializer.<a href="org/cyrus/api/platform/config/file/serializer/ComponentSerializer.html" class="type-name-link" title="class in org.cyrus.api.platform.config.file.serializer">ComponentSerializer</a> (implements org.spongepowered.configurate.serialize.TypeSerializer&lt;T&gt;)</li>
 <li class="circle">org.cyrus.api.network.connection.<a href="org/cyrus/api/network/connection/ConnectionKeys.html" class="type-name-link" title="class in org.cyrus.api.network.connection">ConnectionKeys</a></li>
 <li class="circle">org.cyrus.api.event.network.status.<a href="org/cyrus/api/event/network/status/ConnectionRequestStatusEvent.html" class="type-name-link" title="class in org.cyrus.api.event.network.status">ConnectionRequestStatusEvent</a> (implements org.cyrus.api.event.<a href="org/cyrus/api/event/IEvent.Cancelable.html" title="interface in org.cyrus.api.event">IEvent.Cancelable</a>)</li>
 <li class="circle">org.cyrus.api.command.command.commands.<a href="org/cyrus/api/command/command/commands/CyrusCommands.html" class="type-name-link" title="class in org.cyrus.api.command.command.commands">CyrusCommands</a></li>
@@ -337,7 +336,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.cyrus.api.platform.extensions.<a href="org/cyrus/api/platform/extensions/ExtensionManager.Changeable.html" class="type-name-link" title="interface in org.cyrus.api.platform.extensions">ExtensionManager.Changeable</a></li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt; (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt;)
 <ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a>)</li>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a>)</li>
 </ul>
 </li>
 <li class="circle">org.cyrus.api.world.<a href="org/cyrus/api/world/IWorldManager.Changing.html" class="type-name-link" title="interface in org.cyrus.api.world">IWorldManager.Changing</a> (also extends org.cyrus.api.world.<a href="org/cyrus/api/world/IWorldManager.Writable.html" title="interface in org.cyrus.api.world">IWorldManager.Writable</a>)</li>
@@ -390,14 +389,14 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.cyrus.api.platform.extensions.<a href="org/cyrus/api/platform/extensions/ExtensionManager.Writable.html" class="type-name-link" title="interface in org.cyrus.api.platform.extensions">ExtensionManager.Writable</a></li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt; (also extends org.cyrus.api.item.inventory.<a href="org/cyrus/api/item/inventory/Inventory.Mutable.html" title="interface in org.cyrus.api.item.inventory">Inventory.Mutable</a>, org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView</a>&lt;Self&gt;)
 <ul>
-<li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;)
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory</a>&lt;Self&gt;)
 <ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a>)</li>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
 </ul>
 </li>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory</a>&lt;Self&gt;)
+<li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;)
 <ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a>)</li>
 </ul>
 </li>
 </ul>
@@ -505,8 +504,14 @@ loadScripts(document, 'script');</script>
 </li>
 <li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;Self,<wbr>C&gt;
 <ul>
-<li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Multi.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;C&gt;</li>
-<li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Single.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;</li>
+<li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Multi.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;C&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Writable.html" title="interface in org.cyrus.api.event.change">ChangeStore.Writable</a>&lt;Self,<wbr>C&gt;)</li>
+<li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Single.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Writable.html" title="interface in org.cyrus.api.event.change">ChangeStore.Writable</a>&lt;Self,<wbr>C&gt;)</li>
+<li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Writable.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeStore.Writable</a>&lt;Self,<wbr>C&gt;
+<ul>
+<li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Multi.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;C&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;Self,<wbr>C&gt;)</li>
+<li class="circle">org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.Single.html" class="type-name-link" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;Self,<wbr>C&gt;)</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -580,25 +585,25 @@ loadScripts(document, 'script');</script>
 </li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView</a>&lt;Self&gt; (also extends org.cyrus.api.item.inventory.<a href="org/cyrus/api/item/inventory/Inventory.html" title="interface in org.cyrus.api.item.inventory">Inventory</a>)
 <ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory</a>&lt;Self&gt;
+<ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt;)
+<ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;Self, ChildType&gt;, org.cyrus.api.item.inventory.<a href="org/cyrus/api/item/inventory/Inventory.Mutable.html" title="interface in org.cyrus.api.item.inventory">Inventory.Mutable</a>)
 <ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory</a>&lt;Self&gt;)
+<ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+</ul>
+</li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;)
 <ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a>)</li>
-</ul>
-</li>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory</a>&lt;Self&gt;)
-<ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory</a>&lt;Self&gt;
-<ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt;)
-<ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a>)</li>
 </ul>
 </li>
 </ul>
@@ -685,19 +690,19 @@ loadScripts(document, 'script');</script>
 </li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;Self, ChildType&gt;, org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView</a>&lt;Self&gt;)
 <ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory</a>&lt;Self&gt;)
+<ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+</ul>
+</li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;)
 <ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a>)</li>
-</ul>
-</li>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory</a>&lt;Self&gt;)
-<ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a>)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerCraftingInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerCraftingInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory</a>&lt;Self&gt;)</li>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerCraftingInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerCraftingInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory</a>)</li>
 <li class="circle">org.cyrus.api.item.inventory.slot.<a href="org/cyrus/api/item/inventory/slot/Slot.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.slot">Slot.Mutable</a> (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;Self, ChildType&gt;, org.cyrus.api.item.inventory.slot.<a href="org/cyrus/api/item/inventory/slot/Slot.html" title="interface in org.cyrus.api.item.inventory.slot">Slot</a>&lt;Self&gt;)
 <ul>
 <li class="circle">org.cyrus.api.item.inventory.slot.<a href="org/cyrus/api/item/inventory/slot/Slot.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.slot">Slot.Changing</a> (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;)</li>
@@ -741,7 +746,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/Hotbar.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">Hotbar.Mutable</a> (also extends org.cyrus.api.item.inventory.<a href="org/cyrus/api/item/inventory/Inventory.Mutable.html" title="interface in org.cyrus.api.item.inventory">Inventory.Mutable</a>)</li>
 </ul>
 </li>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerCraftingInventory.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory</a>&lt;Self&gt;
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerCraftingInventory.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory</a>
 <ul>
 <li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerCraftingInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.<a href="org/cyrus/api/item/inventory/Inventory.Mutable.html" title="interface in org.cyrus.api.item.inventory">Inventory.Mutable</a>)</li>
 </ul>
@@ -755,25 +760,25 @@ loadScripts(document, 'script');</script>
 </li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView</a>&lt;Self&gt; (also extends org.cyrus.api.data.<a href="org/cyrus/api/data/DataHolder.html" title="interface in org.cyrus.api.data">DataHolder</a>&lt;Self&gt;)
 <ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory</a>&lt;Self&gt;
+<ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt;)
+<ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;Self, ChildType&gt;, org.cyrus.api.item.inventory.<a href="org/cyrus/api/item/inventory/Inventory.Mutable.html" title="interface in org.cyrus.api.item.inventory">Inventory.Mutable</a>)
 <ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory</a>&lt;Self&gt;)
+<ul>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+</ul>
+</li>
 <li class="circle">org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt; (also extends org.cyrus.api.event.change.<a href="org/cyrus/api/event/change/ChangeHolder.Child.html" title="interface in org.cyrus.api.event.change">ChangeHolder.Child</a>&lt;Parent,<wbr>Self&gt;)
 <ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a>)</li>
-</ul>
-</li>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory</a>&lt;Self&gt;)
-<ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory</a>&lt;Self&gt;
-<ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Mutable.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Mutable.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt;)
-<ul>
-<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/PlayerInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.<a href="org/cyrus/api/item/inventory/type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;)</li>
+<li class="circle">org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Changing.html" class="type-name-link" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a> (also extends org.cyrus.api.item.inventory.type.player.<a href="org/cyrus/api/item/inventory/type/player/ConnectionInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a>)</li>
 </ul>
 </li>
 </ul>

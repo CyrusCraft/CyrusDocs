@@ -84,6 +84,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">CommandBuilder.ExecutorCommand</span><span class="extends-implements">
 extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.api.command.command">CommandBuilder.Buildable</a>&lt;<a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a>&gt;</span></div>
+<div class="block">A stage in the builder</div>
 </div>
 </section>
 <section class="summary">
@@ -101,16 +102,24 @@ extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.ap
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="Command.html" title="interface in org.cyrus.api.command.command">Command</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#build()" class="member-name-link">build</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Builds the command - this does not register the command</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#executor(java.util.function.Function)" class="member-name-link">executor</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>, <a href="../CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a>&gt;&nbsp;executor)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#executor(java.util.function.Function)" class="member-name-link">executor</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>, @NotNull <a href="../CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a>&gt;&nbsp;executor)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The executor for this command.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#noPermission()" class="member-name-link">noPermission</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">States the command should not need a permission</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#permission(org.cyrus.api.service.permission.Permission)" class="member-name-link">permission</a><wbr>(@Nullable <a href="../../service/permission/Permission.html" title="interface in org.cyrus.api.service.permission">Permission</a>&lt;?&gt;&nbsp;permission)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The permission to run this command</div>
+</div>
 </div>
 </div>
 </div>
@@ -135,7 +144,15 @@ extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.ap
 <div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
 @NotNull
 </span><span class="return-type">@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></span>&nbsp;<span class="element-name">executor</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>, <a href="../CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a>&gt;&nbsp;executor)</span></div>
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a>, @NotNull <a href="../CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a>&gt;&nbsp;executor)</span></div>
+<div class="block">The executor for this command. The command context gives all information of the command and then result is
+a command result</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>executor</code> - The executor of the command</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -147,6 +164,16 @@ extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.ap
 @NotNull
 </span><span class="return-type">@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></span>&nbsp;<span class="element-name">permission</span><wbr><span class="parameters">(@Nullable
  @Nullable <a href="../../service/permission/Permission.html" title="interface in org.cyrus.api.service.permission">Permission</a>&lt;?&gt;&nbsp;permission)</span></div>
+<div class="block">The permission to run this command
+<p>
+    Note: if the permission holder does not have permissions for a complete command in terms of arguments,
+    it will fail the permission check even if this is true</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>permission</code> - The permission to use. Null can be used to state no permission should be needed</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -157,6 +184,14 @@ extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.ap
 <div class="member-signature"><span class="annotations">@Contract("-&gt; this")
 @NotNull
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="CommandBuilder.ExecutorCommand.html" title="interface in org.cyrus.api.command.command">CommandBuilder.ExecutorCommand</a></span>&nbsp;<span class="element-name">noPermission</span>()</div>
+<div class="block">States the command should not need a permission
+<p>
+    Note: If the permission holder does not have permission for a complete command in terms of arguments,
+    it will fail the permission check</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -167,6 +202,11 @@ extends <a href="CommandBuilder.Buildable.html" title="interface in org.cyrus.ap
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull <a href="Command.html" title="interface in org.cyrus.api.command.command">Command</a></span>&nbsp;<span class="element-name">build</span>()</div>
+<div class="block">Builds the command - this does not register the command</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the build command</dd>
+</dl>
 </div>
 </section>
 </li>

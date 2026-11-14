@@ -65,9 +65,13 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Interface AlternativeIdentifiers" class="title">Interface AlternativeIdentifiers&lt;<span id="type-param-T">T</span>&gt;</h1>
+<h1 title="Interface AlternativeIdentifiers" class="title">Interface AlternativeIdentifiers&lt;T&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="type-param-T"><code>T</code> - The identifier type</span></dd>
+</dl>
 <dl class="notes">
 <dt>All Known Implementing Classes:</dt>
 <dd><code><a href="../world/block/state/value/BedHalf.html" title="enum class in org.cyrus.api.world.block.state.value">BedHalf</a>, <a href="../world/block/state/value/BlockHalf.html" title="enum class in org.cyrus.api.world.block.state.value">BlockHalf</a></code></dd>
@@ -75,6 +79,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">AlternativeIdentifiers&lt;T&gt;</span></div>
+<div class="block">If a class has multiple identifiers then this class will be implemented allowing for a class to have alternative
+identifiers</div>
 </div>
 </section>
 <section class="summary">
@@ -92,7 +98,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="#type-param-T" title="type parameter in AlternativeIdentifiers">T</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#alternativeIdentifiers()" class="member-name-link">alternativeIdentifiers</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Other identifiers, this does not include the primary identifier</div>
+</div>
 </div>
 </div>
 </div>
@@ -113,6 +121,11 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="return-type">@NotNull @Unmodifiable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="#type-param-T" title="type parameter in AlternativeIdentifiers">T</a>&gt;</span>&nbsp;<span class="element-name">alternativeIdentifiers</span>()</div>
+<div class="block">Other identifiers, this does not include the primary identifier</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A collection of other identifiers</dd>
+</dl>
 </div>
 </section>
 </li>

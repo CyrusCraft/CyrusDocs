@@ -79,6 +79,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">BannerPattern</span><span class="extends-implements">
 extends <a href="../../../registry/RegistryEntry.html" title="interface in org.cyrus.api.registry">RegistryEntry</a>&lt;<a href="BannerPattern.html" title="interface in org.cyrus.api.values.banner.pattern">BannerPattern</a>&gt;</span></div>
+<div class="block">Pattern layer for a banner. A single pattern can be layered with other patterns to create a unique pattern</div>
 </div>
 </section>
 <section class="summary">
@@ -101,7 +102,9 @@ extends <a href="../../../registry/RegistryEntry.html" title="interface in org.c
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#assetId()" class="member-name-link">assetId</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The key used to identify the asset found in the client</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="../../../registry/RegistryValue.html" title="interface in org.cyrus.api.registry">RegistryValue</a><wbr>&lt;<a href="BannerPattern.html" title="interface in org.cyrus.api.values.banner.pattern">BannerPattern</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
@@ -109,7 +112,9 @@ extends <a href="../../../registry/RegistryEntry.html" title="interface in org.c
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#translationKey()" class="member-name-link">translationKey</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Name of the pattern as a translation key</div>
+</div>
 </div>
 </div>
 </div>
@@ -134,6 +139,11 @@ extends <a href="../../../registry/RegistryEntry.html" title="interface in org.c
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">assetId</span>()</div>
+<div class="block">The key used to identify the asset found in the client</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a key of the location of the asset found in the client</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -144,6 +154,14 @@ extends <a href="../../../registry/RegistryEntry.html" title="interface in org.c
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">translationKey</span>()</div>
+<div class="block">Name of the pattern as a translation key
+<p>
+Note: this should probably be <code>TranslatableComponent</code> however as it's not
+implemented yet it shouldn't be used</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The translation key of the pattern</dd>
+</dl>
 </div>
 </section>
 </li>

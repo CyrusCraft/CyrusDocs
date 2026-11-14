@@ -82,6 +82,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ClientValidatorPropertyBuilder.EntityBuilder</span><span class="extends-implements">
 extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder</a>&lt;<a href="ClientValidatorProperty.EntityProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.EntityProperty</a>&gt;</span></div>
+<div class="block">Builder for entity</div>
 </div>
 </section>
 <section class="summary">
@@ -106,9 +107,11 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ClientValidatorPropertyBuilder.EntityBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.EntityBuilder</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ClientValidatorPropertyBuilder.EntityBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.EntityBuilder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#style(org.cyrus.api.command.command.parameter.validator.ClientValidatorProperty.EntityProperty.EntityStyle)" class="member-name-link">style</a><wbr>(<a href="ClientValidatorProperty.EntityProperty.EntityStyle.html" title="enum class in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.EntityProperty.EntityStyle</a>&nbsp;style)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the style of entity to search for</div>
+</div>
 </div>
 </div>
 </div>
@@ -130,8 +133,17 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <section class="detail" id="style(org.cyrus.api.command.command.parameter.validator.ClientValidatorProperty.EntityProperty.EntityStyle)">
 <h3>style</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="ClientValidatorPropertyBuilder.EntityBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.EntityBuilder</a></span>&nbsp;<span class="element-name">style</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@NotNull
+@Contract("_ -&gt; this")
+</span><span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.EntityBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.EntityBuilder</a></span>&nbsp;<span class="element-name">style</span><wbr><span class="parameters">(@NotNull
  <a href="ClientValidatorProperty.EntityProperty.EntityStyle.html" title="enum class in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.EntityProperty.EntityStyle</a>&nbsp;style)</span></div>
+<div class="block">Sets the style of entity to search for</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>style</code> - the style of entity</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>

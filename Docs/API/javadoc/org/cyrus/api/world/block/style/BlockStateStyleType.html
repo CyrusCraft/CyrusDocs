@@ -66,9 +66,13 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Interface BlockStateStyleType" class="title">Interface BlockStateStyleType&lt;<span id="type-param-Style">Style extends <a href="BlockStateStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle</a>&lt;Style,<wbr>?&gt;</span>&gt;</h1>
+<h1 title="Interface BlockStateStyleType" class="title">Interface BlockStateStyleType&lt;Style extends <a href="BlockStateStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle</a>&lt;Style,<wbr>?&gt;&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="type-param-Style"><code>Style</code> - The style its reference</span></dd>
+</dl>
 <dl class="notes">
 <dt>All Known Implementing Classes:</dt>
 <dd><code><a href="EnumStateStyleType.html" title="class in org.cyrus.api.world.block.style">EnumStateStyleType</a>, <a href="IntegerStateStyleType.html" title="class in org.cyrus.api.world.block.style">IntegerStateStyleType</a></code></dd>
@@ -76,6 +80,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">BlockStateStyleType&lt;Style extends <a href="BlockStateStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle</a>&lt;Style,<wbr>?&gt;&gt;</span></div>
+<div class="block">Types for a block state style</div>
 </div>
 </section>
 <section class="summary">
@@ -93,10 +98,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#identifier()" class="member-name-link">identifier</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The identifier for this type</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull org.cyrus.nbt.data.CompoundTag</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#toCompound(Style)" class="member-name-link">toCompound</a><wbr>(<a href="#type-param-Style" title="type parameter in BlockStateStyleType">Style</a>&nbsp;type)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates NBT compound of the style</div>
+</div>
 </div>
 </div>
 </div>
@@ -118,6 +127,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">identifier</span>()</div>
+<div class="block">The identifier for this type</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>identifier of this type</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -129,6 +143,13 @@ loadScripts(document, 'script');</script>
 @CheckReturnValue
 </span><span class="return-type">@NotNull org.cyrus.nbt.data.CompoundTag</span>&nbsp;<span class="element-name">toCompound</span><wbr><span class="parameters">(@NotNull
  <a href="#type-param-Style" title="type parameter in BlockStateStyleType">Style</a>&nbsp;type)</span></div>
+<div class="block">Creates NBT compound of the style</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>type</code> - The style</dd>
+<dt>Returns:</dt>
+<dd>The NBT compound tag</dd>
+</dl>
 </div>
 </section>
 </li>

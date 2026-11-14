@@ -86,6 +86,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ChunkSection.Writable</span><span class="extends-implements">
 extends <a href="ChunkSection.html" title="interface in org.cyrus.api.world.chunk">ChunkSection</a>, <a href="../../event/change/ChangeHolder.html" title="interface in org.cyrus.api.event.change">ChangeHolder</a>&lt;<a href="ChunkSection.Writable.html" title="interface in org.cyrus.api.world.chunk">ChunkSection.Writable</a>, <a href="ChunkSection.Changing.html" title="interface in org.cyrus.api.world.chunk">ChunkSection.Changing</a>&gt;</span></div>
+<div class="block">Writable instance of the chunk section</div>
 </div>
 </section>
 <section class="summary">
@@ -118,7 +119,9 @@ extends <a href="ChunkSection.html" title="interface in org.cyrus.api.world.chun
  @Range(from=0L,to=16L) int&nbsp;y,
  @Range(from=0L,to=16L) int&nbsp;z,
  <a href="../block/BlockData.html" title="interface in org.cyrus.api.world.block">BlockData</a>&nbsp;data)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the position within the chunk and update its block.</div>
+</div>
 </div>
 </div>
 </div>
@@ -153,6 +156,15 @@ extends <a href="ChunkSection.html" title="interface in org.cyrus.api.world.chun
  @Range(from=0L,to=16L) int&nbsp;y,
  @Range(from=0L,to=16L) int&nbsp;z,
  <a href="../block/BlockData.html" title="interface in org.cyrus.api.world.block">BlockData</a>&nbsp;data)</span></div>
+<div class="block">Sets the position within the chunk and update its block. The position is relative to the chunk minimum
+position</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>x</code> - X relative to the chunk section minimum position</dd>
+<dd><code>y</code> - Y relative to the chunk section minimum position</dd>
+<dd><code>z</code> - Z relative to the chunk section minimum position</dd>
+<dd><code>data</code> - the block data to set it as</dd>
+</dl>
 </div>
 </section>
 </li>

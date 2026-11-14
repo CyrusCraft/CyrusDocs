@@ -77,6 +77,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">CommandContextBuilder.Messenger</span></div>
+<div class="block">The next stage of the builder</div>
 </div>
 </section>
 <section class="summary">
@@ -94,10 +95,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandContextBuilder.Target.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Target</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#audience(net.kyori.adventure.audience.Audience)" class="member-name-link">audience</a><wbr>(@NotNull net.kyori.adventure.audience.Audience&nbsp;audience)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The user who should receive the messages from the command</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="CommandContextBuilder.Target.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Target</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#noAudience()" class="member-name-link">noAudience</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">States that no messages will be received from the command</div>
+</div>
 </div>
 </div>
 </div>
@@ -119,6 +124,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="return-type">@NotNull <a href="CommandContextBuilder.Target.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Target</a></span>&nbsp;<span class="element-name">audience</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.audience.Audience&nbsp;audience)</span></div>
+<div class="block">The user who should receive the messages from the command</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>audience</code> - The audience of the command</dd>
+<dt>Returns:</dt>
+<dd>next stage</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -128,6 +140,11 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="CommandContextBuilder.Target.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Target</a></span>&nbsp;<span class="element-name">noAudience</span>()</div>
+<div class="block">States that no messages will be received from the command</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the next stage</dd>
+</dl>
 </div>
 </section>
 </li>

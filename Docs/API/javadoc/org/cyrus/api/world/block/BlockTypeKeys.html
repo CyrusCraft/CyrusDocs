@@ -59,6 +59,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#field-detail" tabindex="0">Field Details</a>
 <ol class="toc-list">
 <li><a href="#AS_ITEM_KEY" tabindex="0">AS_ITEM_KEY</a></li>
+<li><a href="#AS_ITEM" tabindex="0">AS_ITEM</a></li>
 <li><a href="#BLAST_RESISTANCE" tabindex="0">BLAST_RESISTANCE</a></li>
 <li><a href="#BREAK_SOUND_KEY" tabindex="0">BREAK_SOUND_KEY</a></li>
 <li><a href="#DEFAULT_STATE" tabindex="0">DEFAULT_STATE</a></li>
@@ -94,6 +95,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">BlockTypeKeys</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">All BlockType keys</div>
 </div>
 </section>
 <section class="summary">
@@ -107,63 +109,96 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#AS_ITEM_KEY" class="member-name-link">AS_ITEM_KEY</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#BLAST_RESISTANCE" class="member-name-link">BLAST_RESISTANCE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#BREAK_SOUND_KEY" class="member-name-link">BREAK_SOUND_KEY</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="state/BlockState.html" title="interface in org.cyrus.api.world.block.state">BlockState</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#DEFAULT_STATE" class="member-name-link">DEFAULT_STATE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#DESTROY_SPEED" class="member-name-link">DESTROY_SPEED</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#DISPLAY_NAME" class="member-name-link">DISPLAY_NAME</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#FALL_SOUND_KEY" class="member-name-link">FALL_SOUND_KEY</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="../../item/ItemType.html" title="interface in org.cyrus.api.item">ItemType</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#AS_ITEM" class="member-name-link">AS_ITEM</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The ItemType to represent this block type in inventory</div>
+</div>
 <div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#HIT_SOUND_KEY" class="member-name-link">HIT_SOUND_KEY</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#AS_ITEM_KEY" class="member-name-link">AS_ITEM_KEY</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">The ItemType key to represent this block type in inventory</div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#BLAST_RESISTANCE" class="member-name-link">BLAST_RESISTANCE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Blast resistance of the block type</div>
+</div>
+<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#BREAK_SOUND_KEY" class="member-name-link">BREAK_SOUND_KEY</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Break sound's key</div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="state/BlockState.html" title="interface in org.cyrus.api.world.block.state">BlockState</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#DEFAULT_STATE" class="member-name-link">DEFAULT_STATE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The default blockState for this block type</div>
+</div>
+<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#DESTROY_SPEED" class="member-name-link">DESTROY_SPEED</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">The destroy speed of the block in seconds</div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#DISPLAY_NAME" class="member-name-link">DISPLAY_NAME</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">String display name of the block type</div>
+</div>
+<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#FALL_SOUND_KEY" class="member-name-link">FALL_SOUND_KEY</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Fall sound's key</div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#HIT_SOUND_KEY" class="member-name-link">HIT_SOUND_KEY</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Hit sound's key</div>
+</div>
+<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#IS_GRAVITY_AFFECTED" class="member-name-link">IS_GRAVITY_AFFECTED</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Is the block affected by gravity when tick update occurs on the block</div>
+</div>
 <div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#IS_GRAVITY_AFFECTED" class="member-name-link">IS_GRAVITY_AFFECTED</a></code></div>
+<div class="col-second even-row-color"><code><a href="#IS_SURROGATE" class="member-name-link">IS_SURROGATE</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#IS_SURROGATE" class="member-name-link">IS_SURROGATE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#IS_UNBREAKING" class="member-name-link">IS_UNBREAKING</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#NETWORK_ID" class="member-name-link">NETWORK_ID</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#PLACE_SOUND_KEY" class="member-name-link">PLACE_SOUND_KEY</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="style/BlockStateStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle</a>&lt;?,<wbr>?&gt;&gt;&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#PROPERTIES" class="member-name-link">PROPERTIES</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#IS_UNBREAKING" class="member-name-link">IS_UNBREAKING</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">If the block can be broken by a player</div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#NETWORK_ID" class="member-name-link">NETWORK_ID</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The ID of the block when sent over packets</div>
+</div>
+<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#PLACE_SOUND_KEY" class="member-name-link">PLACE_SOUND_KEY</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">The sound key for when the placement occurs</div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="style/BlockStateStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle</a>&lt;?,<wbr>?&gt;&gt;&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#PROPERTIES" class="member-name-link">PROPERTIES</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The block state styles for this block</div>
+</div>
+<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#SOUND_PITCH" class="member-name-link">SOUND_PITCH</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#SOUND_PITCH" class="member-name-link">SOUND_PITCH</a></code></div>
+<div class="col-second even-row-color"><code><a href="#SOUND_VOLUME" class="member-name-link">SOUND_VOLUME</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#SOUND_VOLUME" class="member-name-link">SOUND_VOLUME</a></code></div>
+<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="state/BlockState.html" title="interface in org.cyrus.api.world.block.state">BlockState</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#STATES" class="member-name-link">STATES</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">All the block states for this block type</div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#STEP_SOUND_KEY" class="member-name-link">STEP_SOUND_KEY</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#UPDATE_RANDOMLY" class="member-name-link">UPDATE_RANDOMLY</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="state/BlockState.html" title="interface in org.cyrus.api.world.block.state">BlockState</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#STATES" class="member-name-link">STATES</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;net.kyori.adventure.key.Key&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#STEP_SOUND_KEY" class="member-name-link">STEP_SOUND_KEY</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#UPDATE_RANDOMLY" class="member-name-link">UPDATE_RANDOMLY</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -190,6 +225,16 @@ loadScripts(document, 'script');</script>
 <h3>AS_ITEM_KEY</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">AS_ITEM_KEY</span></div>
+<div class="block">The ItemType key to represent this block type in inventory</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="AS_ITEM">
+<h3>AS_ITEM</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="../../item/ItemType.html" title="interface in org.cyrus.api.item">ItemType</a>&gt;</span>&nbsp;<span class="element-name">AS_ITEM</span></div>
+<div class="block">The ItemType to represent this block type in inventory</div>
 </div>
 </section>
 </li>
@@ -198,6 +243,7 @@ loadScripts(document, 'script');</script>
 <h3>BLAST_RESISTANCE</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</span>&nbsp;<span class="element-name">BLAST_RESISTANCE</span></div>
+<div class="block">Blast resistance of the block type</div>
 </div>
 </section>
 </li>
@@ -206,6 +252,7 @@ loadScripts(document, 'script');</script>
 <h3>BREAK_SOUND_KEY</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">BREAK_SOUND_KEY</span></div>
+<div class="block">Break sound's key</div>
 </div>
 </section>
 </li>
@@ -214,6 +261,7 @@ loadScripts(document, 'script');</script>
 <h3>DEFAULT_STATE</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="state/BlockState.html" title="interface in org.cyrus.api.world.block.state">BlockState</a>&gt;</span>&nbsp;<span class="element-name">DEFAULT_STATE</span></div>
+<div class="block">The default blockState for this block type</div>
 </div>
 </section>
 </li>
@@ -222,6 +270,7 @@ loadScripts(document, 'script');</script>
 <h3>DESTROY_SPEED</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</span>&nbsp;<span class="element-name">DESTROY_SPEED</span></div>
+<div class="block">The destroy speed of the block in seconds</div>
 </div>
 </section>
 </li>
@@ -230,6 +279,7 @@ loadScripts(document, 'script');</script>
 <h3>DISPLAY_NAME</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">DISPLAY_NAME</span></div>
+<div class="block">String display name of the block type</div>
 </div>
 </section>
 </li>
@@ -238,6 +288,7 @@ loadScripts(document, 'script');</script>
 <h3>FALL_SOUND_KEY</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">FALL_SOUND_KEY</span></div>
+<div class="block">Fall sound's key</div>
 </div>
 </section>
 </li>
@@ -246,6 +297,7 @@ loadScripts(document, 'script');</script>
 <h3>HIT_SOUND_KEY</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">HIT_SOUND_KEY</span></div>
+<div class="block">Hit sound's key</div>
 </div>
 </section>
 </li>
@@ -254,6 +306,7 @@ loadScripts(document, 'script');</script>
 <h3>IS_GRAVITY_AFFECTED</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">IS_GRAVITY_AFFECTED</span></div>
+<div class="block">Is the block affected by gravity when tick update occurs on the block</div>
 </div>
 </section>
 </li>
@@ -270,6 +323,7 @@ loadScripts(document, 'script');</script>
 <h3>IS_UNBREAKING</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">IS_UNBREAKING</span></div>
+<div class="block">If the block can be broken by a player</div>
 </div>
 </section>
 </li>
@@ -278,6 +332,7 @@ loadScripts(document, 'script');</script>
 <h3>NETWORK_ID</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">NETWORK_ID</span></div>
+<div class="block">The ID of the block when sent over packets</div>
 </div>
 </section>
 </li>
@@ -286,6 +341,7 @@ loadScripts(document, 'script');</script>
 <h3>PLACE_SOUND_KEY</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;net.kyori.adventure.key.Key&gt;</span>&nbsp;<span class="element-name">PLACE_SOUND_KEY</span></div>
+<div class="block">The sound key for when the placement occurs</div>
 </div>
 </section>
 </li>
@@ -294,6 +350,7 @@ loadScripts(document, 'script');</script>
 <h3>PROPERTIES</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="style/BlockStateStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle</a>&lt;?,<wbr>?&gt;&gt;&gt;</span>&nbsp;<span class="element-name">PROPERTIES</span></div>
+<div class="block">The block state styles for this block</div>
 </div>
 </section>
 </li>
@@ -318,6 +375,7 @@ loadScripts(document, 'script');</script>
 <h3>STATES</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../data/DataKey.html" title="interface in org.cyrus.api.data">DataKey</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="state/BlockState.html" title="interface in org.cyrus.api.world.block.state">BlockState</a>&gt;&gt;</span>&nbsp;<span class="element-name">STATES</span></div>
+<div class="block">All the block states for this block type</div>
 </div>
 </section>
 </li>

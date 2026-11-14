@@ -80,7 +80,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="type/player/Hotbar.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">Hotbar.Mutable</a>, <a href="InventoryGrid.Mutable.html" title="interface in org.cyrus.api.item.inventory">InventoryGrid.Mutable</a>, <a href="type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;, <a href="type/InventoryView.Mutable.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt;, <a href="type/player/PlayerCraftingInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory.Mutable</a>, <a href="type/player/PlayerInventory.Changing.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Changing</a>, <a href="type/player/PlayerInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerInventory.Mutable</a>, <a href="type/player/PlayerMainInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerMainInventory.Mutable</a>, <a href="slot/Slot.Changing.html" title="interface in org.cyrus.api.item.inventory.slot">Slot.Changing</a>, <a href="slot/Slot.Mutable.html" title="interface in org.cyrus.api.item.inventory.slot">Slot.Mutable</a></code></dd>
+<dd><code><a href="type/player/ConnectionInventory.Changing.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Changing</a>, <a href="type/player/ConnectionInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">ConnectionInventory.Mutable</a>, <a href="type/player/Hotbar.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">Hotbar.Mutable</a>, <a href="InventoryGrid.Mutable.html" title="interface in org.cyrus.api.item.inventory">InventoryGrid.Mutable</a>, <a href="type/InventoryView.Changing.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Changing</a>&lt;Muta,<wbr>Self&gt;, <a href="type/InventoryView.Mutable.html" title="interface in org.cyrus.api.item.inventory.type">InventoryView.Mutable</a>&lt;Self,<wbr>Change&gt;, <a href="type/player/PlayerCraftingInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerCraftingInventory.Mutable</a>, <a href="type/player/PlayerMainInventory.Mutable.html" title="interface in org.cyrus.api.item.inventory.type.player">PlayerMainInventory.Mutable</a>, <a href="slot/Slot.Changing.html" title="interface in org.cyrus.api.item.inventory.slot">Slot.Changing</a>, <a href="slot/Slot.Mutable.html" title="interface in org.cyrus.api.item.inventory.slot">Slot.Mutable</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
@@ -182,7 +182,7 @@ extends <a href="Inventory.html" title="interface in org.cyrus.api.item.inventor
 <div class="block">The ability to query the inventory using an <a href="query/InventoryQuery.html" title="interface in org.cyrus.api.item.inventory.query"><code>InventoryQuery</code></a>. Queries are cached meaning that common
 queries should produce results quickly. The amount of queries stored varies depending on the inventory
 implementation.
-
+<p>
 Run <a href="query/InventoryQuery.html#query(org.cyrus.api.item.inventory.Inventory)"><code>InventoryQuery.query(Inventory)</code></a> to run without caching result</div>
 <dl class="notes">
 <dt>Specified by:</dt>

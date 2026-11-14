@@ -76,6 +76,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">CommandContextBuilder.Target</span></div>
+<div class="block">The next stage of the builder</div>
 </div>
 </section>
 <section class="summary">
@@ -93,7 +94,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#target(org.cyrus.api.command.CommandSource)" class="member-name-link">target</a><wbr>(@NotNull <a href="../CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a>&nbsp;source)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the target of the command.</div>
+</div>
 </div>
 </div>
 </div>
@@ -115,6 +118,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="return-type">@NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></span>&nbsp;<span class="element-name">target</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a>&nbsp;source)</span></div>
+<div class="block">Sets the target of the command. If the command applies effects on a target then use this</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>source</code> - the target</dd>
+<dt>Returns:</dt>
+<dd>next stage</dd>
+</dl>
 </div>
 </section>
 </li>

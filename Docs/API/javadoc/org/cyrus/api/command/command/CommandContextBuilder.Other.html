@@ -79,6 +79,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">CommandContextBuilder.Other</span></div>
+<div class="block">The next stage of the builder</div>
 </div>
 </section>
 <section class="summary">
@@ -96,16 +97,24 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#build()" class="member-name-link">build</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Builds the command context</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#forSuggestion()" class="member-name-link">forSuggestion</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">States this command should be used for getting suggestions</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#forSuggestion(boolean)" class="member-name-link">forSuggestion</a><wbr>(boolean&nbsp;suggestion)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">States this command should be used for getting suggestions</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#level(org.cyrus.api.Cyrus.Writable)" class="member-name-link">level</a><wbr>(<a href="../../Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a>&nbsp;writable)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The level to use</div>
+</div>
 </div>
 </div>
 </div>
@@ -125,8 +134,15 @@ loadScripts(document, 'script');</script>
 <h3>forSuggestion</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-@CheckReturnValue
+@Contract("_ -&gt; this")
 </span><span class="return-type">@NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></span>&nbsp;<span class="element-name">forSuggestion</span><wbr><span class="parameters">(boolean&nbsp;suggestion)</span></div>
+<div class="block">States this command should be used for getting suggestions</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>suggestion</code> - if the command should be for suggestions</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -134,7 +150,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="forSuggestion()">
 <h3>forSuggestion</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></span>&nbsp;<span class="element-name">forSuggestion</span>()</div>
+<div class="member-signature"><span class="annotations">@NotNull
+@Contract(" -&gt; this")
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></span>&nbsp;<span class="element-name">forSuggestion</span>()</div>
+<div class="block">States this command should be used for getting suggestions</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -143,9 +166,16 @@ loadScripts(document, 'script');</script>
 <h3>level</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-@CheckReturnValue
+@Contract("_ -&gt; this")
 </span><span class="return-type">@NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></span>&nbsp;<span class="element-name">level</span><wbr><span class="parameters">(@Nullable
  <a href="../../Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a>&nbsp;writable)</span></div>
+<div class="block">The level to use</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>writable</code> - the level to use</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -153,8 +183,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="build()">
 <h3>build</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NotNull
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+@NotNull
 </span><span class="return-type">@NotNull <a href="CommandContent.html" title="interface in org.cyrus.api.command.command">CommandContent</a></span>&nbsp;<span class="element-name">build</span>()</div>
+<div class="block">Builds the command context</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the built command context</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If the builder fails -&gt; will try to throw before hand but not always
+possible</dd>
+</dl>
 </div>
 </section>
 </li>

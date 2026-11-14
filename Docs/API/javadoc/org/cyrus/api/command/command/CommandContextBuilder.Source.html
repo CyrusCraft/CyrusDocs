@@ -77,6 +77,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">CommandContextBuilder.Source</span></div>
+<div class="block">Stage of the builder</div>
 </div>
 </section>
 <section class="summary">
@@ -94,10 +95,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandContextBuilder.Permission.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Permission</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#causeSource(org.cyrus.api.command.CommandSource)" class="member-name-link">causeSource</a><wbr>(@NotNull <a href="../CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a>&nbsp;source)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The object that ran the command, could be Connection, CommandBlock, Console, etc</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#source(org.cyrus.api.command.CommandSourceContext)" class="member-name-link">source</a><wbr>(<a href="../CommandSourceContext.html" title="class in org.cyrus.api.command">CommandSourceContext</a>&nbsp;context)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Take sources from the provided context</div>
+</div>
 </div>
 </div>
 </div>
@@ -116,9 +121,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="causeSource(org.cyrus.api.command.CommandSource)">
 <h3>causeSource</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NotNull
+<div class="member-signature"><span class="annotations">@CheckReturnValue
+@NotNull
 </span><span class="return-type">@NotNull <a href="CommandContextBuilder.Permission.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Permission</a></span>&nbsp;<span class="element-name">causeSource</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a>&nbsp;source)</span></div>
+<div class="block">The object that ran the command, could be Connection, CommandBlock, Console, etc</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>source</code> - the source who ran the command</dd>
+<dt>Returns:</dt>
+<dd>the next stage</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -127,7 +140,15 @@ loadScripts(document, 'script');</script>
 <h3>source</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="CommandContextBuilder.Other.html" title="interface in org.cyrus.api.command.command">CommandContextBuilder.Other</a></span>&nbsp;<span class="element-name">source</span><wbr><span class="parameters">(<a href="../CommandSourceContext.html" title="class in org.cyrus.api.command">CommandSourceContext</a>&nbsp;context)</span></div>
+<div class="block">Take sources from the provided context</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>context</code> - the context to take sources from</dd>
+<dt>Returns:</dt>
+<dd>the next stage of the builder</dd>
+</dl>
 </div>
 </section>
 </li>

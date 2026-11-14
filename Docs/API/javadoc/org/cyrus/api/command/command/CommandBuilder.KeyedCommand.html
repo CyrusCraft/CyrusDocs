@@ -76,6 +76,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">CommandBuilder.KeyedCommand</span></div>
+<div class="block">A step in building commands</div>
 </div>
 </section>
 <section class="summary">
@@ -93,7 +94,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="CommandBuilder.CommandStyle.html" title="interface in org.cyrus.api.command.command">CommandBuilder.CommandStyle</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#namespace(java.lang.String)" class="member-name-link">namespace</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The namespace of what is registering the command.</div>
+</div>
 </div>
 </div>
 </div>
@@ -115,6 +118,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="return-type">@NotNull <a href="CommandBuilder.CommandStyle.html" title="interface in org.cyrus.api.command.command">CommandBuilder.CommandStyle</a></span>&nbsp;<span class="element-name">namespace</span><wbr><span class="parameters">(@NotNull @Namespace
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace)</span></div>
+<div class="block">The namespace of what is registering the command. This should be your extension's namespace</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>namespace</code> - the namespace</dd>
+<dt>Returns:</dt>
+<dd>next stage in the builder</dd>
+</dl>
 </div>
 </section>
 </li>

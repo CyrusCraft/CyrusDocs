@@ -148,7 +148,9 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;C extends <a href="CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a> &amp; net.kyori.adventure.audience.Audience &amp; <a href="../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a>&gt;<br><a href="CommandSourceContext.html" title="class in org.cyrus.api.command">CommandSourceContext</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(C)" class="member-name-link">of</a><wbr>(C&nbsp;source)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Builds a command source context from a single source.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#permissionHolder()" class="member-name-link">permissionHolder</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -224,6 +226,15 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;C extends <a href="CommandSource.html" title="interface in org.cyrus.api.command">CommandSource</a> &amp; net.kyori.adventure.audience.Audience &amp; <a href="../service/permission/PermissionHolder.html" title="interface in org.cyrus.api.service.permission">PermissionHolder</a>&gt;</span>
 <span class="return-type"><a href="CommandSourceContext.html" title="class in org.cyrus.api.command">CommandSourceContext</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(@NotNull
  C&nbsp;source)</span></div>
+<div class="block">Builds a command source context from a single source. Source must be a command sender, audience and permission holder</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="of(C)-type-param-C"><code>C</code> - Type that has CommandSource, Audience and PermissionHolder</span></dd>
+<dt>Parameters:</dt>
+<dd><code>source</code> - the source</dd>
+<dt>Returns:</dt>
+<dd>the built Command source context</dd>
+</dl>
 </div>
 </section>
 </li>

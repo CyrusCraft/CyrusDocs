@@ -69,9 +69,13 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Interface BlockStateStyle.EnumStyle" class="title">Interface BlockStateStyle.EnumStyle&lt;<span id="type-param-E">E extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;E&gt;</span>&gt;</h1>
+<h1 title="Interface BlockStateStyle.EnumStyle" class="title">Interface BlockStateStyle.EnumStyle&lt;E extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;E&gt;&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="type-param-E"><code>E</code> - the enum of the style</span></dd>
+</dl>
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
 <dd><code><a href="BlockStateStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle</a>&lt;<a href="BlockStateStyle.EnumStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle.EnumStyle</a>&lt;E&gt;, E&gt;</code></dd>
@@ -84,6 +88,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">BlockStateStyle.EnumStyle&lt;E extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;E&gt;&gt;</span><span class="extends-implements">
 extends <a href="BlockStateStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle</a>&lt;<a href="BlockStateStyle.EnumStyle.html" title="interface in org.cyrus.api.world.block.style">BlockStateStyle.EnumStyle</a>&lt;E&gt;, E&gt;</span></div>
+<div class="block">Styles are enum</div>
 </div>
 </section>
 <section class="summary">
@@ -115,10 +120,14 @@ extends <a href="BlockStateStyle.html" title="interface in org.cyrus.api.world.b
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a><wbr>&lt;<a href="#type-param-E" title="type parameter in BlockStateStyle.EnumStyle">E</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#enumClass()" class="member-name-link">enumClass</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The enum class of this enum style</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#sourceTypeName()" class="member-name-link">sourceTypeName</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Source type name - used when reading from a file</div>
+</div>
 </div>
 </div>
 </div>
@@ -143,6 +152,11 @@ extends <a href="BlockStateStyle.html" title="interface in org.cyrus.api.world.b
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;<a href="#type-param-E" title="type parameter in BlockStateStyle.EnumStyle">E</a>&gt;</span>&nbsp;<span class="element-name">enumClass</span>()</div>
+<div class="block">The enum class of this enum style</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the enum class</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -153,6 +167,11 @@ extends <a href="BlockStateStyle.html" title="interface in org.cyrus.api.world.b
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">sourceTypeName</span>()</div>
+<div class="block">Source type name - used when reading from a file</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the source type name</dd>
+</dl>
 </div>
 </section>
 </li>

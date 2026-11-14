@@ -82,6 +82,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">AnimalSound.AnimalSoundGroup</span></div>
+<div class="block">A group of sounds for a particular entity</div>
 </div>
 </section>
 <section class="summary">
@@ -99,13 +100,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#ambient()" class="member-name-link">ambient</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sound it makes when peaceful</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#death()" class="member-name-link">death</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sound it makes when death occurs</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull net.kyori.adventure.key.Key</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hurt()" class="member-name-link">hurt</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sound it makes when it is hurt</div>
+</div>
 </div>
 </div>
 </div>
@@ -127,6 +134,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">ambient</span>()</div>
+<div class="block">Sound it makes when peaceful</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a sound identifier of when the entity is peaceful</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -137,6 +149,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">death</span>()</div>
+<div class="block">Sound it makes when death occurs</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a sound identifier of when the entity dies</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -147,6 +164,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
 </span><span class="return-type">@NotNull net.kyori.adventure.key.Key</span>&nbsp;<span class="element-name">hurt</span>()</div>
+<div class="block">Sound it makes when it is hurt</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a sound identifier of when the entity gets hurt</dd>
+</dl>
 </div>
 </section>
 </li>

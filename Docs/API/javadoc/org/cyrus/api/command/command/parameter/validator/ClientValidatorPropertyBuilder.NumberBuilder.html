@@ -68,9 +68,13 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Interface ClientValidatorPropertyBuilder.NumberBuilder" class="title">Interface ClientValidatorPropertyBuilder.NumberBuilder&lt;<span id="type-param-N">N extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a> &amp; <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;N&gt;</span>&gt;</h1>
+<h1 title="Interface ClientValidatorPropertyBuilder.NumberBuilder" class="title">Interface ClientValidatorPropertyBuilder.NumberBuilder&lt;N extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a> &amp; <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;N&gt;&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="type-param-N"><code>N</code> - The number style</span></dd>
+</dl>
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
 <dd><code><a href="ClientValidatorPropertyBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder</a>&lt;<a href="ClientValidatorProperty.NumberProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.NumberProperty</a>&lt;N&gt;&gt;</code></dd>
@@ -83,6 +87,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ClientValidatorPropertyBuilder.NumberBuilder&lt;N extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a> &amp; <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;N&gt;&gt;</span><span class="extends-implements">
 extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder</a>&lt;<a href="ClientValidatorProperty.NumberProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.NumberProperty</a>&lt;N&gt;&gt;</span></div>
+<div class="block">Base builder for all number based properties</div>
 </div>
 </section>
 <section class="summary">
@@ -107,12 +112,16 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a><wbr>&lt;<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a><wbr>&lt;<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#maximum(N)" class="member-name-link">maximum</a><wbr>(<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&nbsp;number)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a><wbr>&lt;<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The maximum number that can be entered</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a><wbr>&lt;<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minimum(N)" class="member-name-link">minimum</a><wbr>(<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&nbsp;number)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The minimum number that can be entered</div>
+</div>
 </div>
 </div>
 </div>
@@ -134,8 +143,17 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <section class="detail" id="minimum(N)">
 <h3 id="minimum(java.lang.Number)">minimum</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a>&lt;<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;</span>&nbsp;<span class="element-name">minimum</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@NotNull
+@Contract("_ -&gt; this")
+</span><span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a>&lt;<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;</span>&nbsp;<span class="element-name">minimum</span><wbr><span class="parameters">(@NotNull
  <a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&nbsp;number)</span></div>
+<div class="block">The minimum number that can be entered</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>number</code> - the minimum number</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -143,8 +161,17 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <section class="detail" id="maximum(N)">
 <h3 id="maximum(java.lang.Number)">maximum</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a>&lt;<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;</span>&nbsp;<span class="element-name">maximum</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@NotNull
+@Contract("_ -&gt; this")
+</span><span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.NumberBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.NumberBuilder</a>&lt;<a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&gt;</span>&nbsp;<span class="element-name">maximum</span><wbr><span class="parameters">(@NotNull
  <a href="#type-param-N" title="type parameter in ClientValidatorPropertyBuilder.NumberBuilder">N</a>&nbsp;number)</span></div>
+<div class="block">The maximum number that can be entered</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>number</code> - the maximum number</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>

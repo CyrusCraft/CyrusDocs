@@ -86,6 +86,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">BedRuleAttribute.BedRuleBuilder</span><span class="extends-implements">
 extends <a href="WorldTypeAttributeBuilder.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttributeBuilder</a></span></div>
+<div class="block">Builder for the bed rules</div>
 </div>
 </section>
 <section class="summary">
@@ -118,13 +119,19 @@ extends <a href="WorldTypeAttributeBuilder.html" title="interface in org.cyrus.a
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="BedRuleAttribute.BedRuleBuilder.html" title="interface in org.cyrus.api.world.type.attribute">BedRuleAttribute.BedRuleBuilder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canSleep(org.cyrus.api.world.type.attribute.BedRuleAttribute.CanSleep)" class="member-name-link">canSleep</a><wbr>(@NotNull <a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a>&nbsp;sleep)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets if a player can sleep in a bed</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="BedRuleAttribute.BedRuleBuilder.html" title="interface in org.cyrus.api.world.type.attribute">BedRuleAttribute.BedRuleBuilder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#errorMessage(net.kyori.adventure.text.Component)" class="member-name-link">errorMessage</a><wbr>(@NotNull net.kyori.adventure.text.Component&nbsp;errorMessage)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the error message for when a player cannot sleep</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="BedRuleAttribute.BedRuleBuilder.html" title="interface in org.cyrus.api.world.type.attribute">BedRuleAttribute.BedRuleBuilder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#explodes(boolean)" class="member-name-link">explodes</a><wbr>(boolean&nbsp;explodes)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Rule for when a bed explodes on creation</div>
+</div>
 </div>
 </div>
 </div>
@@ -158,8 +165,16 @@ extends <a href="WorldTypeAttributeBuilder.html" title="interface in org.cyrus.a
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
+@Contract("_ -&gt; this")
 </span><span class="return-type">@NotNull <a href="BedRuleAttribute.BedRuleBuilder.html" title="interface in org.cyrus.api.world.type.attribute">BedRuleAttribute.BedRuleBuilder</a></span>&nbsp;<span class="element-name">canSleep</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a>&nbsp;sleep)</span></div>
+<div class="block">Sets if a player can sleep in a bed</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>sleep</code> - the rule for if a player can sleep</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -169,8 +184,15 @@ extends <a href="WorldTypeAttributeBuilder.html" title="interface in org.cyrus.a
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
+@Contract("_ -&gt; this")
 </span><span class="return-type">@NotNull <a href="BedRuleAttribute.BedRuleBuilder.html" title="interface in org.cyrus.api.world.type.attribute">BedRuleAttribute.BedRuleBuilder</a></span>&nbsp;<span class="element-name">canSetSpawn</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a>&nbsp;sleep)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>sleep</code> - if a player can set their spawn using a bed</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -180,8 +202,16 @@ extends <a href="WorldTypeAttributeBuilder.html" title="interface in org.cyrus.a
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
+@Contract("_ -&gt; this")
 </span><span class="return-type">@NotNull <a href="BedRuleAttribute.BedRuleBuilder.html" title="interface in org.cyrus.api.world.type.attribute">BedRuleAttribute.BedRuleBuilder</a></span>&nbsp;<span class="element-name">errorMessage</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.text.Component&nbsp;errorMessage)</span></div>
+<div class="block">Sets the error message for when a player cannot sleep</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>errorMessage</code> - the error message to display</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -191,7 +221,15 @@ extends <a href="WorldTypeAttributeBuilder.html" title="interface in org.cyrus.a
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 @CheckReturnValue
+@Contract("_ -&gt; this")
 </span><span class="return-type">@NotNull <a href="BedRuleAttribute.BedRuleBuilder.html" title="interface in org.cyrus.api.world.type.attribute">BedRuleAttribute.BedRuleBuilder</a></span>&nbsp;<span class="element-name">explodes</span><wbr><span class="parameters">(boolean&nbsp;explodes)</span></div>
+<div class="block">Rule for when a bed explodes on creation</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>explodes</code> - if a bed should explode on placement</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>

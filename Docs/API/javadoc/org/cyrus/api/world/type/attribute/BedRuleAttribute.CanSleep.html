@@ -96,6 +96,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static enum </span><span class="element-name type-name-label">BedRuleAttribute.CanSleep</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a>&gt;</span></div>
+<div class="block">Rules for beds in a world</div>
 </div>
 </section>
 <section class="summary">
@@ -118,11 +119,20 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Enum Constant</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="#ALWAYS" class="member-name-link">ALWAYS</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">No matter the state, the action can be completed</div>
+</div>
 <div class="col-first odd-row-color"><code><a href="#NEVER" class="member-name-link">NEVER</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Can never do the action</div>
+</div>
 <div class="col-first even-row-color"><code><a href="#WHEN_DARK" class="member-name-link">WHEN_DARK</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Can only do the action if one of the following conditions are met
+- Clear skies and between 12523 - 23477 ticks
+- Star skies or rain and between 12002 - 23998 ticks
+- thunderstorm</div>
+</div>
 </div>
 </section>
 </li>
@@ -173,6 +183,7 @@ the order they are declared.</div>
 <h3>ALWAYS</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a></span>&nbsp;<span class="element-name">ALWAYS</span></div>
+<div class="block">No matter the state, the action can be completed</div>
 </div>
 </section>
 </li>
@@ -181,6 +192,10 @@ the order they are declared.</div>
 <h3>WHEN_DARK</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a></span>&nbsp;<span class="element-name">WHEN_DARK</span></div>
+<div class="block">Can only do the action if one of the following conditions are met
+- Clear skies and between 12523 - 23477 ticks
+- Star skies or rain and between 12002 - 23998 ticks
+- thunderstorm</div>
 </div>
 </section>
 </li>
@@ -189,6 +204,7 @@ the order they are declared.</div>
 <h3>NEVER</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="BedRuleAttribute.CanSleep.html" title="enum class in org.cyrus.api.world.type.attribute">BedRuleAttribute.CanSleep</a></span>&nbsp;<span class="element-name">NEVER</span></div>
+<div class="block">Can never do the action</div>
 </div>
 </section>
 </li>

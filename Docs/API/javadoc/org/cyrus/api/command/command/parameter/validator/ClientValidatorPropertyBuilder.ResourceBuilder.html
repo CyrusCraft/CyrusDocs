@@ -85,6 +85,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ClientValidatorPropertyBuilder.ResourceBuilder</span><span class="extends-implements">
 extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder</a>&lt;<a href="ClientValidatorProperty.ResourceProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.ResourceProperty</a>&gt;</span></div>
+<div class="block">Client validator for resources. Typically, a registry type</div>
 </div>
 </section>
 <section class="summary">
@@ -109,18 +110,26 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#cyrus(java.lang.String)" class="member-name-link">cyrus</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#cyrus(java.lang.String)" class="member-name-link">cyrus</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Key to use, key wll have 'cyrus' namespace</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#key(net.kyori.adventure.key.Key)" class="member-name-link">key</a><wbr>(@NotNull net.kyori.adventure.key.Key&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The key to filter by</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#key(net.kyori.adventure.key.Keyed)" class="member-name-link">key</a><wbr>(@NotNull net.kyori.adventure.key.Keyed&nbsp;key)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">The key to filter by</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @NotNull <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#minecraft(java.lang.String)" class="member-name-link">minecraft</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Key to use, key will have 'minecraft' namespace</div>
+</div>
 </div>
 </div>
 </div>
@@ -143,9 +152,16 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <h3>key</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
-@CheckReturnValue
+@Contract("_ -&gt; this")
 </span><span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></span>&nbsp;<span class="element-name">key</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.key.Key&nbsp;key)</span></div>
+<div class="block">The key to filter by</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - the key to filter by</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -153,8 +169,17 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <section class="detail" id="key(net.kyori.adventure.key.Keyed)">
 <h3>key</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></span>&nbsp;<span class="element-name">key</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@NotNull
+@Contract("_ -&gt; this")
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></span>&nbsp;<span class="element-name">key</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.key.Keyed&nbsp;key)</span></div>
+<div class="block">The key to filter by</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - the key to filter by</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -162,8 +187,17 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <section class="detail" id="cyrus(java.lang.String)">
 <h3>cyrus</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></span>&nbsp;<span class="element-name">cyrus</span><wbr><span class="parameters">(@Value
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></span>&nbsp;<span class="element-name">cyrus</span><wbr><span class="parameters">(@NotNull @Value
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+<div class="block">Key to use, key wll have 'cyrus' namespace</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>value</code> - the value of the key</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -171,8 +205,17 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <section class="detail" id="minecraft(java.lang.String)">
 <h3>minecraft</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></span>&nbsp;<span class="element-name">minecraft</span><wbr><span class="parameters">(@Value
+<div class="member-signature"><span class="annotations">@NotNull
+@Contract("_ -&gt; this")
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.ResourceBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.ResourceBuilder</a></span>&nbsp;<span class="element-name">minecraft</span><wbr><span class="parameters">(@Value
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+<div class="block">Key to use, key will have 'minecraft' namespace</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>value</code> - the value of the key</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>

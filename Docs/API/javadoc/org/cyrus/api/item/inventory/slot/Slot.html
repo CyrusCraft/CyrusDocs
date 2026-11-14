@@ -279,7 +279,7 @@ then will return <a href="https://docs.oracle.com/en/java/javase/25/docs/api/jav
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="SlotSetOptions.html" title="interface in org.cyrus.api.item.inventory.slot">SlotSetOptions</a>&gt;&nbsp;options)</span></div>
 <div class="block">Checks if the provided item can be set into the slot using the options provided. This does not actually set
 the item
-
+<p>
 Note 1: This does not checks via event so if an event cancels the setting of the item then
 <a href="Slot.Mutable.html#set(org.cyrus.api.item.inventory.ItemStack)"><code>Slot.Mutable.set(ItemStack)</code></a> returns false, but as this doesn't check events this may return true but
 set returns false
@@ -304,8 +304,8 @@ clearing the slot should always be true (except when events cancel it)</div>
  @NotNull <a href="../ItemStack.html" title="interface in org.cyrus.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
 <div class="block">Checks if the provided item can be set into the slot using the options provided. This does not actually set
 the item
-
-Note 1: This does not checks via event so if an event cancels the setting of the item then
+<p>
+Note 1: This does not check via event so if an event cancels the setting of the item then
 <a href="Slot.Mutable.html#set(org.cyrus.api.item.inventory.ItemStack)"><code>Slot.Mutable.set(ItemStack)</code></a> returns false, but as this doesn't check events this may return true but
 set returns false
 Note 2: Itemstack cannot be null (despite it can be in <a href="Slot.Mutable.html#set(org.cyrus.api.item.inventory.ItemStack)"><code>Slot.Mutable.set(ItemStack)</code></a>) this is due to

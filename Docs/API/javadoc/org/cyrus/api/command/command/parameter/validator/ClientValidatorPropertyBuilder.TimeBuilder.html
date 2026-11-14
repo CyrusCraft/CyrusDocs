@@ -82,6 +82,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ClientValidatorPropertyBuilder.TimeBuilder</span><span class="extends-implements">
 extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder</a>&lt;<a href="ClientValidatorProperty.TimeProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty.TimeProperty</a>&gt;</span></div>
+<div class="block">Builder for time property</div>
 </div>
 </section>
 <section class="summary">
@@ -106,9 +107,11 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ClientValidatorPropertyBuilder.TimeBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.TimeBuilder</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ClientValidatorPropertyBuilder.TimeBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.TimeBuilder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minimumDurationTicks(java.time.Duration)" class="member-name-link">minimumDurationTicks</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;duration)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The minimum duration the client can enter</div>
+</div>
 </div>
 </div>
 </div>
@@ -130,8 +133,17 @@ extends <a href="ClientValidatorPropertyBuilder.html" title="interface in org.cy
 <section class="detail" id="minimumDurationTicks(java.time.Duration)">
 <h3>minimumDurationTicks</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="ClientValidatorPropertyBuilder.TimeBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.TimeBuilder</a></span>&nbsp;<span class="element-name">minimumDurationTicks</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
+</span><span class="return-type">@NotNull <a href="ClientValidatorPropertyBuilder.TimeBuilder.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorPropertyBuilder.TimeBuilder</a></span>&nbsp;<span class="element-name">minimumDurationTicks</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;duration)</span></div>
+<div class="block">The minimum duration the client can enter</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>duration</code> - the minimum duration the client can enter</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>

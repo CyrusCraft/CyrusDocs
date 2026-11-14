@@ -116,13 +116,23 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Enum Constant</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="#ERROR_NO_COMMAND" class="member-name-link">ERROR_NO_COMMAND</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Error when no command is found.</div>
+</div>
 <div class="col-first odd-row-color"><code><a href="#ERROR_OWN_MESSAGE" class="member-name-link">ERROR_OWN_MESSAGE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Errors but does not send message for you
+Note:
+For best UX do send a message to the audience yourself to whats going wrong</div>
+</div>
 <div class="col-first even-row-color"><code><a href="#ERROR_USAGE" class="member-name-link">ERROR_USAGE</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Errors and will relay the command usage to the audience</div>
+</div>
 <div class="col-first odd-row-color"><code><a href="#SUCCESS" class="member-name-link">SUCCESS</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">If the command was successful</div>
+</div>
 </div>
 </section>
 </li>
@@ -139,7 +149,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSuccessful()" class="member-name-link">isSuccessful</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">If the command was successful</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(java.lang.String)" class="member-name-link">valueOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -176,6 +188,7 @@ the order they are declared.</div>
 <h3>SUCCESS</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a></span>&nbsp;<span class="element-name">SUCCESS</span></div>
+<div class="block">If the command was successful</div>
 </div>
 </section>
 </li>
@@ -184,6 +197,7 @@ the order they are declared.</div>
 <h3>ERROR_USAGE</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a></span>&nbsp;<span class="element-name">ERROR_USAGE</span></div>
+<div class="block">Errors and will relay the command usage to the audience</div>
 </div>
 </section>
 </li>
@@ -192,6 +206,9 @@ the order they are declared.</div>
 <h3>ERROR_OWN_MESSAGE</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a></span>&nbsp;<span class="element-name">ERROR_OWN_MESSAGE</span></div>
+<div class="block">Errors but does not send message for you
+Note:
+For best UX do send a message to the audience yourself to whats going wrong</div>
 </div>
 </section>
 </li>
@@ -200,6 +217,7 @@ the order they are declared.</div>
 <h3>ERROR_NO_COMMAND</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="CommandResult.html" title="enum class in org.cyrus.api.command">CommandResult</a></span>&nbsp;<span class="element-name">ERROR_NO_COMMAND</span></div>
+<div class="block">Error when no command is found. Used internally but here for checking</div>
 </div>
 </section>
 </li>
@@ -252,6 +270,11 @@ not permitted.)</div>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@CheckReturnValue
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isSuccessful</span>()</div>
+<div class="block">If the command was successful</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if command is successful</dd>
+</dl>
 </div>
 </section>
 </li>

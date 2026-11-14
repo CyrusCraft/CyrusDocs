@@ -75,8 +75,10 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">CyrusInstance</span>
+<div class="type-signature"><span class="annotations">@Internal
+</span><span class="modifiers">public final class </span><span class="element-name type-name-label">CyrusInstance</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Holds cyrus instance</div>
 </div>
 </section>
 <section class="summary">
@@ -94,13 +96,17 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @NotNull <a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#global()" class="member-name-link">global</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the global instance of cyrus</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setGlobal(org.cyrus.api.Cyrus.Writable)" class="member-name-link">setGlobal</a><wbr>(@NotNull <a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a>&nbsp;instance)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @NotNull <a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#tickingServer()" class="member-name-link">tickingServer</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the ticking server level of cyrus</div>
+</div>
 </div>
 </div>
 </div>
@@ -124,6 +130,11 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@NotNull <a href="Cyrus.html" title="interface in org.cyrus.api">Cyrus</a></span>&nbsp;<span class="element-name">global</span>()</div>
+<div class="block">Gets the global instance of cyrus</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the global instance of cyrus</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -132,6 +143,11 @@ loadScripts(document, 'script');</script>
 <h3>tickingServer</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">@NotNull <a href="Cyrus.Writable.html" title="interface in org.cyrus.api">Cyrus.Writable</a></span>&nbsp;<span class="element-name">tickingServer</span>()</div>
+<div class="block">Gets the ticking server level of cyrus</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the ticking server level</dd>
+</dl>
 </div>
 </section>
 </li>

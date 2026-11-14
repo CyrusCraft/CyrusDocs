@@ -55,18 +55,8 @@ loadScripts(document, 'script');</script>
 <ol class="toc-list" tabindex="-1">
 <li><a href="#" tabindex="0">Description</a></li>
 <li><a href="#nested-class-summary" tabindex="0">Nested Class Summary</a></li>
-<li><a href="#field-summary" tabindex="0">Field Summary</a></li>
 <li><a href="#constructor-summary" tabindex="0">Constructor Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
-<li><a href="#field-detail" tabindex="0">Field Details</a>
-<ol class="toc-list">
-<li><a href="#maxPlayers" tabindex="0">maxPlayers</a></li>
-<li><a href="#currentPlayers" tabindex="0">currentPlayers</a></li>
-<li><a href="#enforceSecureChat" tabindex="0">enforceSecureChat</a></li>
-<li><a href="#component" tabindex="0">component</a></li>
-<li><a href="#version" tabindex="0">version</a></li>
-</ol>
-</li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
 <li><a href="#%3Cinit%3E(org.cyrus.api.event.IdentifiedEventData,org.cyrus.api.network.packet.data.status.StatusResponse)" tabindex="0">ConnectionRequestStatusEvent(IdentifiedEventData, StatusResponse)</a></li>
@@ -74,6 +64,11 @@ loadScripts(document, 'script');</script>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
+<li><a href="#maxPlayersStore()" tabindex="0">maxPlayersStore()</a></li>
+<li><a href="#currentPlayersStore()" tabindex="0">currentPlayersStore()</a></li>
+<li><a href="#enforceSecureChatStore()" tabindex="0">enforceSecureChatStore()</a></li>
+<li><a href="#componentStore()" tabindex="0">componentStore()</a></li>
+<li><a href="#minecraftVersionStore()" tabindex="0">minecraftVersionStore()</a></li>
 <li><a href="#originalData()" tabindex="0">originalData()</a></li>
 <li><a href="#minecraftVersion()" tabindex="0">minecraftVersion()</a></li>
 <li><a href="#setMinecraftVersion(org.cyrus.api.network.MinecraftVersion)" tabindex="0">setMinecraftVersion(MinecraftVersion)</a></li>
@@ -131,33 +126,6 @@ clicking the "refresh" button on the "multiplayer" screen within the minecraft c
 <code><a href="../../IEvent.Cancelable.html" title="interface in org.cyrus.api.event">IEvent.Cancelable</a></code></div>
 </section>
 </li>
-<!-- =========== FIELD SUMMARY =========== -->
-<li>
-<section class="field-summary" id="field-summary">
-<h2>Field Summary</h2>
-<div class="caption"><span>Fields</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Field</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>final @NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;net.kyori.adventure.text.Component&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#component" class="member-name-link">component</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>final @NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#currentPlayers" class="member-name-link">currentPlayers</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>final @NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#enforceSecureChat" class="member-name-link">enforceSecureChat</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>final @NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#maxPlayers" class="member-name-link">maxPlayers</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>final @NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#version" class="member-name-link">version</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <li>
 <section class="constructor-summary" id="constructor-summary">
@@ -193,54 +161,69 @@ clicking the "refresh" button on the "multiplayer" screen within the minecraft c
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The cause that lead to this event being triggered</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Range(from=0L,to=2147483647L) int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#currentPlayers()" class="member-name-link">currentPlayers</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a><wbr>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;net.kyori.adventure.text.Component&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;net.kyori.adventure.text.Component&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#componentStore()" class="member-name-link">componentStore</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Range(from=0L,to=2147483647L) int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#currentPlayers()" class="member-name-link">currentPlayers</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a><wbr>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#currentPlayersStore()" class="member-name-link">currentPlayersStore</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull net.kyori.adventure.text.Component</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#description()" class="member-name-link">description</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#identifier()" class="member-name-link">identifier</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a><wbr>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#enforceSecureChatStore()" class="member-name-link">enforceSecureChatStore</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#identifier()" class="member-name-link">identifier</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The identifier of the event handler</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCancelled()" class="member-name-link">isCancelled</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCancelled()" class="member-name-link">isCancelled</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Checks if the event has been cancelled</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEnforcingChat()" class="member-name-link">isEnforcingChat</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEnforcingChat()" class="member-name-link">isEnforcingChat</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Range(from=0L,to=2147483647L) int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#maxPlayers()" class="member-name-link">maxPlayers</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Range(from=0L,to=2147483647L) int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#maxPlayers()" class="member-name-link">maxPlayers</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a><wbr>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#maxPlayersStore()" class="member-name-link">maxPlayersStore</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#minecraftVersion()" class="member-name-link">minecraftVersion</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../../../network/packet/data/status/StatusResponse.html" title="class in org.cyrus.api.network.packet.data.status">StatusResponse</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#originalData()" class="member-name-link">originalData</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a><wbr>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a>&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#minecraftVersionStore()" class="member-name-link">minecraftVersionStore</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#server()" class="member-name-link">server</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../../../network/packet/data/status/StatusResponse.html" title="class in org.cyrus.api.network.packet.data.status">StatusResponse</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#originalData()" class="member-name-link">originalData</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../Cyrus.Changeable.html" title="interface in org.cyrus.api">Cyrus.Changeable</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#server()" class="member-name-link">server</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The level that the event handler should use</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="ConnectionRequestStatusEvent.html" title="class in org.cyrus.api.event.network.status">ConnectionRequestStatusEvent</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCurrentPlayers(java.lang.Integer)" class="member-name-link">setCurrentPlayers</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;min)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="ConnectionRequestStatusEvent.html" title="class in org.cyrus.api.event.network.status">ConnectionRequestStatusEvent</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDescription(net.kyori.adventure.text.Component)" class="member-name-link">setDescription</a><wbr>(@Nullable net.kyori.adventure.text.Component&nbsp;description)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCurrentPlayers(java.lang.Integer)" class="member-name-link">setCurrentPlayers</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;min)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="ConnectionRequestStatusEvent.html" title="class in org.cyrus.api.event.network.status">ConnectionRequestStatusEvent</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEnforcingChat(java.lang.Boolean)" class="member-name-link">setEnforcingChat</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;secureChat)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDescription(net.kyori.adventure.text.Component)" class="member-name-link">setDescription</a><wbr>(@Nullable net.kyori.adventure.text.Component&nbsp;description)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="ConnectionRequestStatusEvent.html" title="class in org.cyrus.api.event.network.status">ConnectionRequestStatusEvent</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMaxPlayers(java.lang.Integer)" class="member-name-link">setMaxPlayers</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;max)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEnforcingChat(java.lang.Boolean)" class="member-name-link">setEnforcingChat</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;secureChat)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="ConnectionRequestStatusEvent.html" title="class in org.cyrus.api.event.network.status">ConnectionRequestStatusEvent</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMinecraftVersion(org.cyrus.api.network.MinecraftVersion)" class="member-name-link">setMinecraftVersion</a><wbr>(@Nullable <a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a>&nbsp;version)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMaxPlayers(java.lang.Integer)" class="member-name-link">setMaxPlayers</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;max)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="ConnectionRequestStatusEvent.html" title="class in org.cyrus.api.event.network.status">ConnectionRequestStatusEvent</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMinecraftVersion(org.cyrus.api.network.MinecraftVersion)" class="member-name-link">setMinecraftVersion</a><wbr>(@Nullable <a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a>&nbsp;version)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -253,54 +236,6 @@ clicking the "refresh" button on the "multiplayer" screen within the minecraft c
 </section>
 <section class="details">
 <ul class="details-list">
-<!-- ============ FIELD DETAIL =========== -->
-<li>
-<section class="field-details" id="field-detail">
-<h2>Field Details</h2>
-<ul class="member-list">
-<li>
-<section class="detail" id="maxPlayers">
-<h3>maxPlayers</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">@NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</span>&nbsp;<span class="element-name">maxPlayers</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="currentPlayers">
-<h3>currentPlayers</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">@NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</span>&nbsp;<span class="element-name">currentPlayers</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="enforceSecureChat">
-<h3>enforceSecureChat</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">@NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</span>&nbsp;<span class="element-name">enforceSecureChat</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="component">
-<h3>component</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">@NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;net.kyori.adventure.text.Component&gt;&gt;</span>&nbsp;<span class="element-name">component</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="version">
-<h3>version</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">@NotNull <a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a>&gt;&gt;</span>&nbsp;<span class="element-name">version</span></div>
-</div>
-</section>
-</li>
-</ul>
-</section>
-</li>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <li>
 <section class="constructor-details" id="constructor-detail">
@@ -325,6 +260,46 @@ clicking the "refresh" button on the "multiplayer" screen within the minecraft c
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="maxPlayersStore()">
+<h3>maxPlayersStore</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</span>&nbsp;<span class="element-name">maxPlayersStore</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="currentPlayersStore()">
+<h3>currentPlayersStore</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</span>&nbsp;<span class="element-name">currentPlayersStore</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="enforceSecureChatStore()">
+<h3>enforceSecureChatStore</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</span>&nbsp;<span class="element-name">enforceSecureChatStore</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="componentStore()">
+<h3>componentStore</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;net.kyori.adventure.text.Component&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;net.kyori.adventure.text.Component&gt;&gt;</span>&nbsp;<span class="element-name">componentStore</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="minecraftVersionStore()">
+<h3>minecraftVersionStore</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../change/ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="../../change/ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a>&gt;&gt;, <a href="../../change/Change.Value.Simple.html" title="interface in org.cyrus.api.event.change">Change.Value.Simple</a>&lt;<a href="../../../network/MinecraftVersion.html" title="enum class in org.cyrus.api.network">MinecraftVersion</a>&gt;&gt;</span>&nbsp;<span class="element-name">minecraftVersionStore</span>()</div>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="originalData()">
 <h3>originalData</h3>

@@ -105,6 +105,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">WorldTypeBuilder.Finalize</span><span class="extends-implements">
 extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder</a></span></div>
+<div class="block">A step within the world builder</div>
 </div>
 </section>
 <section class="summary">
@@ -130,77 +131,126 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#ambientLight(float)" class="member-name-link">ambientLight</a><wbr>(float&nbsp;worldTypeBuilder)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#ambientLight(float)" class="member-name-link">ambientLight</a><wbr>(float&nbsp;ambientLight)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The ambient light in the world</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#appendTimeline(net.kyori.adventure.key.Key)" class="member-name-link">appendTimeline</a><wbr>(@NotNull net.kyori.adventure.key.Key&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Adds a timeline to the world type.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#appendTimelines(java.util.Collection)" class="member-name-link">appendTimelines</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;net.kyori.adventure.key.Key&gt;&nbsp;keys)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Adds a timeline to the world type.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#attribute(java.util.function.Function)" class="member-name-link">attribute</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super <a href="attribute/WorldTypeAttributeBuilder.FirstStep.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttributeBuilder.FirstStep</a>, ? extends <a href="attribute/WorldTypeAttributeBuilder.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttributeBuilder</a>&gt;&nbsp;function)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Adds an attribute to the world type from an attribute builder</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#attribute(org.cyrus.api.world.type.attribute.WorldTypeAttribute)" class="member-name-link">attribute</a><wbr>(@NotNull <a href="attribute/WorldTypeAttribute.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttribute</a>&nbsp;attribute)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Adds an attribute to the world type</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldType.html" title="interface in org.cyrus.api.world.type">WorldType</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#build()" class="member-name-link">build</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Builds the world</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#coordinateScale(double)" class="member-name-link">coordinateScale</a><wbr>(@Range(from=0L,to=30000000L) double&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the scale of the coordinates</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#doBedWorks(boolean)" class="member-name-link">doBedWorks</a><wbr>(boolean&nbsp;bedWorks)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks if beds work -&gt; this will get overwritten by
+<a href="attribute/BedRuleAttribute.html" title="interface in org.cyrus.api.world.type.attribute"><code>BedRuleAttribute</code></a> if possible</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#doRespawnAnchorsWork(boolean)" class="member-name-link">doRespawnAnchorsWork</a><wbr>(boolean&nbsp;worldTypeBuilderWorks)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#doRespawnAnchorsWork(boolean)" class="member-name-link">doRespawnAnchorsWork</a><wbr>(boolean&nbsp;doRespawnAnchorsWork)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Do respawn anchors work</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#effect(org.cyrus.api.world.type.WorldStyle)" class="member-name-link">effect</a><wbr>(@NotNull <a href="WorldStyle.html" title="enum class in org.cyrus.api.world.type">WorldStyle</a>&nbsp;style)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The world style to use</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#fixedTime(java.lang.Long)" class="member-name-link">fixedTime</a><wbr>(@Range(from=0L,to=24000L) <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;time)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Set the fixed time of the world type</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasCeiling(boolean)" class="member-name-link">hasCeiling</a><wbr>(boolean&nbsp;ceiling)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets if the world type has a ceiling</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasEnderDragonFight(boolean)" class="member-name-link">hasEnderDragonFight</a><wbr>(boolean&nbsp;dragonFight)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Has a spawn for ender dragon</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasRaids(boolean)" class="member-name-link">hasRaids</a><wbr>(boolean&nbsp;raids)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">if the world has raids</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasSkylight(boolean)" class="member-name-link">hasSkylight</a><wbr>(boolean&nbsp;hasSkylight)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets if the world type has a skylight</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#infiniteBurn(org.cyrus.api.values.tag.Tag)" class="member-name-link">infiniteBurn</a><wbr>(@Nullable <a href="../../values/tag/Tag.html" title="interface in org.cyrus.api.values.tag">Tag</a>&lt;<a href="../block/BlockType.html" title="interface in org.cyrus.api.world.block">BlockType</a>&gt;&nbsp;blockTag)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The flag of blocks that have infinite burn</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isNatural(boolean)" class="member-name-link">isNatural</a><wbr>(boolean&nbsp;natural)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets if the world type is natural</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#logicalHeight(int)" class="member-name-link">logicalHeight</a><wbr>(@Range(from=0L,to=4064L) int&nbsp;logicalHeight)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The spawn height of the world</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#maximumHeight(int)" class="member-name-link">maximumHeight</a><wbr>(@Range(from=16L,to=4064L) int&nbsp;maxY)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Maximum height of the world</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minimumHeight(int)" class="member-name-link">minimumHeight</a><wbr>(@Range(from=-2032L,to=2031L) int&nbsp;minY)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Minimum height of the world</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#monsterSpawnBlockLight(int)" class="member-name-link">monsterSpawnBlockLight</a><wbr>(@Range(from=0L,to=15L) int&nbsp;light)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">typical light levels on blocks to spawn monsters</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#monsterSpawnLight(int)" class="member-name-link">monsterSpawnLight</a><wbr>(@Range(from=0L,to=15L) int&nbsp;light)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">typical light levels via sky level to spawn monsters</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#piglinSafe(boolean)" class="member-name-link">piglinSafe</a><wbr>(boolean&nbsp;safe)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">If the world is safe from piglin</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#ultraWarm(boolean)" class="member-name-link">ultraWarm</a><wbr>(boolean&nbsp;ultrawarm)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Is the world very warm (nether)</div>
+</div>
 </div>
 </div>
 </div>
@@ -219,8 +269,17 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="attribute(org.cyrus.api.world.type.attribute.WorldTypeAttribute)">
 <h3>attribute</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">attribute</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+@NotNull
+</span><span class="return-type">@NotNull <a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">attribute</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="attribute/WorldTypeAttribute.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttribute</a>&nbsp;attribute)</span></div>
+<div class="block">Adds an attribute to the world type</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>attribute</code> - the attribute to add</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -228,7 +287,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="attribute(java.util.function.Function)">
 <h3>attribute</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">attribute</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super <a href="attribute/WorldTypeAttributeBuilder.FirstStep.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttributeBuilder.FirstStep</a>, ? extends <a href="attribute/WorldTypeAttributeBuilder.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttributeBuilder</a>&gt;&nbsp;function)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">attribute</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super <a href="attribute/WorldTypeAttributeBuilder.FirstStep.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttributeBuilder.FirstStep</a>, ? extends <a href="attribute/WorldTypeAttributeBuilder.html" title="interface in org.cyrus.api.world.type.attribute">WorldTypeAttributeBuilder</a>&gt;&nbsp;function)</span></div>
+<div class="block">Adds an attribute to the world type from an attribute builder</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>function</code> - the function that provides the world builder</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -236,7 +303,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="fixedTime(java.lang.Long)">
 <h3>fixedTime</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">fixedTime</span><wbr><span class="parameters">(@Range(from=0L,to=24000L) <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;time)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">fixedTime</span><wbr><span class="parameters">(@Range(from=0L,to=24000L) <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;time)</span></div>
+<div class="block">Set the fixed time of the world type</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>time</code> - the time to set as the fixed time</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -244,8 +319,17 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="appendTimelines(java.util.Collection)">
 <h3>appendTimelines</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">appendTimelines</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">appendTimelines</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;net.kyori.adventure.key.Key&gt;&nbsp;keys)</span></div>
+<div class="block">Adds a timeline to the world type. The world type requires at least a single timeline. The provided key
+must be a registered timeline in the <a href="../../registry/Registry.html" title="interface in org.cyrus.api.registry"><code>Registry</code></a></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>keys</code> - the keys of the timeline to use</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -253,8 +337,17 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="appendTimeline(net.kyori.adventure.key.Key)">
 <h3>appendTimeline</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">appendTimeline</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">appendTimeline</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.key.Key&nbsp;key)</span></div>
+<div class="block">Adds a timeline to the world type. The world type requires at least a single timeline. The provided key
+must be registered timeline in the <a href="../../registry/Registry.html" title="interface in org.cyrus.api.registry"><code>Registry</code></a></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - the key of the timeline to use</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -262,7 +355,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="hasSkylight(boolean)">
 <h3>hasSkylight</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">hasSkylight</span><wbr><span class="parameters">(boolean&nbsp;hasSkylight)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">hasSkylight</span><wbr><span class="parameters">(boolean&nbsp;hasSkylight)</span></div>
+<div class="block">Sets if the world type has a skylight</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>hasSkylight</code> - If the world type has a skylight</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -270,7 +371,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="hasCeiling(boolean)">
 <h3>hasCeiling</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">hasCeiling</span><wbr><span class="parameters">(boolean&nbsp;ceiling)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">hasCeiling</span><wbr><span class="parameters">(boolean&nbsp;ceiling)</span></div>
+<div class="block">Sets if the world type has a ceiling</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>ceiling</code> - if the world type has a ceiling</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -278,7 +387,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="isNatural(boolean)">
 <h3>isNatural</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">isNatural</span><wbr><span class="parameters">(boolean&nbsp;natural)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">isNatural</span><wbr><span class="parameters">(boolean&nbsp;natural)</span></div>
+<div class="block">Sets if the world type is natural</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>natural</code> - If the world type is natural</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -286,7 +403,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="coordinateScale(double)">
 <h3>coordinateScale</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">coordinateScale</span><wbr><span class="parameters">(@Range(from=0L,to=30000000L) double&nbsp;value)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">coordinateScale</span><wbr><span class="parameters">(@Range(from=0L,to=30000000L) double&nbsp;value)</span></div>
+<div class="block">Sets the scale of the coordinates</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>value</code> - the value</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -294,7 +419,16 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="doBedWorks(boolean)">
 <h3>doBedWorks</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">doBedWorks</span><wbr><span class="parameters">(boolean&nbsp;bedWorks)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">doBedWorks</span><wbr><span class="parameters">(boolean&nbsp;bedWorks)</span></div>
+<div class="block">Checks if beds work -&gt; this will get overwritten by
+<a href="attribute/BedRuleAttribute.html" title="interface in org.cyrus.api.world.type.attribute"><code>BedRuleAttribute</code></a> if possible</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>bedWorks</code> - do beds work</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -302,7 +436,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="doRespawnAnchorsWork(boolean)">
 <h3>doRespawnAnchorsWork</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">doRespawnAnchorsWork</span><wbr><span class="parameters">(boolean&nbsp;worldTypeBuilderWorks)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">doRespawnAnchorsWork</span><wbr><span class="parameters">(boolean&nbsp;doRespawnAnchorsWork)</span></div>
+<div class="block">Do respawn anchors work</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>doRespawnAnchorsWork</code> - </dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -310,7 +452,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="minimumHeight(int)">
 <h3>minimumHeight</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">minimumHeight</span><wbr><span class="parameters">(@Range(from=-2032L,to=2031L) int&nbsp;minY)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">minimumHeight</span><wbr><span class="parameters">(@Range(from=-2032L,to=2031L) int&nbsp;minY)</span></div>
+<div class="block">Minimum height of the world</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>minY</code> - min height</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -319,6 +469,13 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <h3>maximumHeight</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">maximumHeight</span><wbr><span class="parameters">(@Range(from=16L,to=4064L) int&nbsp;maxY)</span></div>
+<div class="block">Maximum height of the world</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>maxY</code> - max height</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -326,7 +483,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="logicalHeight(int)">
 <h3>logicalHeight</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">logicalHeight</span><wbr><span class="parameters">(@Range(from=0L,to=4064L) int&nbsp;logicalHeight)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">logicalHeight</span><wbr><span class="parameters">(@Range(from=0L,to=4064L) int&nbsp;logicalHeight)</span></div>
+<div class="block">The spawn height of the world</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>logicalHeight</code> - the spawn height</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -336,6 +501,13 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">infiniteBurn</span><wbr><span class="parameters">(@Nullable
  @Nullable <a href="../../values/tag/Tag.html" title="interface in org.cyrus.api.values.tag">Tag</a>&lt;<a href="../block/BlockType.html" title="interface in org.cyrus.api.world.block">BlockType</a>&gt;&nbsp;blockTag)</span></div>
+<div class="block">The flag of blocks that have infinite burn</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>blockTag</code> - the block tag types to have infinite brn</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -343,8 +515,16 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="effect(org.cyrus.api.world.type.WorldStyle)">
 <h3>effect</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">effect</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">effect</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="WorldStyle.html" title="enum class in org.cyrus.api.world.type">WorldStyle</a>&nbsp;style)</span></div>
+<div class="block">The world style to use</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>style</code> - the style of world</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -352,7 +532,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="ambientLight(float)">
 <h3>ambientLight</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">ambientLight</span><wbr><span class="parameters">(float&nbsp;worldTypeBuilder)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">ambientLight</span><wbr><span class="parameters">(float&nbsp;ambientLight)</span></div>
+<div class="block">The ambient light in the world</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>ambientLight</code> - the ambient light</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -360,7 +548,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="piglinSafe(boolean)">
 <h3>piglinSafe</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">piglinSafe</span><wbr><span class="parameters">(boolean&nbsp;safe)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">piglinSafe</span><wbr><span class="parameters">(boolean&nbsp;safe)</span></div>
+<div class="block">If the world is safe from piglin</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>safe</code> - if safe from piglins</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -368,7 +564,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="hasRaids(boolean)">
 <h3>hasRaids</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">hasRaids</span><wbr><span class="parameters">(boolean&nbsp;raids)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">hasRaids</span><wbr><span class="parameters">(boolean&nbsp;raids)</span></div>
+<div class="block">if the world has raids</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>raids</code> - if raids</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -376,7 +580,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="monsterSpawnBlockLight(int)">
 <h3>monsterSpawnBlockLight</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">monsterSpawnBlockLight</span><wbr><span class="parameters">(@Range(from=0L,to=15L) int&nbsp;light)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">monsterSpawnBlockLight</span><wbr><span class="parameters">(@Range(from=0L,to=15L) int&nbsp;light)</span></div>
+<div class="block">typical light levels on blocks to spawn monsters</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>light</code> - block light level</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -384,7 +596,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="monsterSpawnLight(int)">
 <h3>monsterSpawnLight</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">monsterSpawnLight</span><wbr><span class="parameters">(@Range(from=0L,to=15L) int&nbsp;light)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">monsterSpawnLight</span><wbr><span class="parameters">(@Range(from=0L,to=15L) int&nbsp;light)</span></div>
+<div class="block">typical light levels via sky level to spawn monsters</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>light</code> - light level</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -392,7 +612,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="ultraWarm(boolean)">
 <h3>ultraWarm</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">ultraWarm</span><wbr><span class="parameters">(boolean&nbsp;ultrawarm)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">ultraWarm</span><wbr><span class="parameters">(boolean&nbsp;ultrawarm)</span></div>
+<div class="block">Is the world very warm (nether)</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>ultrawarm</code> - is very warm</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -400,7 +628,15 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <section class="detail" id="hasEnderDragonFight(boolean)">
 <h3>hasEnderDragonFight</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">hasEnderDragonFight</span><wbr><span class="parameters">(boolean&nbsp;dragonFight)</span></div>
+<div class="member-signature"><span class="annotations">@Contract("_ -&gt; this")
+</span><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">hasEnderDragonFight</span><wbr><span class="parameters">(boolean&nbsp;dragonFight)</span></div>
+<div class="block">Has a spawn for ender dragon</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>dragonFight</code> - has dragon fight</dd>
+<dt>Returns:</dt>
+<dd>itself</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -409,6 +645,14 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <h3>build</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="WorldType.html" title="interface in org.cyrus.api.world.type">WorldType</a></span>&nbsp;<span class="element-name">build</span>()</div>
+<div class="block">Builds the world</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the built world</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - when one of the builder tags is invalid -&gt; will attempt to throw before hand
+but not always possible</dd>
+</dl>
 </div>
 </section>
 </li>

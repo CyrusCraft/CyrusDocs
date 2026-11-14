@@ -82,6 +82,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">WorldTypeBuilder.FirstStep</span><span class="extends-implements">
 extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder</a></span></div>
+<div class="block">Entry step into the builder</div>
 </div>
 </section>
 <section class="summary">
@@ -108,7 +109,9 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.ClockStep.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.ClockStep</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#key(net.kyori.adventure.key.Key)" class="member-name-link">key</a><wbr>(@NotNull net.kyori.adventure.key.Key&nbsp;key)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Provide the world key for the WorldType.</div>
+</div>
 </div>
 </div>
 </div>
@@ -129,6 +132,14 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.ClockStep.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.ClockStep</a></span>&nbsp;<span class="element-name">key</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.key.Key&nbsp;key)</span></div>
+<div class="block">Provide the world key for the WorldType. The namespace should be your extension with the value in the key
+being the name of the world type</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key to use</dd>
+<dt>Returns:</dt>
+<dd>The next step</dd>
+</dl>
 </div>
 </section>
 </li>

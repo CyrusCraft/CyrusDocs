@@ -82,7 +82,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ClientValidatorProperty.TimeProperty</span><span class="extends-implements">
 extends <a href="ClientValidatorProperty.html" title="interface in org.cyrus.api.command.command.parameter.validator">ClientValidatorProperty</a></span></div>
-<div class="block">Time property type</div>
+<div class="block">Client validator for entering a time duration</div>
 </div>
 </section>
 <section class="summary">
@@ -107,9 +107,11 @@ extends <a href="ClientValidatorProperty.html" title="interface in org.cyrus.api
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#minimumDuration()" class="member-name-link">minimumDuration</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The minimum duration the time can be before it is accepted</div>
+</div>
 </div>
 </div>
 </div>
@@ -128,7 +130,14 @@ extends <a href="ClientValidatorProperty.html" title="interface in org.cyrus.api
 <section class="detail" id="minimumDuration()">
 <h3>minimumDuration</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></span>&nbsp;<span class="element-name">minimumDuration</span>()</div>
+<div class="member-signature"><span class="annotations">@NotNull
+@CheckReturnValue
+</span><span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></span>&nbsp;<span class="element-name">minimumDuration</span>()</div>
+<div class="block">The minimum duration the time can be before it is accepted</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the minimum duration</dd>
+</dl>
 </div>
 </section>
 </li>

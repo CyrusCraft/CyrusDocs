@@ -78,7 +78,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;, C&gt;, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;&gt;</code></dd>
+<dd><code><a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;, C&gt;, <a href="ChangeStore.Writable.html" title="interface in org.cyrus.api.event.change">ChangeStore.Writable</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;, C&gt;, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;&gt;</code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
@@ -87,7 +87,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ChangeStore.Single&lt;C extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;C&gt;&gt;</span><span class="extends-implements">
-extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;, C&gt;</span></div>
+extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;, C&gt;, <a href="ChangeStore.Writable.html" title="interface in org.cyrus.api.event.change">ChangeStore.Writable</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;, C&gt;</span></div>
 <div class="block">a change store holding a single change</div>
 </div>
 </section>
@@ -99,7 +99,7 @@ extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.chang
 <h2>Nested Class Summary</h2>
 <div class="inherited-list">
 <h3 id="nested-classes-inherited-from-class-org.cyrus.api.event.change.ChangeStore">Nested classes/interfaces inherited from interface&nbsp;<a href="ChangeStore.html#nested-class-summary" title="interface in org.cyrus.api.event.change">ChangeStore</a></h3>
-<code><a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;C&gt;, <a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;</code></div>
+<code><a href="ChangeStore.Multi.html" title="interface in org.cyrus.api.event.change">ChangeStore.Multi</a>&lt;C&gt;, <a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;C&gt;, <a href="ChangeStore.Writable.html" title="interface in org.cyrus.api.event.change">ChangeStore.Writable</a>&lt;Self,<wbr>C&gt;</code></div>
 </section>
 </li>
 <!-- ========== METHOD SUMMARY =========== -->
@@ -123,13 +123,18 @@ extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.chang
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>@NotNull <a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a><wbr>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copy()" class="member-name-link">copy</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates a new instance with all same detail</div>
+</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.cyrus.api.event.change.ChangeStore">Methods inherited from interface&nbsp;<a href="ChangeStore.html#method-summary" title="interface in org.cyrus.api.event.change">ChangeStore</a></h3>
-<code><a href="ChangeStore.html#changes()" title="changes()">changes</a>, <a href="ChangeStore.html#clear()" title="clear()">clear</a>, <a href="ChangeStore.html#copyInto(org.cyrus.api.event.change.ChangeStore)" title="copyInto(ChangeStore)">copyInto</a>, <a href="ChangeStore.html#count()" title="count()">count</a>, <a href="ChangeStore.html#hasChanges()" title="hasChanges()">hasChanges</a>, <a href="ChangeStore.html#identifier()" title="identifier()">identifier</a>, <a href="ChangeStore.html#insert(C)" title="insert(C)">insert</a></code></div>
+<code><a href="ChangeStore.html#changes()" title="changes()">changes</a>, <a href="ChangeStore.html#copyInto(org.cyrus.api.event.change.ChangeStore.Writable)" title="copyInto(ChangeStore.Writable)">copyInto</a>, <a href="ChangeStore.html#count()" title="count()">count</a>, <a href="ChangeStore.html#hasChanges()" title="hasChanges()">hasChanges</a>, <a href="ChangeStore.html#identifier()" title="identifier()">identifier</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.cyrus.api.event.change.ChangeStore.Writable">Methods inherited from interface&nbsp;<a href="ChangeStore.Writable.html#method-summary" title="interface in org.cyrus.api.event.change">ChangeStore.Writable</a></h3>
+<code><a href="ChangeStore.Writable.html#clear()" title="clear()">clear</a>, <a href="ChangeStore.Writable.html#insert(C)" title="insert(C)">insert</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Comparable">Methods inherited from interface&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html#method-summary" title="class or interface in java.lang" class="external-link">Comparable</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html#compareTo(T)" title="class or interface in java.lang" class="external-link">compareTo</a></code></div>
@@ -165,9 +170,13 @@ extends <a href="ChangeStore.html" title="interface in org.cyrus.api.event.chang
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="return-type">@NotNull <a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;</span>&nbsp;<span class="element-name">copy</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="ChangeStore.html#copy()">ChangeStore</a></code></span></div>
+<div class="block">Creates a new instance with all same detail</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="ChangeStore.html#copy()">copy</a></code>&nbsp;in interface&nbsp;<code><a href="ChangeStore.html" title="interface in org.cyrus.api.event.change">ChangeStore</a>&lt;<a href="ChangeStore.Single.html" title="interface in org.cyrus.api.event.change">ChangeStore.Single</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a> extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;&gt;, <a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a> extends <a href="Change.html" title="interface in org.cyrus.api.event.change">Change</a>&lt;<a href="#type-param-C" title="type parameter in ChangeStore.Single">C</a>&gt;&gt;</code></dd>
+<dt>Returns:</dt>
+<dd>A copy of this instance</dd>
 </dl>
 </div>
 </section>

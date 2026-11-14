@@ -86,6 +86,8 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">WorldTypeBuilder.ClockStep</span><span class="extends-implements">
 extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder</a></span></div>
+<div class="block">Sets the world clock type for the world. This will determine the time between day and night (light levels the
+sun has), sleeping times, etc.</div>
 </div>
 </section>
 <section class="summary">
@@ -112,19 +114,30 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#defaultClock(net.kyori.adventure.key.Key)" class="member-name-link">defaultClock</a><wbr>(@NotNull net.kyori.adventure.key.Key&nbsp;key)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The clock key to use.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#defaultClock(org.cyrus.api.registry.RegistryGetter)" class="member-name-link">defaultClock</a><wbr>(@NotNull <a href="../../registry/RegistryGetter.html" title="class in org.cyrus.api.registry">RegistryGetter</a>&lt;<a href="../timeline/clock/Clock.html" title="interface in org.cyrus.api.world.timeline.clock">Clock</a>&gt;&nbsp;getter)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">The clock to use, this will take the key from the registry.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#defaultClock(org.cyrus.api.world.timeline.clock.Clock)" class="member-name-link">defaultClock</a><wbr>(@NotNull <a href="../timeline/clock/Clock.html" title="interface in org.cyrus.api.world.timeline.clock">Clock</a>&nbsp;clock)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">The clock to use, this will take the key from the provided clock and therefore it is expected that the
+clock object is registered within the Clock <a href="../../registry/Registry.html" title="interface in org.cyrus.api.registry"><code>Registry</code></a></div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#overworld()" class="member-name-link">overworld</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">State to use the overworld clock</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#theEnd()" class="member-name-link">theEnd</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">State to use the end clock</div>
+</div>
 </div>
 </div>
 </div>
@@ -145,6 +158,13 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">defaultClock</span><wbr><span class="parameters">(@NotNull
  @NotNull net.kyori.adventure.key.Key&nbsp;key)</span></div>
+<div class="block">The clock key to use. This needs to be registered within the Clock <a href="../../registry/Registry.html" title="interface in org.cyrus.api.registry"><code>Registry</code></a></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - the key of the clock to use</dd>
+<dt>Returns:</dt>
+<dd>The next step in the world builder</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -154,6 +174,14 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">defaultClock</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../timeline/clock/Clock.html" title="interface in org.cyrus.api.world.timeline.clock">Clock</a>&nbsp;clock)</span></div>
+<div class="block">The clock to use, this will take the key from the provided clock and therefore it is expected that the
+clock object is registered within the Clock <a href="../../registry/Registry.html" title="interface in org.cyrus.api.registry"><code>Registry</code></a></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>clock</code> - The clock object to use</dd>
+<dt>Returns:</dt>
+<dd>the next step in the world builder</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -163,6 +191,14 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">defaultClock</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="../../registry/RegistryGetter.html" title="class in org.cyrus.api.registry">RegistryGetter</a>&lt;<a href="../timeline/clock/Clock.html" title="interface in org.cyrus.api.world.timeline.clock">Clock</a>&gt;&nbsp;getter)</span></div>
+<div class="block">The clock to use, this will take the key from the registry. You can access the vanilla registries with
+<a href="../timeline/clock/VanillaClocks.html" title="class in org.cyrus.api.world.timeline.clock"><code>VanillaClocks</code></a></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>getter</code> - The clock registry getter</dd>
+<dt>Returns:</dt>
+<dd>The next step in the world builder</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -171,6 +207,11 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <h3>overworld</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">overworld</span>()</div>
+<div class="block">State to use the overworld clock</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the next step in the world builder</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -179,6 +220,11 @@ extends <a href="WorldTypeBuilder.html" title="interface in org.cyrus.api.world.
 <h3>theEnd</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="WorldTypeBuilder.Finalize.html" title="interface in org.cyrus.api.world.type">WorldTypeBuilder.Finalize</a></span>&nbsp;<span class="element-name">theEnd</span>()</div>
+<div class="block">State to use the end clock</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the next step in the world builder</dd>
+</dl>
 </div>
 </section>
 </li>
